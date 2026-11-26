@@ -1,0 +1,9 @@
+drugrepo-env/
+__pycache__/
+*.gz
+*.pkl
+node_modules/
+.DS_Store
+drugrepo.db
+backup/
+

@@ -1,0 +1,8 @@
+metric,value
+protocol,P4
+n_queries,965
+n_relevant_pairs,10464
+pool_drugs_with_atc,1900
+mean_M,1898.95
+mean_R,10.8435
+analytical_random_hit10,0.052461

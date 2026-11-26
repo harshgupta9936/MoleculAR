@@ -1,0 +1,3 @@
+configuration,w_s,w_t,w_e,n_test,mrr_mean,mrr_low,mrr_high,enrich_mean,enrich_low,enrich_high
+Best Tune Triple,0.0,0.2,0.8,823,0.403406,0.375628,0.431854,4.105177,3.803066,4.425578
+Default Baseline,0.4,0.4,0.2,823,0.356869,0.332026,0.382724,4.410232,4.083386,4.726714

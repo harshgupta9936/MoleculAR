@@ -1,0 +1,13 @@
+indication_id,indication_name,reason
+21001931,Diagnostic aid,contains 'Diagnostic' (non-therapeutic)
+21001867,Diagnostic Test for Asthma,contains 'Diagnostic' (non-therapeutic)
+21000423,Diagnostic Test for Cushing's Syndrome,contains 'Diagnostic' (non-therapeutic)
+21000659,Diagnostic Test for Gonadotropin Deficiency,contains 'Diagnostic' (non-therapeutic)
+21003016,Diagnostic Test for Growth Hormone Secretion,contains 'Diagnostic' (non-therapeutic)
+21001150,Diagnostic Test for Myasthenia Gravis,contains 'Diagnostic' (non-therapeutic)
+21001932,Diagnostic Test for Pancreas Function,contains 'Diagnostic' (non-therapeutic)
+21000428,Diagnostic Test for Pancreatic Islet Cell Adenoma,contains 'Diagnostic' (non-therapeutic)
+21000506,Diagnostic Test for Pheochromocytoma,contains 'Diagnostic' (non-therapeutic)
+21000628,Diagnostic Test for Primary Aldosteronism,contains 'Diagnostic' (non-therapeutic)
+21000634,Diagnostic Test for Secondary Adrenocortical Insufficiency,contains 'Diagnostic' (non-therapeutic)
+21003003,Diagnostic Test for Thyroid Dysfunction,contains 'Diagnostic' (non-therapeutic)

@@ -1,0 +1,31 @@
+category,protocol,comparison_or_method,tie_rule,metric,value_or_diff,ci_low,ci_high,formatted,n_queries
+m8_performance,P1,M8,average,hit@10,0.2685,,,0.2685,1661
+m8_performance,P1,M8,average,mrr,0.1539,,,0.1539,1661
+m8_performance,P1,M8,best,hit@10,0.2685,,,0.2685,1661
+m8_performance,P1,M8,best,mrr,0.1542,,,0.1542,1661
+m8_performance,P1,M8,worst,hit@10,0.2685,,,0.2685,1661
+m8_performance,P1,M8,worst,mrr,0.1537,,,0.1537,1661
+m8_performance,P4,M8,average,hit@10,0.1637,,,0.1637,965
+m8_performance,P4,M8,average,mrr,0.0683,,,0.0683,965
+m8_performance,P4,M8,best,hit@10,0.1648,,,0.1648,965
+m8_performance,P4,M8,best,mrr,0.0688,,,0.0688,965
+m8_performance,P4,M8,worst,hit@10,0.1637,,,0.1637,965
+m8_performance,P4,M8,worst,mrr,0.0679,,,0.0679,965
+m8_performance,P4b,M8,average,hit@10,0.2435,,,0.2435,965
+m8_performance,P4b,M8,average,mrr,0.1006,,,0.1006,965
+m8_performance,P4b,M8,best,hit@10,0.2456,,,0.2456,965
+m8_performance,P4b,M8,best,mrr,0.1015,,,0.1015,965
+m8_performance,P4b,M8,worst,hit@10,0.2435,,,0.2435,965
+m8_performance,P4b,M8,worst,mrr,0.0998,,,0.0998,965
+paired_difference_m7_minus_m8,P4,M7 - M8,average,hit@10,-0.0415,-0.0694,-0.0135,"-0.0415 [-0.0694, -0.0135]",965
+paired_difference_m7_minus_m8,P4,M7 - M8,average,mrr,0.0009,-0.0137,0.0157,"+0.0009 [-0.0137, +0.0157]",965
+paired_difference_m7_minus_m8,P4,M7 - M8,best,hit@10,-0.0425,-0.0705,-0.0145,"-0.0425 [-0.0705, -0.0145]",965
+paired_difference_m7_minus_m8,P4,M7 - M8,best,mrr,0.0004,-0.0142,0.0152,"+0.0004 [-0.0142, +0.0152]",965
+paired_difference_m7_minus_m8,P4,M7 - M8,worst,hit@10,-0.0415,-0.0694,-0.0135,"-0.0415 [-0.0694, -0.0135]",965
+paired_difference_m7_minus_m8,P4,M7 - M8,worst,mrr,0.0013,-0.0133,0.0162,"+0.0013 [-0.0133, +0.0162]",965
+paired_difference_m7_minus_m8,P4b,M7 - M8,average,hit@10,-0.0487,-0.087,-0.0124,"-0.0487 [-0.0870, -0.0124]",965
+paired_difference_m7_minus_m8,P4b,M7 - M8,average,mrr,0.032,0.0111,0.052,"+0.0320 [+0.0111, +0.0520]",965
+paired_difference_m7_minus_m8,P4b,M7 - M8,best,hit@10,-0.0508,-0.0891,-0.0145,"-0.0508 [-0.0891, -0.0145]",965
+paired_difference_m7_minus_m8,P4b,M7 - M8,best,mrr,0.031,0.0103,0.0509,"+0.0310 [+0.0103, +0.0509]",965
+paired_difference_m7_minus_m8,P4b,M7 - M8,worst,hit@10,-0.0487,-0.087,-0.0124,"-0.0487 [-0.0870, -0.0124]",965
+paired_difference_m7_minus_m8,P4b,M7 - M8,worst,mrr,0.0328,0.0118,0.0528,"+0.0328 [+0.0118, +0.0528]",965

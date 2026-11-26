@@ -1,0 +1,17 @@
+DRUGCENTRAL GOLD STANDARD SOURCE METADATA
+=========================================
+Website Download Portal: https://drugcentral.org/download
+Published Release Name: DrugCentral 2027 Update (Human & Veterinary Drugs & Uses)
+Published Database Dump Reference: Drugcentral_2026-09-25.pgdump (or drugcentral.dump.09022026.sql.gz)
+Published Dump URL: https://unmtid-dbs.net/download/DrugCentral/2027/db_dump/Drugcentral_2026-09-25.pgdump
+Published Dump Date: 2026-09-25
+Database Engine: PostgreSQL 16.15
+Queried Endpoint: drugcentral:unmtid-dbs.net:5433 (user: "drugman", dbname: "drugcentral")
+Endpoint Provenance: Explicitly published on https://drugcentral.org/download
+Live Instance Confirmation: Official live public instance corresponding to DrugCentral 2027 release documented on drugcentral.org/download (bitwise comparison against 1.3 GB .pgdump not performed).
+Download/Access Date: 2026-11-10 05:31:46 UTC
+Filter Column: omop_relationship.relationship_name
+Filter Condition: relationship_name = 'indication' (approved indications only; excludes 'off-label use', 'contraindication', etc.)
+Extracted Table: omop_relationship (12231 approved indication rows across 2845 distinct structures)
+Raw Extracted CSV: drugcentral_raw_approved_indications.csv
+Raw Extracted CSV SHA-256: 9d6eabc60feda0b3354020c8dc1f049bb9ee98fe619e4d87e1226d79988903f9

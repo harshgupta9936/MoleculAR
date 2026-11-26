@@ -1,0 +1,3 @@
+protocol,n_queries,total_relevant_pairs,mean_M,mean_R,analytical_random_hit10
+P4,965,10464,1898.95,10.8435,0.052461
+P4b,965,10464,1636.40,10.8435,0.061161

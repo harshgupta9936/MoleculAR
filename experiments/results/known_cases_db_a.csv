@@ -1,0 +1,9 @@
+query_drug,query_chembl_id,target_drug,target_chembl_id,candidate_pool_size,rank_M2,rank_M6,rank_M7,rank_M8
+Sildenafil,CHEMBL1737,Vardenafil,CHEMBL1339,2191,1.0,1.0,1.0,1448.5
+Minoxidil,CHEMBL802,Diazoxide,CHEMBL181,2191,826.0,4.0,1.0,429.0
+Metformin,CHEMBL1431,Phenformin,CHEMBL1528839,2191,3.0,6.0,9.0,1993.5
+Thalidomide,CHEMBL468,Lenalidomide,CHEMBL6068337,2191,2.0,2.0,1.0,429.0
+Duloxetine,CHEMBL1175,Fluoxetine,CHEMBL1201082,2191,4.0,2.0,2.0,314.0
+Gabapentin,CHEMBL940,Pregabalin,CHEMBL1059,2191,8.0,1.0,1.0,275.5
+Bupropion,CHEMBL1201735,Varenicline,CHEMBL1076903,2191,2070.5,261.0,66.0,1448.5
+Raloxifene,CHEMBL1116,Fulvestrant,CHEMBL1358,2191,997.5,1412.5,1042.0,1448.5
