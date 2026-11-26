@@ -4,7 +4,7 @@ import psycopg2
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\hg340\Documents\MoleculAR")
+ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "experiments" / "data"
 DB_A = DATA_DIR / "drugrepo_oct6.db"
 

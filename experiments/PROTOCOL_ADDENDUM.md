@@ -2,7 +2,7 @@
 
 **Date:** 2026-11-14  
 **Status:** APPROVED (Approved for evaluation in Task N10)  
-**Parent Document:** [`experiments/PROTOCOL.md`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/PROTOCOL.md) (Frozen - unmodified)
+**Parent Document:** [`experiments/PROTOCOL.md`](PROTOCOL.md) (Frozen - unmodified)
 
 ---
 

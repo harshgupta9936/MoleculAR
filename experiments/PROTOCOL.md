@@ -10,7 +10,7 @@
 ## 1. Candidate Pools & Databases
 
 1. **Primary Pool (C1, C2, C3):**
-   - Derived from `DB-A` ([`experiments/data/drugrepo_oct6.db`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/data/drugrepo_oct6.db), SHA-256 `D88A2333743AF2DBE859B3717764B6A645B9786CAA6F059CC9558E29C7FF0DA7`), which matches the restored root `drugrepo.db` and `backup/drugrepo.db.bak`.
+   - Derived from `DB-A` ([`experiments/data/drugrepo_oct6.db`](data/drugrepo_oct6.db), SHA-256 `D88A2333743AF2DBE859B3717764B6A645B9786CAA6F059CC9558E29C7FF0DA7`), which matches the restored root `drugrepo.db` and `backup/drugrepo.db.bak`.
    - Excludes the 65 trivial compounds (`trivial_category IS NOT NULL`).
    - Excludes the 10 inorganic / element / simple-ion compounds:
      `CHEMBL1200345`, `CHEMBL1200458`, `CHEMBL1200539`, `CHEMBL1200691`, `CHEMBL1200696`, `CHEMBL1237066`, `CHEMBL1356`, `CHEMBL2068884`, `CHEMBL2106119`, `CHEMBL3833401`.
@@ -20,7 +20,7 @@
 
 2. **Database Configurations:**
    - **C1 (DB-A Primary):** Primary pool ($N=2,192$) with `DB-A` targets and side effects.
-   - **C2 (DB-R Primary):** Primary pool ($N=2,192$) with `DB-R` ([`experiments/data/drugrepo_oct6_recovered.db`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/data/drugrepo_oct6_recovered.db), SHA-256 `66928166E834ABE98AF895E7E8A5234D11EB2D106EF1A034C9801EA027F07A38`), having 314 recovered target rows across 235 drugs.
+   - **C2 (DB-R Primary):** Primary pool ($N=2,192$) with `DB-R` ([`experiments/data/drugrepo_oct6_recovered.db`](data/drugrepo_oct6_recovered.db), SHA-256 `66928166E834ABE98AF895E7E8A5234D11EB2D106EF1A034C9801EA027F07A38`), having 314 recovered target rows across 235 drugs.
    - **C3 (DB-A Rule-a-only):** Primary pool ($N=2,192$) on `DB-A`, but gold indications restricted strictly to mapping Rule (a) (full InChIKey matches only; Rules (b) and (c) omitted).
    - **C4 (DB-A with Inorganics):** Full non-trivial pool including the 10 inorganics ($N=2,202$, $M=2,201$) on `DB-A`.
 
@@ -28,9 +28,9 @@
 
 ## 2. Gold Standard & Indication Exclusions
 
-1. **Gold File:** [`experiments/data/gold_pairs_primary.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/data/gold_pairs_primary.csv) (therapeutic pairs only).
-2. **Diagnostic Indications Excluded:** 12 diagnostic indications listed in [`experiments/data/excluded_indications.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/data/excluded_indications.csv).
-3. **Rule (b) Exclusions:** 9 rejected Rule (b) candidate mappings in [`experiments/data/rejected_rule_b.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/data/rejected_rule_b.csv):
+1. **Gold File:** [`experiments/data/gold_pairs_primary.csv`](data/gold_pairs_primary.csv) (therapeutic pairs only).
+2. **Diagnostic Indications Excluded:** 12 diagnostic indications listed in [`experiments/data/excluded_indications.csv`](data/excluded_indications.csv).
+3. **Rule (b) Exclusions:** 9 rejected Rule (b) candidate mappings in [`experiments/data/rejected_rule_b.csv`](data/rejected_rule_b.csv):
    - 4 original name mismatches: `hyoscyamine->ATROPINE`, `acetylmethadol->LEVOMETHADYL`, `levmetamfetamine->METHAMPHETAMINE`, `doxribtimine->TELBIVUDINE`.
    - 5 stereo-prefix name differences: `razoxane->DEXRAZOXANE`, `medetomidine->DEXMEDETOMIDINE`, `dexrabeprazole->RABEPRAZOLE`, `levomethadone->METHADONE`, `levomenthol->MENTHOL`.
 4. **Gold Counts on DB-A Primary:**

@@ -20,7 +20,7 @@ from rdkit import Chem
 from rdkit.Chem import DataStructs
 from rdkit.Chem.MolStandardize.rdMolStandardize import LargestFragmentChooser
 
-ROOT = Path(r"C:\Users\hg340\Documents\MoleculAR")
+ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "experiments" / "data"
 RESULTS_DIR = ROOT / "experiments" / "results"
 DB_A_PATH = DATA_DIR / "drugrepo_oct6.db"

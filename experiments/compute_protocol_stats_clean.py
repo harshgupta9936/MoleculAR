@@ -6,7 +6,7 @@ from rdkit.Chem import DataStructs
 from collections import defaultdict
 from pathlib import Path
 
-data_dir = Path(r"C:\Users\hg340\Documents\MoleculAR\experiments\data")
+data_dir = Path(__file__).resolve().parent / "data"
 db_path = data_dir / "drugrepo_snapshot.db"
 
 # 1. Load local drugs

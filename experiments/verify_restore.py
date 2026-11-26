@@ -8,8 +8,8 @@ import os
 import subprocess
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\hg340\Documents\MoleculAR")
-BACKUP_ROOT = Path(r"C:\Users\hg340\Documents\MoleculAR_BACKUP_20261110")
+ROOT = Path(__file__).resolve().parent.parent
+BACKUP_ROOT = Path(os.environ.get("MOLECULAR_BACKUP_ROOT", str(ROOT.parent / "MoleculAR_BACKUP_20261110")))
 LOG_PATH = ROOT / "experiments" / "logs" / "restore_verify.log"
 STATUS_BEFORE = ROOT / "experiments" / "logs" / "status_before_restore.txt"
 

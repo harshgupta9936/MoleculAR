@@ -87,3 +87,24 @@ python verification/step3_verification.py
 
 ## Disclaimer
 MoleculAR is an in-silico computational screening tool for hypothesis generation. It does not provide medical advice or guarantee clinical efficacy. All predicted candidates require rigorous preclinical in vitro assays and clinical trial validation.
+## Data and licences
+
+The scored database (`drugrepo.db`) is **not distributed** in this repository. Its expected SHA-256 checksum is:
+
+`D88A2333743AF2DBE859B3717764B6A645B9786CAA6F059CC9558E29C7FF0DA7`
+
+Dataset provenance, versions, and access metadata are documented in [`experiments/DATA_SOURCES.md`](experiments/DATA_SOURCES.md). ChEMBL 37 is licensed under CC BY-SA 3.0, DrugCentral under CC BY-SA 4.0, and SIDER 4.1 under CC BY-NC-SA 4.0, so the database built from them is not redistributed here.
+
+The PostgreSQL credentials referenced in the evaluation and data-extraction scripts (`host="unmtid-dbs.net"`, `port=5433`, `user="drugman"`) are DrugCentral's own public read-only login.
+
+| File Group | Paths | Licence & Attribution |
+| :--- | :--- | :--- |
+| **Code** | Python backend, evaluation harness, data-pipeline scripts, tests, and React frontend (`*.py`, `*.js`, `*.jsx`, `*.css`, `*.html`, `*.sh`, `*.sql`) | **MIT** |
+| **DrugCentral-derived files** | Raw extracts (`experiments/data/drugcentral_raw_approved_indications.csv`, `drugcentral_raw_atc.csv`), `gold_source.txt`, gold-pair and mapping CSVs (`gold_pairs*.csv`, `excluded_indications.csv`, `rejected_rule_b.csv`, `rule_b_matches.csv`, `rule_c_matches.csv`, `many_to_one.csv`, `sampled_20_with_names.csv`), and `experiments/data/unmapped.csv` | **CC BY-SA 4.0** — attribution to DrugCentral (Avram et al., *Nucleic Acids Res.* 2023) |
+| **SIDER-derived files** | `experiments/results/se_leakage_terms.csv`, `experiments/results/se_top50_lift.csv` | **CC BY-NC-SA 4.0** — attribution to SIDER 4.1 |
+| **Result CSVs (numeric metrics only)** | Aggregate evaluation tables (`experiments/results/metrics_*.csv`, `coverage_*.csv`, `paired_differences*.csv`, `hub_penalty_ablation.csv`, `weight_*.csv`, `tie_sensitivity*.csv`, `shuffle_control_results.csv`, `se_leakage_ablation.csv`, `se_leakage_approved_ablations.csv`, `p4_*query_census.csv`, `known_cases_*.csv`, `failure_analysis_*.csv`, `duplicate_pairs.csv`) and `frontend/public/metrics.json` | **MIT** |
+| **Figures and screenshots** | `experiments/figures/*.png`, `screenshots/*.png` | **MIT** |
+
+### Tags
+
+The tags `eval-v1`, `eval-v2`, and `demo-v1` were recreated on snapshot commits of a private development history. The corresponding source commit hashes (`a732c9c`, `2aec56c`, `c9ff106`, and `a4708a2`) are listed in the commit messages, and result integrity is verified by the SHA-256 values in [`experiments/results/manifest.json`](experiments/results/manifest.json).

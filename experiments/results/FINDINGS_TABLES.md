@@ -28,7 +28,7 @@ Paired bootstrap differences evaluated on Configuration C1 across duplicate-neut
 | M6 - M2 | MRR | +0.1208 | [+0.1046, +0.1368] | Yes |
 | M6 - M2 | Hit@10 | +0.1115 | [+0.0952, +0.1290] | Yes |
 
-> **Source File:** [`experiments\results\paired_differences.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/paired_differences.csv)  
+> **Source File:** [`experiments\results\paired_differences.csv`](paired_differences.csv)  
 > **SHA-256:** `ea8cae01af6419699f0b8b86268c4cc90d157b227bcbe4a7610635fbde83e93b`
 
 ### Table 1.P2a-dn (0.4): Paired Differences on P2a-dn (0.4)
@@ -50,7 +50,7 @@ Paired bootstrap differences evaluated on Configuration C1 across duplicate-neut
 | M6 - M2 | MRR | +0.1681 | [+0.1531, +0.1822] | Yes |
 | M6 - M2 | Hit@10 | +0.2176 | [+0.1969, +0.2383] | Yes |
 
-> **Source File:** [`experiments\results\paired_differences.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/paired_differences.csv)  
+> **Source File:** [`experiments\results\paired_differences.csv`](paired_differences.csv)  
 > **SHA-256:** `ea8cae01af6419699f0b8b86268c4cc90d157b227bcbe4a7610635fbde83e93b`
 
 ### Table 1.P2b-dn (0.4): Paired Differences on P2b-dn (0.4)
@@ -72,7 +72,7 @@ Paired bootstrap differences evaluated on Configuration C1 across duplicate-neut
 | M6 - M2 | MRR | +0.1857 | [+0.1668, +0.2044] | Yes |
 | M6 - M2 | Hit@10 | +0.1483 | [+0.1295, +0.1672] | Yes |
 
-> **Source File:** [`experiments\results\paired_differences.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/paired_differences.csv)  
+> **Source File:** [`experiments\results\paired_differences.csv`](paired_differences.csv)  
 > **SHA-256:** `ea8cae01af6419699f0b8b86268c4cc90d157b227bcbe4a7610635fbde83e93b`
 
 ### Table 1.P3-dn: Paired Differences on P3-dn
@@ -94,7 +94,7 @@ Paired bootstrap differences evaluated on Configuration C1 across duplicate-neut
 | M6 - M2 | MRR | +0.0229 | [+0.0136, +0.0328] | Yes |
 | M6 - M2 | Hit@10 | +0.0605 | [+0.0403, +0.0823] | Yes |
 
-> **Source File:** [`experiments\results\paired_differences.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/paired_differences.csv)  
+> **Source File:** [`experiments\results\paired_differences.csv`](paired_differences.csv)  
 > **SHA-256:** `ea8cae01af6419699f0b8b86268c4cc90d157b227bcbe4a7610635fbde83e93b`
 
 ---
@@ -129,7 +129,7 @@ Evaluates whether optimal modality weights $(w_S, w_T, w_E)$ selected on a 50% t
 | 19 | (0.3, 0.2, 0.5) | 0.5485 | 0.5385 | 0.5127 | +0.0258 | 0.5206 | 23 |
 | **Mean** | — | — | **0.5422** | **0.5204** | **+0.0218 (std: 0.0057)** | — | — |
 
-> **Source File:** [`experiments\results\weight_stability_p2b_dn.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_p2b_dn.csv)  
+> **Source File:** [`experiments\results\weight_stability_p2b_dn.csv`](weight_stability_p2b_dn.csv)  
 > **SHA-256:** `952206ddd6e9edeafc9e8aaa89fb7d9dad94190a171407955d1690c7ce564209`
 
 ### Table 2.P1-dn: Weight Stability on P1-dn
@@ -158,7 +158,7 @@ Evaluates whether optimal modality weights $(w_S, w_T, w_E)$ selected on a 50% t
 | 19 | (0.2, 0.2, 0.6) | 0.6064 | 0.6005 | 0.5846 | +0.0159 | 0.5894 | 18 |
 | **Mean** | — | — | **0.6021** | **0.5891** | **+0.0130 (std: 0.0067)** | — | — |
 
-> **Source File:** [`experiments\results\weight_stability_p1_dn.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_p1_dn.csv)  
+> **Source File:** [`experiments\results\weight_stability_p1_dn.csv`](weight_stability_p1_dn.csv)  
 > **SHA-256:** `5a9f5ba5a7d79b104defccc8f3dc7b2a2da52acf622f51afe6ddaf1b484aff6b`
 
 ---
@@ -192,7 +192,7 @@ Evaluates the impact of hub penalty exponent $k \in \{0, 1, 2, 3, 4\}$ on rankin
 | P3-dn | 3 | 1240 | 0.1193 [0.1064, 0.1322] | 0.2460 [0.2226, 0.2686] | 2.02 [1.82, 2.23] | 42.51 | 43 | 0.35% | 6.31% |
 | P3-dn | 4 | 1240 | 0.1192 [0.1058, 0.1316] | 0.2492 [0.2250, 0.2726] | 2.05 [1.85, 2.25] | 44.16 | 41 | 0.33% | 5.97% |
 
-> **Source File:** [`experiments\results\hub_penalty_ablation.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/hub_penalty_ablation.csv)  
+> **Source File:** [`experiments\results\hub_penalty_ablation.csv`](hub_penalty_ablation.csv)  
 > **SHA-256:** `3e50d709443e304476bd943d7549f29f8acc46a6bc28b0ee231b9789aeb9f8b1`
 
 ---
@@ -224,7 +224,7 @@ Evaluates the impact of hub penalty exponent $k \in \{0, 1, 2, 3, 4\}$ on rankin
 | CHEMBL1200806 (NAPROXEN) | 141 | CHEMBL898 (DIFLUNISAL) | 1.0 | 0.157 | 1.000 | 0.202 | Y / Y | Y / Y |
 | CHEMBL1201071 (TETRACYCLINE PHOSPHATE COMPLEX) | 140 | CHEMBL1200506 (ERYTHROMYCIN) | 1.0 | 0.121 | 1.000 | 0.000 | Y / Y | N / Y |
 
-> **Source File:** [`experiments\results\failure_analysis_p2b_dn.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p2b_dn.csv)  
+> **Source File:** [`experiments\results\failure_analysis_p2b_dn.csv`](failure_analysis_p2b_dn.csv)  
 > **SHA-256:** `bd8197e28ecbd4f3221c05afd41e20740d873b38d357e9b7a19f55d4b2d6cc7f`
 
 ### Table 4.P2b-dn (0.4).2: Top 20 Worst Performing Queries for M7 on P2b-dn (0.4)
@@ -252,7 +252,7 @@ Evaluates the impact of hub penalty exponent $k \in \{0, 1, 2, 3, 4\}$ on rankin
 | CHEMBL2311030 (ERGOLOID MESYLATES) | 1 | CHEMBL71752 (VINPOCETINE) | 1469.0 | 0.128 | 0.000 | 0.000 | Y / N | N / N |
 | CHEMBL544 (MEQUINOL) | 1 | CHEMBL38 (TRETINOIN) | 1446.0 | 0.057 | 0.000 | 0.000 | Y / Y | N / N |
 
-> **Source File:** [`experiments\results\failure_analysis_p2b_dn.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p2b_dn.csv)  
+> **Source File:** [`experiments\results\failure_analysis_p2b_dn.csv`](failure_analysis_p2b_dn.csv)  
 > **SHA-256:** `bd8197e28ecbd4f3221c05afd41e20740d873b38d357e9b7a19f55d4b2d6cc7f`
 
 ### Table 4.P3-dn.1: Top 20 Best Performing Queries for M7 on P3-dn
@@ -280,7 +280,7 @@ Evaluates the impact of hub penalty exponent $k \in \{0, 1, 2, 3, 4\}$ on rankin
 | CHEMBL898 (DIFLUNISAL) | 68 | CHEMBL15770 (SULINDAC) | 1.0 | 0.246 | 1.000 | 0.497 | Y / Y | Y / Y |
 | CHEMBL126 (LINEZOLID) | 64 | CHEMBL1741 (CLARITHROMYCIN) | 1.0 | 0.088 | 1.000 | 0.253 | Y / Y | Y / Y |
 
-> **Source File:** [`experiments\results\failure_analysis_p3_dn.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p3_dn.csv)  
+> **Source File:** [`experiments\results\failure_analysis_p3_dn.csv`](failure_analysis_p3_dn.csv)  
 > **SHA-256:** `9e66d508445a8aa5e94548771d15ec6c58d9853c343418659a1db573365b13bf`
 
 ### Table 4.P3-dn.2: Top 20 Worst Performing Queries for M7 on P3-dn
@@ -308,5 +308,5 @@ Evaluates the impact of hub penalty exponent $k \in \{0, 1, 2, 3, 4\}$ on rankin
 | CHEMBL1220 (TINIDAZOLE) | 1 | CHEMBL2206196 (PAROMOMYCIN) | 1765.0 | 0.025 | 0.000 | 0.031 | N / Y | Y / Y |
 | CHEMBL1201110 (VALACYCLOVIR) | 1 | CHEMBL1200453 (DOCOSANOL) | 1758.0 | 0.051 | 0.000 | 0.000 | Y / Y | N / N |
 
-> **Source File:** [`experiments\results\failure_analysis_p3_dn.csv`](file:///C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p3_dn.csv)  
+> **Source File:** [`experiments\results\failure_analysis_p3_dn.csv`](failure_analysis_p3_dn.csv)  
 > **SHA-256:** `9e66d508445a8aa5e94548771d15ec6c58d9853c343418659a1db573365b13bf`

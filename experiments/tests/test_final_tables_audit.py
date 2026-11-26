@@ -134,6 +134,7 @@ def test_30_random_cells_against_csv(verbose=True):
     log("ALL 30 RANDOMLY SAMPLED NUMERIC CELLS MATCH THEIR SOURCE CSVS EXACTLY.")
     log("=" * 85)
     
+    (ROOT / "experiments" / "logs").mkdir(parents=True, exist_ok=True)
     with open(ROOT / "experiments" / "logs" / "final_tables_audit.log", "w", encoding="utf-8") as f:
         f.write("\n".join(log_lines) + "\n")
 

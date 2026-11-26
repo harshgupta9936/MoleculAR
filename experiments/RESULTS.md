@@ -22,7 +22,7 @@
 | **M8** | 0.2685 [0.2492, 0.2914] | 0.2757 [0.2571, 0.2980] | 0.1328 [0.1217, 0.1449] | 0.1539 [0.1397, 0.1680] | 0.0975 [0.0907, 0.1043] | 1.85 [1.74, 1.97] |
 | **M9** | 0.7363 [0.7158, 0.7568] | 0.7760 [0.7562, 0.7947] | 0.2936 [0.2798, 0.3075] | 0.5658 [0.5452, 0.5868] | 0.0385 [0.0327, 0.0443] | 5.08 [4.85, 5.33] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P1.csv` (SHA-256: `9b939e734d346b8878fcb9e5922d9ffaaca8fe90f2051cd2e94e60da5f629ba0`)
+**Source CSV:** `experiments/results/metrics_C1_P1.csv` (SHA-256: `9b939e734d346b8878fcb9e5922d9ffaaca8fe90f2051cd2e94e60da5f629ba0`)
 
 
 ### Protocol P1-dn (Broad Indication Matching - Duplicate-Neutral, N=1,659)
@@ -39,7 +39,7 @@
 | **M8** | 0.2682 [0.2477, 0.2906] | 0.2755 [0.2550, 0.2978] | 0.1325 [0.1213, 0.1445] | 0.1540 [0.1403, 0.1687] | 0.0974 [0.0905, 0.1039] | 1.85 [1.74, 1.97] |
 | **M9** | 0.7324 [0.7071, 0.7529] | 0.7728 [0.7504, 0.7926] | 0.2913 [0.2765, 0.3046] | 0.5544 [0.5322, 0.5737] | 0.0393 [0.0334, 0.0459] | 5.05 [4.80, 5.32] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P1_dn.csv` (SHA-256: `5882d072942d69ff7387a09c4d4d6704580e9c71108a174793a3917a8bb17a2b`)
+**Source CSV:** `experiments/results/metrics_C1_P1_dn.csv` (SHA-256: `5882d072942d69ff7387a09c4d4d6704580e9c71108a174793a3917a8bb17a2b`)
 
 
 ### Protocol P2a (0.4) (Analogue Neutralization at θ=0.4 - Original Baseline, N=1,645)
@@ -56,7 +56,7 @@
 | **M8** | 0.2705 [0.2486, 0.2918] | 0.2766 [0.2553, 0.2979] | 0.1270 [0.1162, 0.1382] | 0.1540 [0.1393, 0.1689] | 0.1011 [0.0945, 0.1087] | 1.92 [1.80, 2.04] |
 | **M9** | 0.6225 [0.5988, 0.6462] | 0.6997 [0.6766, 0.7228] | 0.1934 [0.1811, 0.2044] | 0.3398 [0.3211, 0.3572] | 0.0475 [0.0414, 0.0546] | 4.42 [4.21, 4.68] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2a_0.4.csv` (SHA-256: `97bbc8c6aaa94b3389242253abc49608c1fe5823cbd39e1164f26605d2a446a0`)
+**Source CSV:** `experiments/results/metrics_C1_P2a_0.4.csv` (SHA-256: `97bbc8c6aaa94b3389242253abc49608c1fe5823cbd39e1164f26605d2a446a0`)
 
 
 ### Protocol P2a-dn (0.4) (Analogue Neutralization at θ=0.4 - Duplicate-Neutral, N=1,645)
@@ -73,7 +73,7 @@
 | **M8** | 0.2705 [0.2486, 0.2918] | 0.2766 [0.2553, 0.2979] | 0.1270 [0.1162, 0.1382] | 0.1540 [0.1393, 0.1689] | 0.1011 [0.0945, 0.1087] | 1.92 [1.80, 2.04] |
 | **M9** | 0.6231 [0.5994, 0.6468] | 0.7009 [0.6778, 0.7234] | 0.1949 [0.1824, 0.2059] | 0.3449 [0.3261, 0.3624] | 0.0475 [0.0414, 0.0546] | 4.43 [4.21, 4.68] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2a_dn_0.4.csv` (SHA-256: `39b6d3d4e7da1e4e9b136766ec5d17842dee95433e856adf848d530d4c1f058c`)
+**Source CSV:** `experiments/results/metrics_C1_P2a_dn_0.4.csv` (SHA-256: `39b6d3d4e7da1e4e9b136766ec5d17842dee95433e856adf848d530d4c1f058c`)
 
 
 ### Protocol P2a (0.3) (Analogue Neutralization at θ=0.3, N=1,637)
@@ -90,7 +90,7 @@
 | **M8** | 0.2688 [0.2474, 0.2926] | 0.2761 [0.2553, 0.2999] | 0.1217 [0.1114, 0.1335] | 0.1512 [0.1379, 0.1670] | 0.1004 [0.0939, 0.1075] | 1.96 [1.83, 2.09] |
 | **M9** | 0.5333 [0.5101, 0.5571] | 0.6329 [0.6102, 0.6579] | 0.1497 [0.1403, 0.1590] | 0.2755 [0.2605, 0.2915] | 0.0535 [0.0469, 0.0604] | 3.88 [3.67, 4.11] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2a_0.3.csv` (SHA-256: `cde7542cf7983c2545b99ada6c0a03581f01d4d42bfc3bf25b91341e10b44ff6`)
+**Source CSV:** `experiments/results/metrics_C1_P2a_0.3.csv` (SHA-256: `cde7542cf7983c2545b99ada6c0a03581f01d4d42bfc3bf25b91341e10b44ff6`)
 
 
 ### Protocol P2a (0.5) (Analogue Neutralization at θ=0.5, N=1,654)
@@ -107,7 +107,7 @@
 | **M8** | 0.2690 [0.2497, 0.2920] | 0.2751 [0.2551, 0.2975] | 0.1294 [0.1191, 0.1408] | 0.1534 [0.1401, 0.1677] | 0.1003 [0.0937, 0.1074] | 1.89 [1.77, 2.02] |
 | **M9** | 0.6784 [0.6548, 0.7007] | 0.7340 [0.7116, 0.7545] | 0.2286 [0.2169, 0.2405] | 0.3969 [0.3785, 0.4157] | 0.0445 [0.0384, 0.0508] | 4.76 [4.53, 5.02] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2a_0.5.csv` (SHA-256: `8c1a0f36030c7b060ea21dce08f36225bb30ef21dc71dfa3b3b508b27a604ec7`)
+**Source CSV:** `experiments/results/metrics_C1_P2a_0.5.csv` (SHA-256: `8c1a0f36030c7b060ea21dce08f36225bb30ef21dc71dfa3b3b508b27a604ec7`)
 
 
 ### Protocol P2b (0.4) (Analogue Removal at θ=0.4 - Original Baseline, N=1,645)
@@ -124,7 +124,7 @@
 | **M8** | 0.2705 [0.2486, 0.2918] | 0.2766 [0.2553, 0.2979] | 0.1291 [0.1182, 0.1405] | 0.1551 [0.1405, 0.1701] | 0.1011 [0.0945, 0.1087] | 1.92 [1.79, 2.04] |
 | **M9** | 0.6559 [0.6328, 0.6784] | 0.7143 [0.6918, 0.7368] | 0.2395 [0.2264, 0.2530] | 0.4841 [0.4629, 0.5045] | 0.0467 [0.0406, 0.0538] | 4.65 [4.44, 4.90] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2b_0.4.csv` (SHA-256: `6196cb76ea3a12439ef5bd9d346c2c8afd8f7fac19d514fbee6074ad85857a69`)
+**Source CSV:** `experiments/results/metrics_C1_P2b_0.4.csv` (SHA-256: `6196cb76ea3a12439ef5bd9d346c2c8afd8f7fac19d514fbee6074ad85857a69`)
 
 
 ### Protocol P2b-dn (0.4) (Analogue Removal at θ=0.4 - Duplicate-Neutral, N=1,645)
@@ -141,7 +141,7 @@
 | **M8** | 0.2705 [0.2486, 0.2918] | 0.2766 [0.2553, 0.2979] | 0.1291 [0.1182, 0.1405] | 0.1551 [0.1405, 0.1701] | 0.1011 [0.0945, 0.1087] | 1.92 [1.79, 2.04] |
 | **M9** | 0.6559 [0.6328, 0.6784] | 0.7143 [0.6918, 0.7368] | 0.2395 [0.2264, 0.2530] | 0.4841 [0.4629, 0.5045] | 0.0467 [0.0406, 0.0538] | 4.65 [4.44, 4.90] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2b_dn_0.4.csv` (SHA-256: `e3d4b15c9092928e2ba06e15a6b3b50d210b65db6951075bd16aa1763b6735ba`)
+**Source CSV:** `experiments/results/metrics_C1_P2b_dn_0.4.csv` (SHA-256: `e3d4b15c9092928e2ba06e15a6b3b50d210b65db6951075bd16aa1763b6735ba`)
 
 
 ### Protocol P3 (Cross-Class Repurposing: Disjoint ATC-L3, Pool with ATC - Original Baseline, N=1,241)
@@ -158,7 +158,7 @@
 | **M8** | 0.2933 [0.2675, 0.3175] | 0.3030 [0.2764, 0.3280] | 0.1057 [0.0951, 0.1160] | 0.1545 [0.1389, 0.1699] | 0.0942 [0.0867, 0.1024] | 2.41 [2.23, 2.60] |
 | **M9** | 0.2240 [0.2006, 0.2482] | 0.3376 [0.3110, 0.3626] | 0.0419 [0.0355, 0.0486] | 0.1114 [0.0975, 0.1253] | 0.1369 [0.1252, 0.1492] | 1.84 [1.64, 2.06] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P3.csv` (SHA-256: `475ae67d8d4e59753735bc1a0b7963ece1da6c065de445f74006d1eec5b64503`)
+**Source CSV:** `experiments/results/metrics_C1_P3.csv` (SHA-256: `475ae67d8d4e59753735bc1a0b7963ece1da6c065de445f74006d1eec5b64503`)
 
 
 ### Protocol P3-all (Cross-Class Repurposing: Disjoint ATC-L3, Full Pool - Original Baseline, N=1,241)
@@ -175,7 +175,7 @@
 | **M8** | 0.2933 [0.2675, 0.3175] | 0.3030 [0.2764, 0.3280] | 0.1051 [0.0942, 0.1156] | 0.1475 [0.1322, 0.1626] | 0.0884 [0.0814, 0.0961] | 2.73 [2.52, 2.94] |
 | **M9** | 0.2063 [0.1837, 0.2305] | 0.3022 [0.2756, 0.3272] | 0.0367 [0.0308, 0.0426] | 0.1007 [0.0879, 0.1141] | 0.1380 [0.1262, 0.1503] | 1.92 [1.70, 2.16] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P3_all.csv` (SHA-256: `a137f819d8f4621cee6d694c3d56dbfd2791623d72ae91a54e4de00847191012`)
+**Source CSV:** `experiments/results/metrics_C1_P3_all.csv` (SHA-256: `a137f819d8f4621cee6d694c3d56dbfd2791623d72ae91a54e4de00847191012`)
 
 
 ### Protocol P3-dn (Cross-Class Repurposing: Disjoint ATC-L3, Pool with ATC - Duplicate-Neutral, N=1,240)
@@ -192,7 +192,7 @@
 | **M8** | 0.2935 [0.2669, 0.3202] | 0.3032 [0.2774, 0.3290] | 0.1059 [0.0955, 0.1169] | 0.1547 [0.1396, 0.1706] | 0.0941 [0.0863, 0.1022] | 2.41 [2.22, 2.60] |
 | **M9** | 0.2226 [0.2000, 0.2460] | 0.3347 [0.3105, 0.3597] | 0.0418 [0.0358, 0.0485] | 0.1114 [0.0980, 0.1244] | 0.1370 [0.1251, 0.1502] | 1.83 [1.63, 2.03] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P3_dn.csv` (SHA-256: `5d6454723c94bf6bc8d04ef4475dc5773a6f599e43fb0a82ec5b6ba29ae5dd89`)
+**Source CSV:** `experiments/results/metrics_C1_P3_dn.csv` (SHA-256: `5d6454723c94bf6bc8d04ef4475dc5773a6f599e43fb0a82ec5b6ba29ae5dd89`)
 
 
 ### Protocol P4 (Stricter Cross-Class: Disjoint ATC Level-1 Anatomical Main Groups, Full ATC Pool, N=965)
@@ -208,7 +208,7 @@
 | **M7** | 0.1223 [0.1015, 0.1420] | 0.1710 [0.1451, 0.1948] | 0.0198 [0.0153, 0.0246] | 0.0692 [0.0565, 0.0817] | 0.2146 [0.1992, 0.2309] | 2.33 [1.93, 2.71] |
 | **M8** | 0.1637 [0.1399, 0.1876] | 0.1979 [0.1720, 0.2228] | 0.0399 [0.0335, 0.0465] | 0.0683 [0.0587, 0.0780] | 0.1087 [0.0990, 0.1187] | 3.12 [2.68, 3.60] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P4.csv` (SHA-256: `ee450459323b7f6f380fff51c2a5130c320a4ecdb36f11517e9a7cd1a56371a8`)
+**Source CSV:** `experiments/results/metrics_C1_P4.csv` (SHA-256: `ee450459323b7f6f380fff51c2a5130c320a4ecdb36f11517e9a7cd1a56371a8`)
 
 
 ### Protocol P4b (Stricter Cross-Class: Disjoint ATC Level-1 Anatomical Removal, N=965)
@@ -224,7 +224,7 @@
 | **M7** | 0.1948 [0.1689, 0.2197] | 0.2539 [0.2259, 0.2829] | 0.0404 [0.0333, 0.0479] | 0.1326 [0.1133, 0.1507] | 0.2053 [0.1901, 0.2217] | 3.19 [2.77, 3.63] |
 | **M8** | 0.2435 [0.2155, 0.2725] | 0.3378 [0.3078, 0.3679] | 0.0524 [0.0453, 0.0598] | 0.1006 [0.0881, 0.1128] | 0.1064 [0.0967, 0.1165] | 3.98 [3.53, 4.55] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P4b.csv` (SHA-256: `cb864dd654b0da3e9b0548e12876a122b9d9ddb9fc96503731d51c749099767e`)
+**Source CSV:** `experiments/results/metrics_C1_P4b.csv` (SHA-256: `cb864dd654b0da3e9b0548e12876a122b9d9ddb9fc96503731d51c749099767e`)
 
 
 ---
@@ -292,7 +292,7 @@
 | P3-dn | M6 - M2 | mrr | +0.0229 | [+0.0136, +0.0328] | `+0.0229 [+0.0136, +0.0328]` |
 | P3-dn | M6 - M2 | hit@10 | +0.0605 | [+0.0403, +0.0823] | `+0.0605 [+0.0403, +0.0823]` |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/paired_differences.csv` (SHA-256: `ea8cae01af6419699f0b8b86268c4cc90d157b227bcbe4a7610635fbde83e93b`)
+**Source CSV:** `experiments/results/paired_differences.csv` (SHA-256: `ea8cae01af6419699f0b8b86268c4cc90d157b227bcbe4a7610635fbde83e93b`)
 
 ### Paired Differences for Protocols P4 and P4b
 
@@ -315,7 +315,7 @@
 | P4b | M4 - M7 | hit@10 | -0.0756 | [-0.1067, -0.0456] | `-0.0756 [-0.1067, -0.0456]` |
 | P4b | M4 - M7 | mrr | -0.0620 | [-0.0834, -0.0418] | `-0.0620 [-0.0834, -0.0418]` |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/paired_differences_p4_p4b.csv` (SHA-256: `35fe15dc841e237d8093f36d68c320dd351a3eb700a2a0015c160c97ddb8a09c`)
+**Source CSV:** `experiments/results/paired_differences_p4_p4b.csv` (SHA-256: `35fe15dc841e237d8093f36d68c320dd351a3eb700a2a0015c160c97ddb8a09c`)
 
 ---
 
@@ -422,7 +422,7 @@
 | P3_dn | (d) Neither | 172 | M6 | 0.2209 [0.1626, 0.2849] | 0.1122 [0.0780, 0.1506] | 2.32 [1.70, 3.01] |
 | P3_dn | (d) Neither | 172 | M7 | 0.2093 [0.1512, 0.2733] | 0.1014 [0.0698, 0.1364] | 2.20 [1.59, 2.91] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/coverage_stratified_all.csv` (SHA-256: `75dcd7c5b881f8ce6e4541cdb2709dd0c825f045f38f6b64fd8fe01b2aabdac1`)
+**Source CSV:** `experiments/results/coverage_stratified_all.csv` (SHA-256: `75dcd7c5b881f8ce6e4541cdb2709dd0c825f045f38f6b64fd8fe01b2aabdac1`)
 
 ### Coverage-Stratified Evaluation for Protocols P4 and P4b
 
@@ -477,7 +477,7 @@
 | P4b | (d) Neither | 129 | M6 | 0.1705 [0.1085, 0.2328] | 0.1153 [0.0704, 0.1640] | 2.99 [1.91, 4.30] |
 | P4b | (d) Neither | 129 | M7 | 0.1860 [0.1240, 0.2558] | 0.1242 [0.0744, 0.1759] | 3.26 [2.18, 4.59] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/coverage_stratified_p4_p4b.csv` (SHA-256: `856c6843716ab32e00838e0ac960a2b4ed7e09992cdabca4d7cf83d8ef7958c8`)
+**Source CSV:** `experiments/results/coverage_stratified_p4_p4b.csv` (SHA-256: `856c6843716ab32e00838e0ac960a2b4ed7e09992cdabca4d7cf83d8ef7958c8`)
 
 ---
 
@@ -506,7 +506,7 @@
 | P3_dn | M4 | mrr | 0.0991 | 0.0383 | 0.0303 | 0.0450 | `[0.0303, 0.0450]` | 20 |
 | P3_dn | M4 | enrichment | 1.8148 | 0.7375 | 0.5961 | 0.8941 | `[0.5961, 0.8941]` | 20 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/shuffle_control_results.csv` (SHA-256: `5530aaa5525765245e3aa35283e0c3062e7592fcadc031bd0ea3eec18acc148a`)
+**Source CSV:** `experiments/results/shuffle_control_results.csv` (SHA-256: `5530aaa5525765245e3aa35283e0c3062e7592fcadc031bd0ea3eec18acc148a`)
 
 ### Coverage-Fair Nulls within Coverage Strata (20 Permutations, Seed 42)
 
@@ -539,7 +539,7 @@
 | P4 | M4 | (a)+(c) Combined (Side Effects Present) | 544 | 0.1397 | 0.0628 | `[0.0441, 0.0882]` | 0.0667 | 0.0297 | `[0.0225, 0.0400]` |
 | P4 | M4 | (c) Side Effects Only | 111 | 0.0991 | 0.0523 | `[0.0180, 0.0901]` | 0.0534 | 0.0249 | `[0.0133, 0.0430]` |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/coverage_fair_nulls.csv` (SHA-256: `809424436d0320f0fee65de5b57d0663621b422907cf7e6cdd66f22c444b8efd`)
+**Source CSV:** `experiments/results/coverage_fair_nulls.csv` (SHA-256: `809424436d0320f0fee65de5b57d0663621b422907cf7e6cdd66f22c444b8efd`)
 
 ---
 
@@ -570,7 +570,7 @@
 | P3-dn | 3 | 1240 | 0.2460 [0.2226, 0.2686] | 0.1193 [0.1064, 0.1322] | 2.02 [1.82, 2.23] | 0.0631 |
 | P3-dn | 4 | 1240 | 0.2492 [0.2250, 0.2726] | 0.1192 [0.1058, 0.1316] | 2.05 [1.85, 2.25] | 0.0597 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/hub_penalty_ablation.csv` (SHA-256: `3e50d709443e304476bd943d7549f29f8acc46a6bc28b0ee231b9789aeb9f8b1`)
+**Source CSV:** `experiments/results/hub_penalty_ablation.csv` (SHA-256: `3e50d709443e304476bd943d7549f29f8acc46a6bc28b0ee231b9789aeb9f8b1`)
 
 ### Approved Side-Effect Leakage Ablations (Methods M4 and M6)
 
@@ -601,7 +601,7 @@
 | P4 | (C) (A) + (B) Together removed | M4 | 0.0788 [0.0611, 0.0954] | 0.0788 [0.0611, 0.0953] | 0.0378 [0.0291, 0.0469] | 0.0381 [0.0292, 0.0471] |
 | P4 | (C) (A) + (B) Together removed | M6 | 0.1181 [0.0974, 0.1378] | 0.1192 [0.0984, 0.1389] | 0.0621 [0.0509, 0.0726] | 0.0621 [0.0509, 0.0726] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/se_leakage_approved_ablations.csv` (SHA-256: `0c04d8b6e497bc31ac962a07ffceb91c35e31179c43ea99020e7a55b219892de`)
+**Source CSV:** `experiments/results/se_leakage_approved_ablations.csv` (SHA-256: `0c04d8b6e497bc31ac962a07ffceb91c35e31179c43ea99020e7a55b219892de`)
 
 ---
 
@@ -666,7 +666,7 @@
 | P4b | M7 | best | 0.1948 | 0.2539 | 0.1326 | 965 |
 | P4b | M7 | worst | 0.1948 | 0.2539 | 0.1326 | 965 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/tie_sensitivity.csv` (SHA-256: `a386d55e8945e3ce4e989a62ffa7d4db07503bd6f099352450668e85a4e831df`)
+**Source CSV:** `experiments/results/tie_sensitivity.csv` (SHA-256: `a386d55e8945e3ce4e989a62ffa7d4db07503bd6f099352450668e85a4e831df`)
 
 ### Method M8 (Popularity) Evaluation under Average, Best, and Worst Rank Tie Rules
 
@@ -703,7 +703,7 @@
 | paired_difference_m7_minus_m8 | P4b | M7 - M8 | worst | hit@10 | -0.0487 | [-0.0870, -0.0124] | `-0.0487 [-0.0870, -0.0124]` | 965 |
 | paired_difference_m7_minus_m8 | P4b | M7 - M8 | worst | mrr | +0.0328 | [+0.0118, +0.0528] | `+0.0328 [+0.0118, +0.0528]` | 965 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/tie_sensitivity_m8.csv` (SHA-256: `fbe1fd6ba3d314e4f781790e251db6fd574fb283cc5052b38346abfe489cf620`)
+**Source CSV:** `experiments/results/tie_sensitivity_m8.csv` (SHA-256: `fbe1fd6ba3d314e4f781790e251db6fd574fb283cc5052b38346abfe489cf620`)
 
 ---
 
@@ -722,7 +722,7 @@
 | Bupropion | CHEMBL1201735 | Varenicline | CHEMBL1076903 | 2191 | 2070.5 | 261.0 | 66.0 | 1448.5 |
 | Raloxifene | CHEMBL1116 | Fulvestrant | CHEMBL1358 | 2191 | 997.5 | 1412.5 | 1042.0 | 1448.5 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/known_cases_db_a.csv` (SHA-256: `898b3d42dde29c4b12cf22ff025003e6cdcf6f19f20ce288e6f7cf602fd9a34e`)
+**Source CSV:** `experiments/results/known_cases_db_a.csv` (SHA-256: `898b3d42dde29c4b12cf22ff025003e6cdcf6f19f20ce288e6f7cf602fd9a34e`)
 
 ### Top 10 Ranked Candidates under Method M7 for Canonical Queries
 
@@ -809,7 +809,7 @@
 | Raloxifene | 9 | 9.0 | CYCLOFENIL | CHEMBL141305 | 0.180672 |
 | Raloxifene | 10 | 10.0 | DIETHYLSTILBESTROL | CHEMBL1200598 | 0.158278 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/known_cases_m7_top10.csv` (SHA-256: `595a8edcd73e33004b60c1831a84867a0dc72534db532b823cf812c95eb264a8`)
+**Source CSV:** `experiments/results/known_cases_m7_top10.csv` (SHA-256: `595a8edcd73e33004b60c1831a84867a0dc72534db532b823cf812c95eb264a8`)
 
 ---
 
@@ -840,7 +840,7 @@
 | 18 | (0.2, 0.2, 0.6) | 0.6101 | 0.5968 | 0.5847 | +0.0121 | 0.5893 | 17 |
 | 19 | (0.2, 0.2, 0.6) | 0.6064 | 0.6005 | 0.5846 | +0.0159 | 0.5894 | 18 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_p1_dn.csv` (SHA-256: `5a9f5ba5a7d79b104defccc8f3dc7b2a2da52acf622f51afe6ddaf1b484aff6b`)
+**Source CSV:** `experiments/results/weight_stability_p1_dn.csv` (SHA-256: `5a9f5ba5a7d79b104defccc8f3dc7b2a2da52acf622f51afe6ddaf1b484aff6b`)
 
 ### Modality Weight Stability Hit@10 on Protocol P1-dn (20 Random 50/50 Splits, Seeds 0-19)
 
@@ -867,7 +867,7 @@
 | 18 | (0.2, 0.2, 0.6) | 0.7410 | 0.7458 | -0.0048 |
 | 19 | (0.2, 0.2, 0.6) | 0.7398 | 0.7398 | +0.0000 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_hit10_p1_dn.csv` (SHA-256: `38569a29134e0a20aef46f7d9da12ee8eab9a4b91445522adc8c2551a2858b46`)
+**Source CSV:** `experiments/results/weight_stability_hit10_p1_dn.csv` (SHA-256: `38569a29134e0a20aef46f7d9da12ee8eab9a4b91445522adc8c2551a2858b46`)
 
 ### Modality Weight Stability on Protocol P2b-dn (0.4) (20 Random 50/50 Splits, Seeds 0-19)
 
@@ -894,7 +894,7 @@
 | 18 | (0.3, 0.2, 0.5) | 0.5445 | 0.5425 | 0.5117 | +0.0307 | 0.5215 | 20 |
 | 19 | (0.3, 0.2, 0.5) | 0.5485 | 0.5385 | 0.5127 | +0.0258 | 0.5206 | 23 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_p2b_dn.csv` (SHA-256: `952206ddd6e9edeafc9e8aaa89fb7d9dad94190a171407955d1690c7ce564209`)
+**Source CSV:** `experiments/results/weight_stability_p2b_dn.csv` (SHA-256: `952206ddd6e9edeafc9e8aaa89fb7d9dad94190a171407955d1690c7ce564209`)
 
 ### Modality Weight Stability Hit@10 on Protocol P2b-dn (0.4) (20 Random 50/50 Splits, Seeds 0-19)
 
@@ -921,7 +921,7 @@
 | 18 | (0.3, 0.2, 0.5) | 0.7023 | 0.6902 | +0.0122 |
 | 19 | (0.3, 0.2, 0.5) | 0.6999 | 0.6987 | +0.0012 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_hit10_p2b_dn.csv` (SHA-256: `f56ccfd573d101388bbb8f3b762af7a81ad4ea62df4817398855975dd1286158`)
+**Source CSV:** `experiments/results/weight_stability_hit10_p2b_dn.csv` (SHA-256: `f56ccfd573d101388bbb8f3b762af7a81ad4ea62df4817398855975dd1286158`)
 
 ### Independent Test Split Evaluation: Best Tune Weights vs Default Baseline
 
@@ -932,7 +932,7 @@
 | Best Tune Triple | (0.0, 0.2, 0.8) | 823 | 0.4034 [0.3756, 0.4319] | 4.11 [3.80, 4.43] |
 | Default Baseline | (0.4, 0.4, 0.2) | 823 | 0.3569 [0.3320, 0.3827] | 4.41 [4.08, 4.73] |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_test_comparison.csv` (SHA-256: `52690a67e8d76ca3e3a3687fced6428c8109955edda19287eafd92e90f25e90f`)
+**Source CSV:** `experiments/results/weight_test_comparison.csv` (SHA-256: `52690a67e8d76ca3e3a3687fced6428c8109955edda19287eafd92e90f25e90f`)
 
 ### Modality Weight Grid Search Summary (66 Triples on 2-Simplex at Step 0.1)
 
@@ -952,7 +952,7 @@
 | 10 | (0.0, 0.7, 0.3) | 0.4564 |  |
 | 37 | (0.4, 0.4, 0.2) | 0.3827 | Production Default Baseline |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_grid.csv` (SHA-256: `4d8ea43d9352ec05517283b7c51ed76385153a5a5a76f5f558a23a363d6e28b1`)
+**Source CSV:** `experiments/results/weight_grid.csv` (SHA-256: `4d8ea43d9352ec05517283b7c51ed76385153a5a5a76f5f558a23a363d6e28b1`)
 
 ---
 
@@ -983,7 +983,7 @@
 | CHEMBL1200806 (NAPROXEN) | 141 | CHEMBL898 (DIFLUNISAL) | 1.0 | 0.1569 | 1.0000 | 0.2022 | Y / Y | Y / Y |
 | CHEMBL1201071 (TETRACYCLINE PHOSPHATE COMPLEX) | 140 | CHEMBL1200506 (ERYTHROMYCIN) | 1.0 | 0.1207 | 1.0000 | 0.0000 | Y / Y | N / Y |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p2b_dn.csv` (SHA-256: `bd8197e28ecbd4f3221c05afd41e20740d873b38d357e9b7a19f55d4b2d6cc7f`)
+**Source CSV:** `experiments/results/failure_analysis_p2b_dn.csv` (SHA-256: `bd8197e28ecbd4f3221c05afd41e20740d873b38d357e9b7a19f55d4b2d6cc7f`)
 
 ### Top 20 Worst Performing Queries for M7 on Protocol P2b-dn (0.4)
 
@@ -1010,7 +1010,7 @@
 | CHEMBL2311030 (ERGOLOID MESYLATES) | 1 | CHEMBL71752 (VINPOCETINE) | 1469.0 | 0.1280 | 0.0000 | 0.0000 | Y / N | N / N |
 | CHEMBL544 (MEQUINOL) | 1 | CHEMBL38 (TRETINOIN) | 1446.0 | 0.0566 | 0.0000 | 0.0000 | Y / Y | N / N |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p2b_dn.csv` (SHA-256: `bd8197e28ecbd4f3221c05afd41e20740d873b38d357e9b7a19f55d4b2d6cc7f`)
+**Source CSV:** `experiments/results/failure_analysis_p2b_dn.csv` (SHA-256: `bd8197e28ecbd4f3221c05afd41e20740d873b38d357e9b7a19f55d4b2d6cc7f`)
 
 ### Top 20 Best Performing Queries for M7 on Protocol P3-dn
 
@@ -1037,7 +1037,7 @@
 | CHEMBL898 (DIFLUNISAL) | 68 | CHEMBL15770 (SULINDAC) | 1.0 | 0.2459 | 1.0000 | 0.4968 | Y / Y | Y / Y |
 | CHEMBL126 (LINEZOLID) | 64 | CHEMBL1741 (CLARITHROMYCIN) | 1.0 | 0.0877 | 1.0000 | 0.2526 | Y / Y | Y / Y |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p3_dn.csv` (SHA-256: `9e66d508445a8aa5e94548771d15ec6c58d9853c343418659a1db573365b13bf`)
+**Source CSV:** `experiments/results/failure_analysis_p3_dn.csv` (SHA-256: `9e66d508445a8aa5e94548771d15ec6c58d9853c343418659a1db573365b13bf`)
 
 ### Top 20 Worst Performing Queries for M7 on Protocol P3-dn
 
@@ -1064,7 +1064,7 @@
 | CHEMBL1220 (TINIDAZOLE) | 1 | CHEMBL2206196 (PAROMOMYCIN) | 1765.0 | 0.0247 | 0.0000 | 0.0312 | N / Y | Y / Y |
 | CHEMBL1201110 (VALACYCLOVIR) | 1 | CHEMBL1200453 (DOCOSANOL) | 1758.0 | 0.0508 | 0.0000 | 0.0000 | Y / Y | N / N |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p3_dn.csv` (SHA-256: `9e66d508445a8aa5e94548771d15ec6c58d9853c343418659a1db573365b13bf`)
+**Source CSV:** `experiments/results/failure_analysis_p3_dn.csv` (SHA-256: `9e66d508445a8aa5e94548771d15ec6c58d9853c343418659a1db573365b13bf`)
 
 ---
 
@@ -1075,7 +1075,7 @@
 > **Duplicate Census:** 160 unique pool drugs involved across 107 duplicate pairs in the 2,192-drug pool.  
 > **Reason Breakdown:** First-block InChIKey: 56 pairs, Generic base name: 47 pairs, Both: 4 pairs.  
 > **Query Impact:** 120 P1 queries have >= 1 duplicate in candidate pool; 83 P1 queries have >= 1 duplicate in Rel(q). Queries dropped due to zero remaining indications: P1-dn dropped 2 (1,661 -> 1,659), P3-dn dropped 1 (1,241 -> 1,240).  
-> **Census Source Files:** `C:/Users/hg340/Documents/MoleculAR/experiments/data/gold_pairs_primary.csv` (SHA-256: `75212d962470a5248460a1ca9c39cc579d39aeed73106dbc73b2fa22cf582b4d`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P1.csv` (SHA-256: `9b939e734d346b8878fcb9e5922d9ffaaca8fe90f2051cd2e94e60da5f629ba0`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P1_dn.csv` (SHA-256: `5882d072942d69ff7387a09c4d4d6704580e9c71108a174793a3917a8bb17a2b`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P3.csv` (SHA-256: `475ae67d8d4e59753735bc1a0b7963ece1da6c065de445f74006d1eec5b64503`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P3_dn.csv` (SHA-256: `5d6454723c94bf6bc8d04ef4475dc5773a6f599e43fb0a82ec5b6ba29ae5dd89`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/duplicate_pairs.csv` (SHA-256: `a86ae3d542b2e547c99d295df6477e9c73ba29b079af876b065beeff2d5df81c`)
+> **Census Source Files:** `experiments/data/gold_pairs_primary.csv` (SHA-256: `75212d962470a5248460a1ca9c39cc579d39aeed73106dbc73b2fa22cf582b4d`), `experiments/results/metrics_C1_P1.csv` (SHA-256: `9b939e734d346b8878fcb9e5922d9ffaaca8fe90f2051cd2e94e60da5f629ba0`), `experiments/results/metrics_C1_P1_dn.csv` (SHA-256: `5882d072942d69ff7387a09c4d4d6704580e9c71108a174793a3917a8bb17a2b`), `experiments/results/metrics_C1_P3.csv` (SHA-256: `475ae67d8d4e59753735bc1a0b7963ece1da6c065de445f74006d1eec5b64503`), `experiments/results/metrics_C1_P3_dn.csv` (SHA-256: `5d6454723c94bf6bc8d04ef4475dc5773a6f599e43fb0a82ec5b6ba29ae5dd89`), `experiments/results/duplicate_pairs.csv` (SHA-256: `a86ae3d542b2e547c99d295df6477e9c73ba29b079af876b065beeff2d5df81c`)
 
 | Pair Index | Drug 1 ChEMBL ID | Drug 1 Name | Drug 2 ChEMBL ID | Drug 2 Name | Removal Reason |
 | :---: | :--- | :--- | :--- | :--- | :--- |
@@ -1100,7 +1100,7 @@
 | 19 | CHEMBL1200376 | BETAMETHASONE | CHEMBL1200762 | BETAMETHASONE | `generic_base_name` |
 | 20 | CHEMBL1200376 | BETAMETHASONE | CHEMBL1497 | BETAMETHASONE | `generic_base_name` |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/duplicate_pairs.csv` (SHA-256: `a86ae3d542b2e547c99d295df6477e9c73ba29b079af876b065beeff2d5df81c`)
+**Source CSV:** `experiments/results/duplicate_pairs.csv` (SHA-256: `a86ae3d542b2e547c99d295df6477e9c73ba29b079af876b065beeff2d5df81c`)
 
 ---
 
@@ -1161,4 +1161,4 @@
 | 49 | Parkinsonism | 40 | 134 | 6.4530 |
 | 50 | Torticollis | 27 | 60 | 6.4209 |
 
-**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/se_top50_lift.csv` (SHA-256: `63d8c4cf7aaa8e76c934286d3dd14fc0d3d50c6d2e6df1675526af40caa6104a`)
+**Source CSV:** `experiments/results/se_top50_lift.csv` (SHA-256: `63d8c4cf7aaa8e76c934286d3dd14fc0d3d50c6d2e6df1675526af40caa6104a`)
