@@ -1,31 +1,30 @@
 {
   "metadata": {
     "description": "MoleculAR Evaluation Harness Manifest",
-    "git_commit": "885e59a37ccb85139b43d54894d845177a895b34",
-    "code_commit": "885e59a37ccb85139b43d54894d845177a895b34",
+    "git_commit": "020dbadc4d6ded0a7ff1d84a4fc8f4cd0ee4c41e",
+    "experiments_working_tree_clean": true,
     "random_seed": 42,
     "environment": {
       "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
       "numpy": "2.4.6",
-      "rdkit": "2026.03.6",
+      "pandas": "3.0.3",
       "sqlite3": "3.50.4",
       "psycopg2": "2.9.13 (dt dec pq3 ext lo64)",
-      "matplotlib": "3.11.2",
       "pytest": "9.2.0"
     }
   },
   "databases": {
     "DB-A": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\data\\drugrepo_oct6.db",
-      "sha256": "D88A2333743AF2DBE859B3717764B6A645B9786CAA6F059CC9558E29C7FF0DA7"
+      "sha256": "d88a2333743af2dbe859b3717764b6a645b9786caa6f059cc9558e29c7ff0da7"
     },
     "DB-R": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\data\\drugrepo_oct6_recovered.db",
-      "sha256": "66928166E834ABE98AF895E7E8A5234D11EB2D106EF1A034C9801EA027F07A38"
+      "sha256": "66928166e834abe98af895e7e8a5234d11eb2d106ef1a034c9801ea027f07a38"
     },
     "root_drugrepo_db": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\drugrepo.db",
-      "sha256": "D88A2333743AF2DBE859B3717764B6A645B9786CAA6F059CC9558E29C7FF0DA7"
+      "sha256": "d88a2333743af2dbe859b3717764b6a645b9786caa6f059cc9558e29c7ff0da7"
     }
   },
   "gold_and_reference_files": {
@@ -61,335 +60,343 @@
   "results_csvs": {
     "coverage_fair_nulls.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\coverage_fair_nulls.csv",
-      "sha256": "809424436D0320F0FEE65DE5B57D0663621B422907CF7E6CDD66F22C444B8EFD"
-    },
-    "coverage_stratified_all.csv": {
-      "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\coverage_stratified_all.csv",
-      "sha256": "75DCD7C5B881F8CE6E4541CDB2709DD0C825F045F38F6B64FD8FE01B2AABDAC1"
+      "sha256": "809424436d0320f0fee65de5b57d0663621b422907cf7e6cdd66f22c444b8efd"
     },
     "coverage_stratified_P1.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\coverage_stratified_P1.csv",
-      "sha256": "DF4339463AFA4811DFAA6782E9524AFC1AE33DF8D9A4FD42CAB4CFA07A227EE5"
+      "sha256": "df4339463afa4811dfaa6782e9524afc1ae33df8d9a4fd42cab4cfa07a227ee5"
     },
     "coverage_stratified_P2a_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\coverage_stratified_P2a_0.4.csv",
-      "sha256": "EE03DE77936CB7C5F13F72F3856644404FF126DF2E52FFEC60A70B5521C20429"
+      "sha256": "ee03de77936cb7c5f13f72f3856644404ff126df2e52ffec60a70b5521c20429"
     },
     "coverage_stratified_P2b_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\coverage_stratified_P2b_0.4.csv",
-      "sha256": "2C5E7DD28B54BD399FDFE460C0DD3454CD04C6536CB357A82F1C51B5EC294C32"
+      "sha256": "2c5e7dd28b54bd399fdfe460c0dd3454cd04c6536cb357a82f1c51b5ec294c32"
     },
     "coverage_stratified_P3_dn.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\coverage_stratified_P3_dn.csv",
-      "sha256": "384FCD8E61551F896BC224F8AEED156E2747218BA813D67BD9085CAFD7A5DE51"
+      "sha256": "384fcd8e61551f896bc224f8aeed156e2747218ba813d67bd9085cafd7a5de51"
+    },
+    "coverage_stratified_all.csv": {
+      "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\coverage_stratified_all.csv",
+      "sha256": "75dcd7c5b881f8ce6e4541cdb2709dd0c825f045f38f6b64fd8fe01b2aabdac1"
     },
     "coverage_stratified_p4_p4b.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\coverage_stratified_p4_p4b.csv",
-      "sha256": "856C6843716AB32E00838E0AC960A2B4ED7E09992CDABCA4D7CF83D8EF7958C8"
+      "sha256": "856c6843716ab32e00838e0ac960a2b4ed7e09992cdabca4d7cf83d8ef7958c8"
     },
     "duplicate_pairs.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\duplicate_pairs.csv",
-      "sha256": "A86AE3D542B2E547C99D295DF6477E9C73BA29B079AF876B065BEEFF2D5DF81C"
+      "sha256": "a86ae3d542b2e547c99d295df6477e9c73ba29b079af876b065beeff2d5df81c"
     },
     "failure_analysis_p2b_dn.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\failure_analysis_p2b_dn.csv",
-      "sha256": "BD8197E28ECBD4F3221C05AFD41E20740D873B38D357E9B7A19F55D4B2D6CC7F"
+      "sha256": "bd8197e28ecbd4f3221c05afd41e20740d873b38d357e9b7a19f55d4b2d6cc7f"
     },
     "failure_analysis_p3_dn.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\failure_analysis_p3_dn.csv",
-      "sha256": "9E66D508445A8AA5E94548771D15EC6C58D9853C343418659A1DB573365B13BF"
+      "sha256": "9e66d508445a8aa5e94548771d15ec6c58d9853c343418659a1db573365b13bf"
     },
     "hub_penalty_ablation.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\hub_penalty_ablation.csv",
-      "sha256": "3E50D709443E304476BD943D7549F29F8ACC46A6BC28B0EE231B9789AEB9F8B1"
+      "sha256": "3e50d709443e304476bd943d7549f29f8acc46a6bc28b0ee231b9789aeb9f8b1"
     },
     "known_cases_db_a.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\known_cases_db_a.csv",
-      "sha256": "898B3D42DDE29C4B12CF22FF025003E6CDCF6F19F20CE288E6F7CF602FD9A34E"
+      "sha256": "898b3d42dde29c4b12cf22ff025003e6cdcf6f19f20ce288e6f7cf602fd9a34e"
     },
     "known_cases_m7_top10.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\known_cases_m7_top10.csv",
-      "sha256": "595A8EDCD73E33004B60C1831A84867A0DC72534DB532B823CF812C95EB264A8"
+      "sha256": "595a8edcd73e33004b60c1831a84867a0dc72534db532b823cf812c95eb264a8"
     },
     "metrics_C1_P1.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P1.csv",
-      "sha256": "9B939E734D346B8878FCB9E5922D9FFAACA8FE90F2051CD2E94E60DA5F629BA0"
+      "sha256": "9b939e734d346b8878fcb9e5922d9ffaaca8fe90f2051cd2e94e60da5f629ba0"
     },
     "metrics_C1_P1_dn.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P1_dn.csv",
-      "sha256": "5882D072942D69FF7387A09C4D4D6704580E9C71108A174793A3917A8BB17A2B"
+      "sha256": "5882d072942d69ff7387a09c4d4d6704580e9c71108a174793a3917a8bb17a2b"
     },
     "metrics_C1_P1_large.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P1_large.csv",
-      "sha256": "C7CD55E20A1835AD10BEA4AED14579B8686665631C64947AB67EC0588F3EC416"
+      "sha256": "c7cd55e20a1835ad10bea4aed14579b8686665631c64947ab67ec0588f3ec416"
     },
     "metrics_C1_P1_medium.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P1_medium.csv",
-      "sha256": "6211E637B85DA4BA0410E588B135D1507B58672D5C5497C3C0FE474B502E8A1F"
+      "sha256": "6211e637b85da4ba0410e588b135d1507b58672d5c5497c3c0fe474b502e8a1f"
     },
     "metrics_C1_P1_small.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P1_small.csv",
-      "sha256": "3948F157E16D3B439509CD8EDA2ACFCE30D53C131425F9DE7C4A6B7A51EF5283"
+      "sha256": "3948f157e16d3b439509cd8eda2acfce30d53c131425f9de7c4a6b7a51ef5283"
     },
     "metrics_C1_P2a_0.3.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.3.csv",
-      "sha256": "CDE7542CF7983C2545B99ADA6C0A03581F01D4D42BFC3BF25B91341E10B44FF6"
+      "sha256": "cde7542cf7983c2545b99ada6c0a03581f01d4d42bfc3bf25b91341e10b44ff6"
     },
     "metrics_C1_P2a_0.3_large.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.3_large.csv",
-      "sha256": "374269D1E922923D102857F25C48CC7D4914867954F159B615EE602612A4B3DC"
+      "sha256": "374269d1e922923d102857f25c48cc7d4914867954f159b615ee602612a4b3dc"
     },
     "metrics_C1_P2a_0.3_medium.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.3_medium.csv",
-      "sha256": "A77A037CB2DB1715D42F5756E066C8DA89EBF156A9D833DE67B6FE7D4CBF0181"
+      "sha256": "a77a037cb2db1715d42f5756e066c8da89ebf156a9d833de67b6fe7d4cbf0181"
     },
     "metrics_C1_P2a_0.3_small.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.3_small.csv",
-      "sha256": "725CD31652B33C25248066887D5E408BF24528CCC61B44207C04203723996543"
+      "sha256": "725cd31652b33c25248066887d5e408bf24528ccc61b44207c04203723996543"
     },
     "metrics_C1_P2a_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.4.csv",
-      "sha256": "97BBC8C6AAA94B3389242253ABC49608C1FE5823CBD39E1164F26605D2A446A0"
+      "sha256": "97bbc8c6aaa94b3389242253abc49608c1fe5823cbd39e1164f26605d2a446a0"
     },
     "metrics_C1_P2a_0.4_large.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.4_large.csv",
-      "sha256": "749D59D959F5B39C2D0D8B138FC2A3704DFEB522B10709DD01701D10F48D94E3"
+      "sha256": "749d59d959f5b39c2d0d8b138fc2a3704dfeb522b10709dd01701d10f48d94e3"
     },
     "metrics_C1_P2a_0.4_medium.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.4_medium.csv",
-      "sha256": "4BC7D313A194A474F700F67C11F510C0B80BCE8281385A91C0C07EE8C5AEF299"
+      "sha256": "4bc7d313a194a474f700f67c11f510c0b80bce8281385a91c0c07ee8c5aef299"
     },
     "metrics_C1_P2a_0.4_small.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.4_small.csv",
-      "sha256": "A5D9B04D7964978DAF9CD886FE155CFD2CAC753A04612DA0F514B5C46C499F26"
+      "sha256": "a5d9b04d7964978daf9cd886fe155cfd2cac753a04612da0f514b5c46c499f26"
     },
     "metrics_C1_P2a_0.5.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.5.csv",
-      "sha256": "8C1A0F36030C7B060EA21DCE08F36225BB30EF21DC71DFA3B3B508B27A604EC7"
+      "sha256": "8c1a0f36030c7b060ea21dce08f36225bb30ef21dc71dfa3b3b508b27a604ec7"
     },
     "metrics_C1_P2a_0.5_large.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.5_large.csv",
-      "sha256": "8219200556985D216C9AD7D4D79CBD5E0493B843096E4F081509756E13E3084A"
+      "sha256": "8219200556985d216c9ad7d4d79cbd5e0493b843096e4f081509756e13e3084a"
     },
     "metrics_C1_P2a_0.5_medium.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.5_medium.csv",
-      "sha256": "06ABF616470AD03EF64F96FCC8E6615C83B8A1D6EE718E4012DD6347751443E2"
+      "sha256": "06abf616470ad03ef64f96fcc8e6615c83b8a1d6ee718e4012dd6347751443e2"
     },
     "metrics_C1_P2a_0.5_small.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_0.5_small.csv",
-      "sha256": "E993E9A1FFDB8EABDF4F4F19A9137E5779CE3CCFD964FDC7C9E46E691D5A4E34"
+      "sha256": "e993e9a1ffdb8eabdf4f4f19a9137e5779ce3ccfd964fdc7c9e46e691d5a4e34"
     },
     "metrics_C1_P2a_dn_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2a_dn_0.4.csv",
-      "sha256": "39B6D3D4E7DA1E4E9B136766EC5D17842DEE95433E856ADF848D530D4C1F058C"
+      "sha256": "39b6d3d4e7da1e4e9b136766ec5d17842dee95433e856adf848d530d4c1f058c"
     },
     "metrics_C1_P2b_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2b_0.4.csv",
-      "sha256": "6196CB76EA3A12439EF5BD9D346C2C8AFD8F7FAC19D514FBEE6074AD85857A69"
+      "sha256": "6196cb76ea3a12439ef5bd9d346c2c8afd8f7fac19d514fbee6074ad85857a69"
     },
     "metrics_C1_P2b_0.4_large.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2b_0.4_large.csv",
-      "sha256": "AAA58E6D2E8FB5EC2BC5150E78C3F6E86E4CCA8825E4BDA871A7209CA21607C7"
+      "sha256": "aaa58e6d2e8fb5ec2bc5150e78c3f6e86e4cca8825e4bda871a7209ca21607c7"
     },
     "metrics_C1_P2b_0.4_medium.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2b_0.4_medium.csv",
-      "sha256": "1E9E6DAF78D8C668581DDC0E0189D4FEF0C8CF8A88793B05A8DA2A1F44D607A5"
+      "sha256": "1e9e6daf78d8c668581ddc0e0189d4fef0c8cf8a88793b05a8da2a1f44d607a5"
     },
     "metrics_C1_P2b_0.4_small.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2b_0.4_small.csv",
-      "sha256": "60719721AA97162EE6866D3676599251402CB34E90875A328F107C8A243A66D4"
+      "sha256": "60719721aa97162ee6866d3676599251402cb34e90875a328f107c8a243a66d4"
     },
     "metrics_C1_P2b_dn_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P2b_dn_0.4.csv",
-      "sha256": "E3D4B15C9092928E2BA06E15A6B3B50D210B65DB6951075BD16AA1763B6735BA"
+      "sha256": "e3d4b15c9092928e2ba06e15a6b3b50d210b65db6951075bd16aa1763b6735ba"
     },
     "metrics_C1_P3.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P3.csv",
-      "sha256": "475AE67D8D4E59753735BC1A0B7963ECE1DA6C065DE445F74006D1EEC5B64503"
+      "sha256": "475ae67d8d4e59753735bc1a0b7963ece1da6c065de445f74006d1eec5b64503"
     },
     "metrics_C1_P3_all.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P3_all.csv",
-      "sha256": "A137F819D8F4621CEE6D694C3D56DBFD2791623D72AE91A54E4DE00847191012"
+      "sha256": "a137f819d8f4621cee6d694c3d56dbfd2791623d72ae91a54e4de00847191012"
     },
     "metrics_C1_P3_all_large.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P3_all_large.csv",
-      "sha256": "31E032B76014B538D0228BF78D849D41B1D8740169432987E6D6E0F2D468FF00"
+      "sha256": "31e032b76014b538d0228bf78d849d41b1d8740169432987e6d6e0f2d468ff00"
     },
     "metrics_C1_P3_all_medium.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P3_all_medium.csv",
-      "sha256": "FFD2AAFDA83D8938176FABBC8F2E236DC7D4BBBFF3CEF4EDBD98B8C9768FD90D"
+      "sha256": "ffd2aafda83d8938176fabbc8f2e236dc7d4bbbff3cef4edbd98b8c9768fd90d"
     },
     "metrics_C1_P3_all_small.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P3_all_small.csv",
-      "sha256": "DD84CA4DAFBEE8D77C61EB271CC9161296FD47EB2DD1F44B1DEC8C18FC247DBA"
+      "sha256": "dd84ca4dafbee8d77c61eb271cc9161296fd47eb2dd1f44b1dec8c18fc247dba"
     },
     "metrics_C1_P3_dn.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P3_dn.csv",
-      "sha256": "5D6454723C94BF6BC8D04EF4475DC5773A6F599E43FB0A82EC5B6BA29AE5DD89"
+      "sha256": "5d6454723c94bf6bc8d04ef4475dc5773a6f599e43fb0a82ec5b6ba29ae5dd89"
     },
     "metrics_C1_P3_large.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P3_large.csv",
-      "sha256": "D67F085A8BC490239449814DC0A191E831180160D46B1A0651037A57226F16B2"
+      "sha256": "d67f085a8bc490239449814dc0a191e831180160d46b1a0651037a57226f16b2"
     },
     "metrics_C1_P3_medium.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P3_medium.csv",
-      "sha256": "B77C4B66B3979A6EE69F5EF274E0A13059475DA2149B9DCF3DDF8484B1FDFD0B"
+      "sha256": "b77c4b66b3979a6ee69f5ef274e0a13059475da2149b9dcf3ddf8484b1fdfd0b"
     },
     "metrics_C1_P3_small.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P3_small.csv",
-      "sha256": "C9CE43122B01202C4B708A5629E1A72C3B0882AF6448CAD09282FC86A37F28F3"
+      "sha256": "c9ce43122b01202c4b708a5629e1a72c3b0882af6448cad09282fc86a37f28f3"
     },
     "metrics_C1_P4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P4.csv",
-      "sha256": "EE450459323B7F6F380FFF51C2A5130C320A4ECDB36F11517E9A7CD1A56371A8"
+      "sha256": "ee450459323b7f6f380fff51c2a5130c320a4ecdb36f11517e9a7cd1a56371a8"
     },
     "metrics_C1_P4b.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C1_P4b.csv",
-      "sha256": "CB864DD654B0DA3E9B0548E12876A122B9D9DDB9FC96503731D51C749099767E"
+      "sha256": "cb864dd654b0da3e9b0548e12876a122b9d9ddb9fc96503731d51c749099767e"
     },
     "metrics_C2_P1.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C2_P1.csv",
-      "sha256": "BE452CB4344CAF842CC1832D51B30264D47AC48954FC7CA597DF0EB8373045FB"
+      "sha256": "be452cb4344caf842cc1832d51b30264d47ac48954fc7ca597df0eb8373045fb"
     },
     "metrics_C2_P2a_0.3.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C2_P2a_0.3.csv",
-      "sha256": "D34D9DA8BD50726039A2CDC89F47C94F248522C83B494D35B723D13723653FEE"
+      "sha256": "d34d9da8bd50726039a2cdc89f47c94f248522c83b494d35b723d13723653fee"
     },
     "metrics_C2_P2a_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C2_P2a_0.4.csv",
-      "sha256": "601C18D04BC7E3D0754BF8B9471EDCAC5B90AE3794984AD5255E2AE52CF8BE01"
+      "sha256": "601c18d04bc7e3d0754bf8b9471edcac5b90ae3794984ad5255e2ae52cf8be01"
     },
     "metrics_C2_P2a_0.5.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C2_P2a_0.5.csv",
-      "sha256": "9F5A9C48C0353F28127581AC1738BCF7EF47969BC3C2367FBB71FCF4C328BC85"
+      "sha256": "9f5a9c48c0353f28127581ac1738bcf7ef47969bc3c2367fbb71fcf4c328bc85"
     },
     "metrics_C2_P2b_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C2_P2b_0.4.csv",
-      "sha256": "7382DFB7D7F55447A70389275619EA0C50C39D74130596D3EFB0FB3793467645"
+      "sha256": "7382dfb7d7f55447a70389275619ea0c50c39d74130596d3efb0fb3793467645"
     },
     "metrics_C2_P3.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C2_P3.csv",
-      "sha256": "C0ACF7212ADFE8CAC5C58F4A8A64A792E9F1B4FFC1C22E31DB15271E4A81D0AB"
+      "sha256": "c0acf7212adfe8cac5c58f4a8a64a792e9f1b4ffc1c22e31db15271e4a81d0ab"
     },
     "metrics_C2_P3_all.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C2_P3_all.csv",
-      "sha256": "626B4E549099CCA2B4176AA8E35EDCA713223F21B79CDE1FC7BB4E3FDEB0414D"
+      "sha256": "626b4e549099cca2b4176aa8e35edca713223f21b79cde1fc7bb4e3fdeb0414d"
     },
     "metrics_C3_P1.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C3_P1.csv",
-      "sha256": "87C47EDE39F5B9E74356DF98ABF95E3DBE6BFA18C9C6B928CF2B3D154D9B632C"
+      "sha256": "87c47ede39f5b9e74356df98abf95e3dbe6bfa18c9c6b928cf2b3d154d9b632c"
     },
     "metrics_C3_P2a_0.3.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C3_P2a_0.3.csv",
-      "sha256": "21F7F83E71409117156399B957CE4DA80A7AAAA5A0E14A0BCE37B7263131C7BA"
+      "sha256": "21f7f83e71409117156399b957ce4da80a7aaaa5a0e14a0bce37b7263131c7ba"
     },
     "metrics_C3_P2a_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C3_P2a_0.4.csv",
-      "sha256": "28204FB85F69F5A42A93A0A5E2BDDCDAB715251D3CD2DE726E9D49C5597030D8"
+      "sha256": "28204fb85f69f5a42a93a0a5e2bddcdab715251d3cd2de726e9d49c5597030d8"
     },
     "metrics_C3_P2a_0.5.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C3_P2a_0.5.csv",
-      "sha256": "F8BFDF5A7FAD61029ADA2D783A2F4E76D45A9C5B039116CB0FF58C5394E7001E"
+      "sha256": "f8bfdf5a7fad61029ada2d783a2f4e76d45a9c5b039116cb0ff58c5394e7001e"
     },
     "metrics_C3_P2b_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C3_P2b_0.4.csv",
-      "sha256": "5174388E6CEC898AEF323D6077CF2824A1B5913D0C1C1913F4FA40C291F45FB1"
+      "sha256": "5174388e6cec898aef323d6077cf2824a1b5913d0c1c1913f4fa40c291f45fb1"
     },
     "metrics_C3_P3.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C3_P3.csv",
-      "sha256": "AC599EFF46CFABB7FF9E760D384430454097DE25F0B03286B7883C09C507F6ED"
+      "sha256": "ac599eff46cfabb7ff9e760d384430454097de25f0b03286b7883c09c507f6ed"
     },
     "metrics_C3_P3_all.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C3_P3_all.csv",
-      "sha256": "ECFBD26C059C238733AA3C7A22828807B95C282D2F260F06068483C600C23C87"
+      "sha256": "ecfbd26c059c238733aa3c7a22828807b95c282d2f260f06068483c600c23c87"
     },
     "metrics_C4_P1.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C4_P1.csv",
-      "sha256": "4E57F7055C7CD7DFADCA52003FAA24961D41875701C463372563A312F05E06C9"
+      "sha256": "4e57f7055c7cd7dfadca52003faa24961d41875701c463372563a312f05e06c9"
     },
     "metrics_C4_P2a_0.3.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C4_P2a_0.3.csv",
-      "sha256": "1E03B7002F44B8EE409A07A5484DE916F3DF6A2158284A551DD3FA6F67158B27"
+      "sha256": "1e03b7002f44b8ee409a07a5484de916f3df6a2158284a551dd3fa6f67158b27"
     },
     "metrics_C4_P2a_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C4_P2a_0.4.csv",
-      "sha256": "15679397CE9A8FB445AF13174824CE914078C8C1700AD67136EECFAD7DD73A50"
+      "sha256": "15679397ce9a8fb445af13174824ce914078c8c1700ad67136eecfad7dd73a50"
     },
     "metrics_C4_P2a_0.5.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C4_P2a_0.5.csv",
-      "sha256": "1CBA4A5B7364E973D7A66BA8ABA7BFFE80EEC0C736F8398C3528DC31A1171360"
+      "sha256": "1cba4a5b7364e973d7a66ba8aba7bffe80eec0c736f8398c3528dc31a1171360"
     },
     "metrics_C4_P2b_0.4.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C4_P2b_0.4.csv",
-      "sha256": "3812E24F9ACA09C0CF7A3006B2B1F2996E42BE2AA1A7035A07CD7E30EDBF49AD"
+      "sha256": "3812e24f9aca09c0cf7a3006b2b1f2996e42be2aa1a7035a07cd7e30edbf49ad"
     },
     "metrics_C4_P3.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C4_P3.csv",
-      "sha256": "65E672906B126A97C139F86640E2F552C35ABB70E589B641F2552073C2CF3745"
+      "sha256": "65e672906b126a97c139f86640e2f552c35abb70e589b641f2552073c2cf3745"
     },
     "metrics_C4_P3_all.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\metrics_C4_P3_all.csv",
-      "sha256": "3B3DA690D7C4D426C797ECDAF25AFA6BA11D085C71D7D742E35D807780AD46EE"
+      "sha256": "3b3da690d7c4d426c797ecdaf25afa6ba11d085c71d7d742e35d807780ad46ee"
     },
     "p4_p4b_query_census.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\p4_p4b_query_census.csv",
-      "sha256": "8463D660FF417DA0060F26521AE92842C08DA90053D4E6CC51B5C1FDCC38972E"
+      "sha256": "8463d660ff417da0060f26521ae92842c08da90053d4e6cc51b5c1fdcc38972e"
     },
     "p4_query_census.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\p4_query_census.csv",
-      "sha256": "38A170929892EB1CD1A02173F2834BCE1CB6297DD9BDDAB0EAC17C7E2F79A978"
+      "sha256": "38a170929892eb1cd1a02173f2834bce1cb6297dd9bddab0eac17c7e2f79a978"
     },
     "paired_differences.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\paired_differences.csv",
-      "sha256": "EA8CAE01AF6419699F0B8B86268C4CC90D157B227BCBE4A7610635FBDE83E93B"
+      "sha256": "ea8cae01af6419699f0b8b86268c4cc90d157b227bcbe4a7610635fbde83e93b"
     },
     "paired_differences_p4_p4b.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\paired_differences_p4_p4b.csv",
-      "sha256": "35FE15DC841E237D8093F36D68C320DD351A3EB700A2A0015C160C97DDB8A09C"
+      "sha256": "35fe15dc841e237d8093f36d68c320dd351a3eb700a2a0015c160c97ddb8a09c"
     },
     "se_leakage_ablation.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\se_leakage_ablation.csv",
-      "sha256": "286179980BFBF4ABCDE2513A61A259179310CC75D43FC7E397223B35543EB77D"
+      "sha256": "286179980bfbf4abcde2513a61a259179310cc75d43fc7e397223b35543eb77d"
     },
     "se_leakage_approved_ablations.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\se_leakage_approved_ablations.csv",
-      "sha256": "0C04D8B6E497BC31AC962A07FFCEB91C35E31179C43EA99020E7A55B219892DE"
+      "sha256": "0c04d8b6e497bc31ac962a07ffceb91c35e31179c43ea99020e7a55b219892de"
     },
     "se_leakage_terms.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\se_leakage_terms.csv",
-      "sha256": "FC179D93888C2F3B93AAE96DE4B1C8411B1CBB7142A60534F31DE088E29A3FD5"
+      "sha256": "fc179d93888c2f3b93aae96de4b1c8411b1cbb7142a60534f31de088e29a3fd5"
     },
     "se_top50_lift.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\se_top50_lift.csv",
-      "sha256": "63D8C4CF7AAA8E76C934286D3DD14FC0D3D50C6D2E6DF1675526AF40CAA6104A"
+      "sha256": "63d8c4cf7aaa8e76c934286d3dd14fc0d3d50c6d2e6df1675526af40caa6104a"
     },
     "shuffle_control_results.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\shuffle_control_results.csv",
-      "sha256": "5530AAA5525765245E3AA35283E0C3062E7592FCADC031BD0EA3EEC18ACC148A"
+      "sha256": "5530aaa5525765245e3aa35283e0c3062e7592fcadc031bd0ea3eec18acc148a"
     },
     "tie_sensitivity.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\tie_sensitivity.csv",
-      "sha256": "A386D55E8945E3CE4E989A62FFA7D4DB07503BD6F099352450668E85A4E831DF"
+      "sha256": "a386d55e8945e3ce4e989a62ffa7d4db07503bd6f099352450668e85a4e831df"
     },
     "tie_sensitivity_m8.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\tie_sensitivity_m8.csv",
-      "sha256": "FBE1FD6BA3D314E4F781790E251DB6FD574FB283CC5052B38346ABFE489CF620"
+      "sha256": "fbe1fd6ba3d314e4f781790e251db6fd574fb283cc5052b38346abfe489cf620"
     },
     "weight_grid.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\weight_grid.csv",
-      "sha256": "4D8EA43D9352EC05517283B7C51ED76385153A5A5A76F5F558A23A363D6E28B1"
+      "sha256": "4d8ea43d9352ec05517283b7c51ed76385153a5a5a76f5f558a23a363d6e28b1"
+    },
+    "weight_stability_hit10_p1_dn.csv": {
+      "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\weight_stability_hit10_p1_dn.csv",
+      "sha256": "38569a29134e0a20aef46f7d9da12ee8eab9a4b91445522adc8c2551a2858b46"
+    },
+    "weight_stability_hit10_p2b_dn.csv": {
+      "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\weight_stability_hit10_p2b_dn.csv",
+      "sha256": "f56ccfd573d101388bbb8f3b762af7a81ad4ea62df4817398855975dd1286158"
     },
     "weight_stability_p1_dn.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\weight_stability_p1_dn.csv",
-      "sha256": "5A9F5BA5A7D79B104DEFCCC8F3DC7B2A2DA52ACF622F51AFE6DDAF1B484AFF6B"
+      "sha256": "5a9f5ba5a7d79b104defccc8f3dc7b2a2da52acf622f51afe6ddaf1b484aff6b"
     },
     "weight_stability_p2b_dn.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\weight_stability_p2b_dn.csv",
-      "sha256": "952206DDD6E9EDEAFC9E8AAA89FB7D9DAD94190A171407955D1690C7CE564209"
+      "sha256": "952206ddd6e9edeafc9e8aaa89fb7d9dad94190a171407955d1690c7ce564209"
     },
     "weight_test_comparison.csv": {
       "path": "C:\\Users\\hg340\\Documents\\MoleculAR\\experiments\\results\\weight_test_comparison.csv",
-      "sha256": "52690A67E8D76CA3E3A3687FCED6428C8109955EDDA19287EAFD92E90F25E90F"
+      "sha256": "52690a67e8d76ca3e3a3687fced6428c8109955edda19287eafd92e90f25e90f"
     }
   },
   "reproduction_commands": {

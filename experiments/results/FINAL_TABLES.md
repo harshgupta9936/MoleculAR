@@ -1,6 +1,6 @@
 # MOLECULAR EVALUATION HARNESS: FINAL CONSOLIDATED RESULTS TABLES
 
-**Generated:** 2026-11-14  
+**Generated:** 2026-11-15  
 **Primary Database:** DB-A (`experiments/data/drugrepo_oct6.db`)  
 **Strict Governance:** Frozen PROTOCOL.md definitions, exact mid-rank average ranking for ties, float64 precision, seed 42, chembl_id keys.  
 
@@ -25,7 +25,7 @@
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P1.csv` (SHA-256: `9b939e734d346b8878fcb9e5922d9ffaaca8fe90f2051cd2e94e60da5f629ba0`)
 
 
-### Protocol P1-dn (Broad Indication Matching - Duplicate-Neutral, N=1,661)
+### Protocol P1-dn (Broad Indication Matching - Duplicate-Neutral, N=1,659)
 
 | Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -42,7 +42,7 @@
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P1_dn.csv` (SHA-256: `5882d072942d69ff7387a09c4d4d6704580e9c71108a174793a3917a8bb17a2b`)
 
 
-### Protocol P2a (0.4) (Analogue Neutralization at θ=0.4 - Original Baseline, N=1,647)
+### Protocol P2a (0.4) (Analogue Neutralization at θ=0.4 - Original Baseline, N=1,645)
 
 | Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -59,7 +59,7 @@
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2a_0.4.csv` (SHA-256: `97bbc8c6aaa94b3389242253abc49608c1fe5823cbd39e1164f26605d2a446a0`)
 
 
-### Protocol P2a-dn (0.4) (Analogue Neutralization at θ=0.4 - Duplicate-Neutral, N=1,647)
+### Protocol P2a-dn (0.4) (Analogue Neutralization at θ=0.4 - Duplicate-Neutral, N=1,645)
 
 | Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -76,7 +76,7 @@
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2a_dn_0.4.csv` (SHA-256: `39b6d3d4e7da1e4e9b136766ec5d17842dee95433e856adf848d530d4c1f058c`)
 
 
-### Protocol P2a (0.3) (Analogue Neutralization at θ=0.3, N=1,640)
+### Protocol P2a (0.3) (Analogue Neutralization at θ=0.3, N=1,637)
 
 | Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -93,7 +93,7 @@
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2a_0.3.csv` (SHA-256: `cde7542cf7983c2545b99ada6c0a03581f01d4d42bfc3bf25b91341e10b44ff6`)
 
 
-### Protocol P2a (0.5) (Analogue Neutralization at θ=0.5, N=1,650)
+### Protocol P2a (0.5) (Analogue Neutralization at θ=0.5, N=1,654)
 
 | Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -110,7 +110,7 @@
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2a_0.5.csv` (SHA-256: `8c1a0f36030c7b060ea21dce08f36225bb30ef21dc71dfa3b3b508b27a604ec7`)
 
 
-### Protocol P2b (0.4) (Analogue Removal at θ=0.4 - Original Baseline, N=1,647)
+### Protocol P2b (0.4) (Analogue Removal at θ=0.4 - Original Baseline, N=1,645)
 
 | Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -127,7 +127,7 @@
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2b_0.4.csv` (SHA-256: `6196cb76ea3a12439ef5bd9d346c2c8afd8f7fac19d514fbee6074ad85857a69`)
 
 
-### Protocol P2b-dn (0.4) (Analogue Removal at θ=0.4 - Duplicate-Neutral, N=1,647)
+### Protocol P2b-dn (0.4) (Analogue Removal at θ=0.4 - Duplicate-Neutral, N=1,645)
 
 | Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -144,7 +144,7 @@
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P2b_dn_0.4.csv` (SHA-256: `e3d4b15c9092928e2ba06e15a6b3b50d210b65db6951075bd16aa1763b6735ba`)
 
 
-### Protocol P3 (Cross-Class Repurposing: Disjoint ATC-L3, Pool with ATC - Original Baseline, N=1,240)
+### Protocol P3 (Cross-Class Repurposing: Disjoint ATC-L3, Pool with ATC - Original Baseline, N=1,241)
 
 | Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -161,7 +161,7 @@
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P3.csv` (SHA-256: `475ae67d8d4e59753735bc1a0b7963ece1da6c065de445f74006d1eec5b64503`)
 
 
-### Protocol P3-all (Cross-Class Repurposing: Disjoint ATC-L3, Full Pool - Original Baseline, N=1,240)
+### Protocol P3-all (Cross-Class Repurposing: Disjoint ATC-L3, Full Pool - Original Baseline, N=1,241)
 
 | Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -810,3 +810,355 @@
 | Raloxifene | 10 | 10.0 | DIETHYLSTILBESTROL | CHEMBL1200598 | 0.158278 |
 
 **Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/known_cases_m7_top10.csv` (SHA-256: `595a8edcd73e33004b60c1831a84867a0dc72534db532b823cf812c95eb264a8`)
+
+---
+
+## 8. Modality Weight Optimization and Stability Analysis
+
+### Modality Weight Stability on Protocol P1-dn (20 Random 50/50 Splits, Seeds 0-19)
+
+| Split Seed | Best Tune Weights $(w_S, w_T, w_E)$ | Best Tune MRR | Best Test MRR | Default Test MRR | Test MRR Diff (Best - Def) | Default Tune MRR | Default Tune Rank (/66) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 0 | (0.3, 0.2, 0.5) | 0.6076 | 0.5985 | 0.5802 | +0.0183 | 0.5938 | 17 |
+| 1 | (0.3, 0.2, 0.5) | 0.5935 | 0.6126 | 0.6015 | +0.0110 | 0.5725 | 19 |
+| 2 | (0.3, 0.2, 0.5) | 0.5993 | 0.6068 | 0.5932 | +0.0135 | 0.5808 | 17 |
+| 3 | (0.2, 0.2, 0.6) | 0.6024 | 0.6046 | 0.5827 | +0.0219 | 0.5913 | 14 |
+| 4 | (0.2, 0.2, 0.6) | 0.5872 | 0.6198 | 0.6002 | +0.0196 | 0.5738 | 17 |
+| 5 | (0.4, 0.2, 0.4) | 0.5923 | 0.6104 | 0.5995 | +0.0109 | 0.5746 | 20 |
+| 6 | (0.2, 0.2, 0.6) | 0.5992 | 0.6078 | 0.5896 | +0.0182 | 0.5844 | 16 |
+| 7 | (0.2, 0.2, 0.6) | 0.5886 | 0.6184 | 0.6049 | +0.0134 | 0.5691 | 17 |
+| 8 | (0.3, 0.2, 0.5) | 0.6008 | 0.6052 | 0.5930 | +0.0122 | 0.5811 | 18 |
+| 9 | (0.2, 0.2, 0.6) | 0.6040 | 0.6030 | 0.5958 | +0.0072 | 0.5783 | 21 |
+| 10 | (0.2, 0.2, 0.6) | 0.6004 | 0.6066 | 0.5866 | +0.0201 | 0.5875 | 15 |
+| 11 | (0.2, 0.2, 0.6) | 0.6156 | 0.5914 | 0.5771 | +0.0142 | 0.5969 | 19 |
+| 12 | (0.3, 0.1, 0.6) | 0.6025 | 0.5866 | 0.5883 | -0.0018 | 0.5857 | 15 |
+| 13 | (0.2, 0.2, 0.6) | 0.6071 | 0.5999 | 0.5799 | +0.0200 | 0.5941 | 13 |
+| 14 | (0.4, 0.1, 0.5) | 0.6168 | 0.5764 | 0.5818 | -0.0054 | 0.5922 | 19 |
+| 15 | (0.5, 0.2, 0.3) | 0.6211 | 0.5781 | 0.5682 | +0.0099 | 0.6059 | 13 |
+| 16 | (0.3, 0.2, 0.5) | 0.5967 | 0.6093 | 0.5926 | +0.0168 | 0.5815 | 16 |
+| 17 | (0.3, 0.2, 0.5) | 0.5966 | 0.6094 | 0.5967 | +0.0127 | 0.5773 | 14 |
+| 18 | (0.2, 0.2, 0.6) | 0.6101 | 0.5968 | 0.5847 | +0.0121 | 0.5893 | 17 |
+| 19 | (0.2, 0.2, 0.6) | 0.6064 | 0.6005 | 0.5846 | +0.0159 | 0.5894 | 18 |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_p1_dn.csv` (SHA-256: `5a9f5ba5a7d79b104defccc8f3dc7b2a2da52acf622f51afe6ddaf1b484aff6b`)
+
+### Modality Weight Stability Hit@10 on Protocol P1-dn (20 Random 50/50 Splits, Seeds 0-19)
+
+| Split Seed | Best Tune Weights $(w_S, w_T, w_E)$ | Best Test Hit@10 | Default Test Hit@10 | Test Hit@10 Diff (Best - Def) |
+| :---: | :---: | :---: | :---: | :---: |
+| 0 | (0.3, 0.2, 0.5) | 0.7651 | 0.7590 | +0.0060 |
+| 1 | (0.3, 0.2, 0.5) | 0.7699 | 0.7771 | -0.0072 |
+| 2 | (0.3, 0.2, 0.5) | 0.7675 | 0.7590 | +0.0084 |
+| 3 | (0.2, 0.2, 0.6) | 0.7566 | 0.7554 | +0.0012 |
+| 4 | (0.2, 0.2, 0.6) | 0.7639 | 0.7723 | -0.0084 |
+| 5 | (0.4, 0.2, 0.4) | 0.7747 | 0.7687 | +0.0060 |
+| 6 | (0.2, 0.2, 0.6) | 0.7687 | 0.7639 | +0.0048 |
+| 7 | (0.2, 0.2, 0.6) | 0.7735 | 0.7735 | +0.0000 |
+| 8 | (0.3, 0.2, 0.5) | 0.7627 | 0.7506 | +0.0120 |
+| 9 | (0.2, 0.2, 0.6) | 0.7530 | 0.7602 | -0.0072 |
+| 10 | (0.2, 0.2, 0.6) | 0.7578 | 0.7614 | -0.0036 |
+| 11 | (0.2, 0.2, 0.6) | 0.7386 | 0.7337 | +0.0048 |
+| 12 | (0.3, 0.1, 0.6) | 0.7434 | 0.7542 | -0.0108 |
+| 13 | (0.2, 0.2, 0.6) | 0.7687 | 0.7663 | +0.0024 |
+| 14 | (0.4, 0.1, 0.5) | 0.7458 | 0.7482 | -0.0024 |
+| 15 | (0.5, 0.2, 0.3) | 0.7566 | 0.7566 | +0.0000 |
+| 16 | (0.3, 0.2, 0.5) | 0.7687 | 0.7542 | +0.0145 |
+| 17 | (0.3, 0.2, 0.5) | 0.7663 | 0.7566 | +0.0096 |
+| 18 | (0.2, 0.2, 0.6) | 0.7410 | 0.7458 | -0.0048 |
+| 19 | (0.2, 0.2, 0.6) | 0.7398 | 0.7398 | +0.0000 |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_hit10_p1_dn.csv` (SHA-256: `38569a29134e0a20aef46f7d9da12ee8eab9a4b91445522adc8c2551a2858b46`)
+
+### Modality Weight Stability on Protocol P2b-dn (0.4) (20 Random 50/50 Splits, Seeds 0-19)
+
+| Split Seed | Best Tune Weights $(w_S, w_T, w_E)$ | Best Tune MRR | Best Test MRR | Default Test MRR | Test MRR Diff (Best - Def) | Default Tune MRR | Default Tune Rank (/66) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 0 | (0.3, 0.2, 0.5) | 0.5479 | 0.5391 | 0.5226 | +0.0164 | 0.5106 | 24 |
+| 1 | (0.3, 0.2, 0.5) | 0.5318 | 0.5551 | 0.5373 | +0.0178 | 0.4959 | 26 |
+| 2 | (0.3, 0.2, 0.5) | 0.5264 | 0.5605 | 0.5301 | +0.0304 | 0.5031 | 23 |
+| 3 | (0.2, 0.2, 0.6) | 0.5615 | 0.5200 | 0.4957 | +0.0243 | 0.5376 | 23 |
+| 4 | (0.2, 0.3, 0.5) | 0.5225 | 0.5560 | 0.5404 | +0.0156 | 0.4929 | 26 |
+| 5 | (0.3, 0.2, 0.5) | 0.5591 | 0.5279 | 0.5010 | +0.0269 | 0.5323 | 23 |
+| 6 | (0.4, 0.2, 0.4) | 0.5439 | 0.5346 | 0.5150 | +0.0195 | 0.5182 | 20 |
+| 7 | (0.3, 0.2, 0.5) | 0.5366 | 0.5503 | 0.5202 | +0.0301 | 0.5131 | 25 |
+| 8 | (0.3, 0.2, 0.5) | 0.5386 | 0.5484 | 0.5266 | +0.0217 | 0.5066 | 24 |
+| 9 | (0.2, 0.3, 0.5) | 0.5396 | 0.5389 | 0.5185 | +0.0204 | 0.5147 | 23 |
+| 10 | (0.2, 0.2, 0.6) | 0.5146 | 0.5668 | 0.5415 | +0.0252 | 0.4917 | 21 |
+| 11 | (0.1, 0.3, 0.6) | 0.5450 | 0.5278 | 0.5175 | +0.0102 | 0.5157 | 24 |
+| 12 | (0.3, 0.2, 0.5) | 0.5436 | 0.5434 | 0.5222 | +0.0211 | 0.5110 | 24 |
+| 13 | (0.3, 0.2, 0.5) | 0.5461 | 0.5409 | 0.5189 | +0.0220 | 0.5144 | 24 |
+| 14 | (0.3, 0.2, 0.5) | 0.5385 | 0.5484 | 0.5204 | +0.0280 | 0.5128 | 18 |
+| 15 | (0.2, 0.2, 0.6) | 0.5553 | 0.5261 | 0.5103 | +0.0159 | 0.5230 | 22 |
+| 16 | (0.1, 0.3, 0.6) | 0.5338 | 0.5389 | 0.5247 | +0.0142 | 0.5085 | 24 |
+| 17 | (0.3, 0.2, 0.5) | 0.5468 | 0.5401 | 0.5215 | +0.0186 | 0.5117 | 26 |
+| 18 | (0.3, 0.2, 0.5) | 0.5445 | 0.5425 | 0.5117 | +0.0307 | 0.5215 | 20 |
+| 19 | (0.3, 0.2, 0.5) | 0.5485 | 0.5385 | 0.5127 | +0.0258 | 0.5206 | 23 |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_p2b_dn.csv` (SHA-256: `952206ddd6e9edeafc9e8aaa89fb7d9dad94190a171407955d1690c7ce564209`)
+
+### Modality Weight Stability Hit@10 on Protocol P2b-dn (0.4) (20 Random 50/50 Splits, Seeds 0-19)
+
+| Split Seed | Best Tune Weights $(w_S, w_T, w_E)$ | Best Test Hit@10 | Default Test Hit@10 | Test Hit@10 Diff (Best - Def) |
+| :---: | :---: | :---: | :---: | :---: |
+| 0 | (0.3, 0.2, 0.5) | 0.6950 | 0.6962 | -0.0012 |
+| 1 | (0.3, 0.2, 0.5) | 0.6987 | 0.6902 | +0.0085 |
+| 2 | (0.3, 0.2, 0.5) | 0.7108 | 0.7060 | +0.0049 |
+| 3 | (0.2, 0.2, 0.6) | 0.6719 | 0.6646 | +0.0073 |
+| 4 | (0.2, 0.3, 0.5) | 0.7120 | 0.7084 | +0.0036 |
+| 5 | (0.3, 0.2, 0.5) | 0.6829 | 0.6646 | +0.0182 |
+| 6 | (0.4, 0.2, 0.4) | 0.7169 | 0.6962 | +0.0207 |
+| 7 | (0.3, 0.2, 0.5) | 0.7169 | 0.7096 | +0.0073 |
+| 8 | (0.3, 0.2, 0.5) | 0.7035 | 0.6853 | +0.0182 |
+| 9 | (0.2, 0.3, 0.5) | 0.7060 | 0.6938 | +0.0122 |
+| 10 | (0.2, 0.2, 0.6) | 0.7230 | 0.7181 | +0.0049 |
+| 11 | (0.1, 0.3, 0.6) | 0.6853 | 0.6804 | +0.0049 |
+| 12 | (0.3, 0.2, 0.5) | 0.7072 | 0.7035 | +0.0036 |
+| 13 | (0.3, 0.2, 0.5) | 0.7047 | 0.6865 | +0.0182 |
+| 14 | (0.3, 0.2, 0.5) | 0.7254 | 0.7108 | +0.0146 |
+| 15 | (0.2, 0.2, 0.6) | 0.6829 | 0.6853 | -0.0024 |
+| 16 | (0.1, 0.3, 0.6) | 0.7011 | 0.6914 | +0.0097 |
+| 17 | (0.3, 0.2, 0.5) | 0.7072 | 0.6987 | +0.0085 |
+| 18 | (0.3, 0.2, 0.5) | 0.7023 | 0.6902 | +0.0122 |
+| 19 | (0.3, 0.2, 0.5) | 0.6999 | 0.6987 | +0.0012 |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_stability_hit10_p2b_dn.csv` (SHA-256: `f56ccfd573d101388bbb8f3b762af7a81ad4ea62df4817398855975dd1286158`)
+
+### Independent Test Split Evaluation: Best Tune Weights vs Default Baseline
+
+> **Evaluation Protocol & Provenance:** Protocol P2a ($\theta=0.4$, original baseline, $N=1,645$ queries); 50/50 split with seed 42 ($N_{\text{tune}}=822$, $N_{\text{test}}=823$ queries; test set is held-out second half); scoring formulation uses production hub penalty ($M_7$: composite score divided by $1 + (\text{hubness\_percentile}/100)^2$); generator script: `experiments/step4_weight_sensitivity.py`.
+
+| Configuration | Modality Weights $(w_S, w_T, w_E)$ | N Test Queries | MRR [95% CI] | Enrichment [95% CI] |
+| :--- | :---: | :---: | :---: | :---: |
+| Best Tune Triple | (0.0, 0.2, 0.8) | 823 | 0.4034 [0.3756, 0.4319] | 4.11 [3.80, 4.43] |
+| Default Baseline | (0.4, 0.4, 0.2) | 823 | 0.3569 [0.3320, 0.3827] | 4.41 [4.08, 4.73] |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_test_comparison.csv` (SHA-256: `52690a67e8d76ca3e3a3687fced6428c8109955edda19287eafd92e90f25e90f`)
+
+### Modality Weight Grid Search Summary (66 Triples on 2-Simplex at Step 0.1)
+
+> **Evaluation Protocol & Provenance:** Protocol P2a ($\theta=0.4$, original baseline, $N=1,645$ queries); evaluated on tuning split ($N_{\text{tune}}=822$ of 1,645, split seed 42); scoring formulation uses production hub penalty ($M_7$); generator script: `experiments/step4_weight_sensitivity.py`.
+
+| Rank | Modality Weights $(w_S, w_T, w_E)$ | Tune MRR | Note |
+| :---: | :---: | :---: | :--- |
+| 1 | (0.0, 0.2, 0.8) | 0.4690 | Best tuning configuration |
+| 2 | (0.0, 0.3, 0.7) | 0.4644 |  |
+| 3 | (0.1, 0.4, 0.5) | 0.4636 |  |
+| 4 | (0.1, 0.2, 0.7) | 0.4619 |  |
+| 5 | (0.0, 0.4, 0.6) | 0.4611 |  |
+| 6 | (0.0, 0.5, 0.5) | 0.4609 |  |
+| 7 | (0.1, 0.3, 0.6) | 0.4605 |  |
+| 8 | (0.1, 0.5, 0.4) | 0.4597 |  |
+| 9 | (0.0, 0.6, 0.4) | 0.4578 |  |
+| 10 | (0.0, 0.7, 0.3) | 0.4564 |  |
+| 37 | (0.4, 0.4, 0.2) | 0.3827 | Production Default Baseline |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/weight_grid.csv` (SHA-256: `4d8ea43d9352ec05517283b7c51ed76385153a5a5a76f5f558a23a363d6e28b1`)
+
+---
+
+## 9. Failure Analysis for Composite Scoring (Method M7)
+
+### Top 20 Best Performing Queries for M7 on Protocol P2b-dn (0.4)
+
+| Query Drug | N Relevant | First Relevant Drug | Rank ($r_{\min}$) | S | T | E | Targets (Q / Cand) | SEs (Q / Cand) |
+| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| CHEMBL1650 (CORTISONE) | 297 | CHEMBL131 (PREDNISOLONE) | 1.0 | 0.3816 | 1.0000 | 0.3774 | Y / Y | Y / Y |
+| CHEMBL389621 (HYDROCORTISONE) | 288 | CHEMBL1200386 (PREDNICARBATE) | 1.0 | 0.3951 | 1.0000 | 0.5000 | Y / Y | Y / Y |
+| CHEMBL384467 (DEXAMETHASONE) | 278 | CHEMBL635 (PREDNISONE) | 1.0 | 0.3919 | 1.0000 | 0.5210 | Y / Y | Y / Y |
+| CHEMBL131 (PREDNISOLONE) | 257 | CHEMBL1200600 (FLUOROMETHOLONE) | 1.0 | 0.3784 | 1.0000 | 0.0000 | Y / Y | Y / N |
+| CHEMBL1451 (TRIAMCINOLONE) | 221 | CHEMBL1512 (FLUNISOLIDE) | 1.0 | 0.3214 | 1.0000 | 0.2559 | Y / Y | Y / Y |
+| CHEMBL1504 (TRIAMCINOLONE ACETONIDE) | 218 | CHEMBL1201064 (FLUOROMETHOLONE) | 1.0 | 0.3951 | 1.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL632 (BETAMETHASONE) | 217 | CHEMBL1201109 (DESONIDE) | 1.0 | 0.3875 | 1.0000 | 0.2985 | Y / Y | Y / Y |
+| CHEMBL650 (METHYLPREDNISOLONE) | 217 | CHEMBL384467 (DEXAMETHASONE) | 1.0 | 0.3766 | 1.0000 | 0.5430 | Y / Y | Y / Y |
+| CHEMBL635 (PREDNISONE) | 206 | CHEMBL384467 (DEXAMETHASONE) | 1.0 | 0.3919 | 1.0000 | 0.5210 | Y / Y | Y / Y |
+| CHEMBL1091 (HYDROCORTISONE) | 204 | CHEMBL1201173 (MEDRYSONE) | 1.0 | 0.3867 | 1.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL1200449 (TRIAMCINOLONE DIACETATE) | 199 | CHEMBL989 (FLUOCINOLONE ACETONIDE) | 1.0 | 0.3882 | 1.0000 | 0.0000 | Y / Y | N / N |
+| CHEMBL1200538 (BETAMETHASONE) | 181 | CHEMBL1473 (FLUTICASONE PROPIONATE) | 1.0 | 0.4000 | 1.0000 | 0.0000 | Y / Y | N / N |
+| CHEMBL1200532 (METHDILAZINE) | 155 | CHEMBL3989885 (TRIMEPRAZINE) | 1.0 | 0.3913 | 1.0000 | 0.0000 | Y / Y | N / N |
+| CHEMBL3989885 (TRIMEPRAZINE) | 155 | CHEMBL1255739 (METHAPYRILENE) | 1.0 | 0.1964 | 1.0000 | 0.0000 | Y / Y | N / N |
+| CHEMBL428647 (PACLITAXEL) | 155 | CHEMBL1683544 (ERIBULIN) | 1.0 | 0.0974 | 1.0000 | 0.2691 | Y / Y | Y / Y |
+| CHEMBL9 (NORFLOXACIN) | 146 | CHEMBL1200779 (TROVAFLOXACIN) | 1.0 | 0.3333 | 1.0000 | 0.2778 | Y / Y | Y / Y |
+| CHEMBL4 (OFLOXACIN) | 145 | CHEMBL1202 (CIPROFLOXACIN) | 1.0 | 0.3857 | 0.5000 | 0.4228 | Y / Y | Y / Y |
+| CHEMBL1201109 (DESONIDE) | 142 | CHEMBL1766 (DESOXIMETASONE) | 1.0 | 0.3415 | 1.0000 | 0.3134 | Y / Y | Y / Y |
+| CHEMBL1200806 (NAPROXEN) | 141 | CHEMBL898 (DIFLUNISAL) | 1.0 | 0.1569 | 1.0000 | 0.2022 | Y / Y | Y / Y |
+| CHEMBL1201071 (TETRACYCLINE PHOSPHATE COMPLEX) | 140 | CHEMBL1200506 (ERYTHROMYCIN) | 1.0 | 0.1207 | 1.0000 | 0.0000 | Y / Y | N / Y |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p2b_dn.csv` (SHA-256: `bd8197e28ecbd4f3221c05afd41e20740d873b38d357e9b7a19f55d4b2d6cc7f`)
+
+### Top 20 Worst Performing Queries for M7 on Protocol P2b-dn (0.4)
+
+| Query Drug | N Relevant | First Relevant Drug | Rank ($r_{\min}$) | S | T | E | Targets (Q / Cand) | SEs (Q / Cand) |
+| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| CHEMBL1200627 (PROPIOLACTONE) | 1 | CHEMBL582 (ISOPROPYL ALCOHOL) | 2172.0 | 0.0000 | 0.0000 | 0.0000 | N / N | N / N |
+| CHEMBL4101807 (VOXELOTOR) | 1 | CHEMBL467 (HYDROXYUREA) | 2164.0 | 0.0345 | 0.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL582 (ISOPROPYL ALCOHOL) | 1 | CHEMBL1200627 (PROPIOLACTONE) | 2128.0 | 0.0000 | 0.0000 | 0.0000 | N / N | N / N |
+| CHEMBL1200358 (SODIUM PHENYLACETATE) | 1 | CHEMBL296306 (LACTULOSE) | 2123.0 | 0.0408 | 0.0000 | 0.0000 | N / N | N / Y |
+| CHEMBL426559 (LAROPIPRANT) | 1 | CHEMBL247951 (PEMAFIBRATE) | 2011.0 | 0.1038 | 0.0000 | 0.0000 | Y / Y | N / N |
+| CHEMBL247951 (PEMAFIBRATE) | 1 | CHEMBL426559 (LAROPIPRANT) | 1976.0 | 0.1038 | 0.0000 | 0.0000 | Y / Y | N / N |
+| CHEMBL1251 (GANIRELIX) | 1 | CHEMBL2355051 (CLOMIPHENE) | 1944.0 | 0.0780 | 0.0000 | 0.0000 | Y / N | N / Y |
+| CHEMBL3545185 (SELINEXOR) | 1 | CHEMBL451887 (CARFILZOMIB) | 1811.0 | 0.0769 | 0.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL272427 (TAURURSODIOL) | 3 | CHEMBL1469 (PHENYLBUTANOIC ACID) | 1806.0 | 0.0694 | 0.0000 | 0.0000 | N / N | N / N |
+| CHEMBL2105680 (RIFAMYCIN) | 1 | CHEMBL1707 (LOPERAMIDE) | 1697.0 | 0.0776 | 0.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL106258 (AMINOREX) | 1 | CHEMBL4084119 (LIRAGLUTIDE) | 1621.0 | 0.0513 | 0.0000 | 0.0000 | N / Y | N / Y |
+| CHEMBL2106155 (ENCAINIDE) | 1 | CHEMBL1200813 (ACEBUTOLOL) | 1548.0 | 0.1446 | 0.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL1096885 (VALRUBICIN) | 1 | CHEMBL671 (THIOTEPA) | 1542.0 | 0.0101 | 0.0000 | 0.1226 | Y / N | Y / Y |
+| CHEMBL1256391 (PIRFENIDONE) | 1 | CHEMBL3039504 (NINTEDANIB ESYLATE) | 1531.0 | 0.1282 | 0.0000 | 0.0000 | N / Y | Y / N |
+| CHEMBL744 (RILUZOLE) | 3 | CHEMBL290916 (EDARAVONE) | 1530.0 | 0.0755 | 0.0000 | 0.0000 | Y / N | Y / N |
+| CHEMBL1863513 (INGENOL MEBUTATE) | 6 | CHEMBL1200582 (AMINOLEVULINIC ACID) | 1517.0 | 0.0563 | 0.0000 | 0.0000 | N / N | N / N |
+| CHEMBL1200729 (CHLORAMPHENICOL) | 3 | CHEMBL4 (OFLOXACIN) | 1516.0 | 0.0778 | 0.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL2104415 (MOXIDECTIN) | 1 | CHEMBL684 (DIETHYLCARBAMAZINE) | 1500.0 | 0.0472 | 0.0000 | 0.0000 | N / N | N / N |
+| CHEMBL2311030 (ERGOLOID MESYLATES) | 1 | CHEMBL71752 (VINPOCETINE) | 1469.0 | 0.1280 | 0.0000 | 0.0000 | Y / N | N / N |
+| CHEMBL544 (MEQUINOL) | 1 | CHEMBL38 (TRETINOIN) | 1446.0 | 0.0566 | 0.0000 | 0.0000 | Y / Y | N / N |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p2b_dn.csv` (SHA-256: `bd8197e28ecbd4f3221c05afd41e20740d873b38d357e9b7a19f55d4b2d6cc7f`)
+
+### Top 20 Best Performing Queries for M7 on Protocol P3-dn
+
+| Query Drug | N Relevant | First Relevant Drug | Rank ($r_{\min}$) | S | T | E | Targets (Q / Cand) | SEs (Q / Cand) |
+| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| CHEMBL1200467 (HYDROXYZINE) | 124 | CHEMBL1172 (DESLORATADINE) | 1.0 | 0.1286 | 1.0000 | 0.1125 | Y / Y | Y / Y |
+| CHEMBL1201109 (DESONIDE) | 113 | CHEMBL1512 (FLUNISOLIDE) | 1.0 | 0.7206 | 1.0000 | 0.0819 | Y / Y | Y / Y |
+| CHEMBL1200806 (NAPROXEN) | 96 | CHEMBL898 (DIFLUNISAL) | 1.0 | 0.1569 | 1.0000 | 0.2022 | Y / Y | Y / Y |
+| CHEMBL1200820 (PIPERACILLIN) | 92 | CHEMBL127 (MEROPENEM) | 1.0 | 0.1443 | 1.0000 | 0.2541 | Y / Y | Y / Y |
+| CHEMBL1200855 (TICARCILLIN DISODIUM) | 90 | CHEMBL927 (CEFDINIR) | 1.0 | 0.1889 | 1.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL1082 (AMOXICILLIN) | 88 | CHEMBL927 (CEFDINIR) | 1.0 | 0.1932 | 1.0000 | 0.3057 | Y / Y | Y / Y |
+| CHEMBL1200326 (NICARDIPINE) | 88 | CHEMBL1280 (VERAPAMIL) | 1.0 | 0.1538 | 1.0000 | 0.2932 | Y / Y | Y / Y |
+| CHEMBL1201080 (TRIMETHOPRIM) | 87 | CHEMBL119 (TRIMETREXATE) | 1.0 | 0.3929 | 0.0000 | 0.0932 | Y / N | Y / Y |
+| CHEMBL1055 (CHLORTHALIDONE) | 81 | CHEMBL1763 (HYDROFLUMETHIAZIDE) | 1.0 | 0.1818 | 1.0000 | 0.6154 | Y / Y | Y / Y |
+| CHEMBL193 (NIFEDIPINE) | 81 | CHEMBL1280 (VERAPAMIL) | 1.0 | 0.0909 | 1.0000 | 0.2515 | Y / Y | Y / Y |
+| CHEMBL1237132 (CLEVIDIPINE) | 78 | CHEMBL1280 (VERAPAMIL) | 1.0 | 0.1047 | 1.0000 | 0.0694 | Y / Y | Y / Y |
+| CHEMBL1648 (ISRADIPINE) | 78 | CHEMBL1280 (VERAPAMIL) | 1.0 | 0.1059 | 1.0000 | 0.2827 | Y / Y | Y / Y |
+| CHEMBL1726 (NISOLDIPINE) | 78 | CHEMBL1280 (VERAPAMIL) | 1.0 | 0.1190 | 1.0000 | 0.2353 | Y / Y | Y / Y |
+| CHEMBL1200965 (BACAMPICILLIN) | 77 | CHEMBL3544973 (CEFTAROLINE FOSAMIL) | 1.0 | 0.1967 | 1.0000 | 0.0000 | Y / Y | N / N |
+| CHEMBL1558 (PRAZOSIN) | 77 | CHEMBL3989562 (TERAZOSIN) | 1.0 | 0.5846 | 1.0000 | 0.3429 | Y / Y | Y / Y |
+| CHEMBL1697708 (MEZLOCILLIN) | 77 | CHEMBL127 (MEROPENEM) | 1.0 | 0.1429 | 1.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL1639 (ALISKIREN) | 72 | CHEMBL1280 (VERAPAMIL) | 1.0 | 0.2360 | 0.0000 | 0.1643 | N / Y | Y / Y |
+| CHEMBL1200852 (PENICILLIN V) | 68 | CHEMBL3544973 (CEFTAROLINE FOSAMIL) | 1.0 | 0.1892 | 1.0000 | 0.0000 | Y / Y | N / N |
+| CHEMBL898 (DIFLUNISAL) | 68 | CHEMBL15770 (SULINDAC) | 1.0 | 0.2459 | 1.0000 | 0.4968 | Y / Y | Y / Y |
+| CHEMBL126 (LINEZOLID) | 64 | CHEMBL1741 (CLARITHROMYCIN) | 1.0 | 0.0877 | 1.0000 | 0.2526 | Y / Y | Y / Y |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p3_dn.csv` (SHA-256: `9e66d508445a8aa5e94548771d15ec6c58d9853c343418659a1db573365b13bf`)
+
+### Top 20 Worst Performing Queries for M7 on Protocol P3-dn
+
+| Query Drug | N Relevant | First Relevant Drug | Rank ($r_{\min}$) | S | T | E | Targets (Q / Cand) | SEs (Q / Cand) |
+| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| CHEMBL1200485 (SORAFENIB) | 1 | CHEMBL3989777 (TRIENTINE) | 1891.0 | 0.0164 | 0.0000 | 0.0000 | Y / N | Y / N |
+| CHEMBL2103868 (CABOZANTINIB S-MALATE) | 1 | CHEMBL3989777 (TRIENTINE) | 1891.0 | 0.0164 | 0.0000 | 0.0000 | Y / N | N / N |
+| CHEMBL5314934 (VANZACAFTOR) | 1 | CHEMBL689 (MANNITOL) | 1891.0 | 0.0114 | 0.0000 | 0.0000 | Y / N | N / Y |
+| CHEMBL1289926 (AXITINIB) | 1 | CHEMBL3989777 (TRIENTINE) | 1885.0 | 0.0159 | 0.0000 | 0.0000 | Y / N | Y / N |
+| CHEMBL1289494 (TIVOZANIB) | 1 | CHEMBL3989777 (TRIENTINE) | 1884.0 | 0.0152 | 0.0000 | 0.0000 | Y / N | N / N |
+| CHEMBL413 (SIROLIMUS) | 1 | CHEMBL3989777 (TRIENTINE) | 1881.0 | 0.0182 | 0.0000 | 0.0000 | Y / N | N / N |
+| CHEMBL1677 (TACRINE) | 1 | CHEMBL1149 (LEVOCARNITINE) | 1879.5 | 0.0000 | 0.0000 | 0.0000 | Y / N | N / N |
+| CHEMBL4101807 (VOXELOTOR) | 1 | CHEMBL467 (HYDROXYUREA) | 1877.0 | 0.0345 | 0.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL4297603 (DEUTIVACAFTOR) | 1 | CHEMBL689 (MANNITOL) | 1876.0 | 0.0169 | 0.0000 | 0.0000 | Y / N | N / Y |
+| CHEMBL1289601 (LENVATINIB) | 1 | CHEMBL3989777 (TRIENTINE) | 1875.0 | 0.0294 | 0.0000 | 0.0000 | N / N | N / N |
+| CHEMBL4298128 (ELEXACAFTOR) | 1 | CHEMBL689 (MANNITOL) | 1873.0 | 0.0366 | 0.0000 | 0.0000 | Y / N | N / Y |
+| CHEMBL1097279 (CANGRELOR TETRASODIUM) | 1 | CHEMBL1200379 (APRACLONIDINE) | 1866.0 | 0.0300 | 0.0000 | 0.0000 | Y / Y | N / Y |
+| CHEMBL1201749 (DIFLUPREDNATE) | 1 | CHEMBL1200331 (FOSFOMYCIN TROMETHAMINE) | 1862.0 | 0.0270 | 0.0000 | 0.0000 | Y / Y | N / N |
+| CHEMBL1678 (DONEPEZIL) | 1 | CHEMBL1149 (LEVOCARNITINE) | 1848.0 | 0.0469 | 0.0000 | 0.0000 | Y / N | Y / N |
+| CHEMBL1200358 (SODIUM PHENYLACETATE) | 1 | CHEMBL296306 (LACTULOSE) | 1844.0 | 0.0408 | 0.0000 | 0.0000 | N / N | N / Y |
+| CHEMBL1200448 (TILUDRONATE DISODIUM) | 1 | CHEMBL3989767 (CALCITONIN SALMON) | 1836.0 | 0.0335 | 0.0000 | 0.0000 | N / Y | N / N |
+| CHEMBL1201733 (PAZOPANIB) | 1 | CHEMBL3989777 (TRIENTINE) | 1812.0 | 0.0303 | 0.0000 | 0.0000 | Y / N | Y / N |
+| CHEMBL1555 (GALANTAMINE) | 1 | CHEMBL1149 (LEVOCARNITINE) | 1779.0 | 0.0469 | 0.0000 | 0.0000 | Y / N | Y / N |
+| CHEMBL1220 (TINIDAZOLE) | 1 | CHEMBL2206196 (PAROMOMYCIN) | 1765.0 | 0.0247 | 0.0000 | 0.0312 | N / Y | Y / Y |
+| CHEMBL1201110 (VALACYCLOVIR) | 1 | CHEMBL1200453 (DOCOSANOL) | 1758.0 | 0.0508 | 0.0000 | 0.0000 | Y / Y | N / N |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/failure_analysis_p3_dn.csv` (SHA-256: `9e66d508445a8aa5e94548771d15ec6c58d9853c343418659a1db573365b13bf`)
+
+---
+
+## 10. Candidate Pool Duplicate Audit and Query Impact
+
+### Duplicate Pairs Audit Summary and Representative Sample Pairs
+
+> **Duplicate Census:** 160 unique pool drugs involved across 107 duplicate pairs in the 2,192-drug pool.  
+> **Reason Breakdown:** First-block InChIKey: 56 pairs, Generic base name: 47 pairs, Both: 4 pairs.  
+> **Query Impact:** 120 P1 queries have >= 1 duplicate in candidate pool; 83 P1 queries have >= 1 duplicate in Rel(q). Queries dropped due to zero remaining indications: P1-dn dropped 2 (1,661 -> 1,659), P3-dn dropped 1 (1,241 -> 1,240).  
+> **Census Source Files:** `C:/Users/hg340/Documents/MoleculAR/experiments/data/gold_pairs_primary.csv` (SHA-256: `75212d962470a5248460a1ca9c39cc579d39aeed73106dbc73b2fa22cf582b4d`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P1.csv` (SHA-256: `9b939e734d346b8878fcb9e5922d9ffaaca8fe90f2051cd2e94e60da5f629ba0`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P1_dn.csv` (SHA-256: `5882d072942d69ff7387a09c4d4d6704580e9c71108a174793a3917a8bb17a2b`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P3.csv` (SHA-256: `475ae67d8d4e59753735bc1a0b7963ece1da6c065de445f74006d1eec5b64503`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/metrics_C1_P3_dn.csv` (SHA-256: `5d6454723c94bf6bc8d04ef4475dc5773a6f599e43fb0a82ec5b6ba29ae5dd89`), `C:/Users/hg340/Documents/MoleculAR/experiments/results/duplicate_pairs.csv` (SHA-256: `a86ae3d542b2e547c99d295df6477e9c73ba29b079af876b065beeff2d5df81c`)
+
+| Pair Index | Drug 1 ChEMBL ID | Drug 1 Name | Drug 2 ChEMBL ID | Drug 2 Name | Removal Reason |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | CHEMBL1000 | CETIRIZINE | CHEMBL1201190 | LEVOCETIRIZINE DIHYDROCHLORIDE | `first_block_inchikey` |
+| 2 | CHEMBL1002 | LEVOSALBUTAMOL | CHEMBL1441059 | ALBUTEROL | `first_block_inchikey` |
+| 3 | CHEMBL1057 | FLUORESCEIN | CHEMBL1628233 | FLUORESCEIN | `generic_base_name` |
+| 4 | CHEMBL1090 | VIDARABINE | CHEMBL477 | ADENOSINE | `first_block_inchikey` |
+| 5 | CHEMBL1091 | HYDROCORTISONE | CHEMBL1200495 | HYDROCORTISONE | `generic_base_name` |
+| 6 | CHEMBL1091 | HYDROCORTISONE | CHEMBL1200562 | HYDROCORTISONE | `generic_base_name` |
+| 7 | CHEMBL1091 | HYDROCORTISONE | CHEMBL1200968 | HYDROCORTISONE | `generic_base_name` |
+| 8 | CHEMBL1091 | HYDROCORTISONE | CHEMBL389621 | HYDROCORTISONE | `generic_base_name` |
+| 9 | CHEMBL1097620 | IOTHALAMATE | CHEMBL2106318 | IOTHALAMATE SODIUM I 125 | `first_block_inchikey` |
+| 10 | CHEMBL1098 | BUPIVACAINE | CHEMBL1200749 | LEVOBUPIVACAINE | `first_block_inchikey` |
+| 11 | CHEMBL113178 | SELENOMETHIONINE | CHEMBL1201054 | SELENOMETHIONINE SE 75 | `first_block_inchikey` |
+| 12 | CHEMBL1152 | PREDNISOLONE | CHEMBL1201014 | PREDNISOLONE | `generic_base_name` |
+| 13 | CHEMBL1152 | PREDNISOLONE | CHEMBL131 | PREDNISOLONE | `generic_base_name` |
+| 14 | CHEMBL1162 | NORETHINDRONE | CHEMBL1201146 | NORETHINDRONE | `generic_base_name` |
+| 15 | CHEMBL117785 | TETRABENAZINE | CHEMBL3137326 | DEUTETRABENAZINE | `first_block_inchikey` |
+| 16 | CHEMBL1200322 | ESCITALOPRAM OXALATE | CHEMBL1200781 | CITALOPRAM | `first_block_inchikey` |
+| 17 | CHEMBL1200323 | LABETALOL | CHEMBL1204165 | DILEVALOL | `first_block_inchikey` |
+| 18 | CHEMBL1200376 | BETAMETHASONE | CHEMBL1200538 | BETAMETHASONE | `generic_base_name` |
+| 19 | CHEMBL1200376 | BETAMETHASONE | CHEMBL1200762 | BETAMETHASONE | `generic_base_name` |
+| 20 | CHEMBL1200376 | BETAMETHASONE | CHEMBL1497 | BETAMETHASONE | `generic_base_name` |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/duplicate_pairs.csv` (SHA-256: `a86ae3d542b2e547c99d295df6477e9c73ba29b079af876b065beeff2d5df81c`)
+
+---
+
+## 11. Side-Effect Mutual Information Lift Analysis
+
+### Top 50 Side Effects Ranked by Indication Co-occurrence Lift
+
+| Rank | Preferred Term | Drug Count ($N_{\text{drugs}}$) | Indication Co-occurrences | Lift |
+| :---: | :--- | :---: | :---: | :---: |
+| 1 | Lipohypertrophy | 20 | 137 | 27.0842 |
+| 2 | Pseudomembranous colitis | 49 | 717 | 22.9013 |
+| 3 | Autoimmune disorder | 27 | 191 | 20.4397 |
+| 4 | Skin atrophy | 20 | 99 | 19.5718 |
+| 5 | Hyperlactacidaemia | 20 | 91 | 17.9902 |
+| 6 | Intermittent claudication | 27 | 127 | 13.5908 |
+| 7 | Leukoderma | 30 | 154 | 13.2978 |
+| 8 | Atrophy | 22 | 78 | 12.6833 |
+| 9 | Allergic contact dermatitis | 20 | 63 | 12.4548 |
+| 10 | Dermatitis acneiform | 24 | 86 | 11.7041 |
+| 11 | Tendon rupture | 22 | 68 | 11.0572 |
+| 12 | Hypomania | 32 | 146 | 11.0566 |
+| 13 | Benign intracranial hypertension | 21 | 60 | 10.7320 |
+| 14 | Opportunistic infection | 43 | 255 | 10.6072 |
+| 15 | Nephropathy toxic | 49 | 306 | 9.7738 |
+| 16 | Catatonia | 28 | 97 | 9.6389 |
+| 17 | Prothrombin level increased | 33 | 135 | 9.6039 |
+| 18 | Tardive dyskinesia | 34 | 134 | 8.9720 |
+| 19 | Serum sickness | 38 | 163 | 8.7093 |
+| 20 | Anorgasmia | 22 | 53 | 8.6181 |
+| 21 | Sensation of foreign body | 25 | 68 | 8.5141 |
+| 22 | Angle closure glaucoma | 25 | 68 | 8.5141 |
+| 23 | Hyperprolactinaemia | 22 | 52 | 8.4555 |
+| 24 | CNS depression NOS | 32 | 108 | 8.1788 |
+| 25 | Bruxism | 20 | 40 | 7.9078 |
+| 26 | Choreoathetosis | 24 | 58 | 7.8935 |
+| 27 | Eye discharge | 21 | 43 | 7.6913 |
+| 28 | Vaginal moniliasis | 49 | 238 | 7.6018 |
+| 29 | Gastric irritation | 24 | 54 | 7.3491 |
+| 30 | Akinesia | 26 | 63 | 7.2813 |
+| 31 | Papilloedema | 23 | 49 | 7.2749 |
+| 32 | Drug dependence | 24 | 53 | 7.2130 |
+| 33 | Withdrawal syndrome | 42 | 164 | 7.1547 |
+| 34 | Impaired healing | 36 | 119 | 7.0950 |
+| 35 | Vulvovaginal candidiasis | 51 | 240 | 7.0705 |
+| 36 | Throat tightness | 36 | 118 | 7.0354 |
+| 37 | Serotonin syndrome | 34 | 105 | 7.0303 |
+| 38 | Vulvovaginal mycotic infection | 54 | 267 | 7.0084 |
+| 39 | Movements involuntary | 27 | 65 | 6.9559 |
+| 40 | Tumour lysis syndrome | 27 | 65 | 6.9559 |
+| 41 | Feeling cold | 22 | 42 | 6.8295 |
+| 42 | Respiratory arrest | 32 | 90 | 6.8157 |
+| 43 | Hypertrichosis | 29 | 73 | 6.7538 |
+| 44 | Colitis ischaemic | 27 | 63 | 6.7419 |
+| 45 | Acute leukaemia | 23 | 45 | 6.6810 |
+| 46 | Conjunctival oedema | 20 | 33 | 6.5239 |
+| 47 | Uterine leiomyoma | 20 | 33 | 6.5239 |
+| 48 | Suicidal behaviour | 22 | 40 | 6.5042 |
+| 49 | Parkinsonism | 40 | 134 | 6.4530 |
+| 50 | Torticollis | 27 | 60 | 6.4209 |
+
+**Source CSV:** `C:/Users/hg340/Documents/MoleculAR/experiments/results/se_top50_lift.csv` (SHA-256: `63d8c4cf7aaa8e76c934286d3dd14fc0d3d50c6d2e6df1675526af40caa6104a`)

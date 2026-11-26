@@ -13,7 +13,11 @@ Requirement F4: Consolidation
 import os
 import sys
 import json
+import csv
 import hashlib
+import datetime
+import subprocess
+from collections import defaultdict
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -35,11 +39,13 @@ def make_source_line(filename):
     p = RESULTS_DIR / filename
     return f"\n**Source CSV:** `{p.as_posix()}` (SHA-256: `{sha256_file(p)}`)\n"
 
-def format_protocol_table(csv_name, title):
+def format_protocol_table(csv_name, title_template):
     p = RESULTS_DIR / csv_name
     if not p.exists():
         return ""
     df = pd.read_csv(p)
+    n_queries = int(df['n_queries'].iloc[0])
+    title = title_template.format(n_queries=f"{n_queries:,}")
     lines = [f"### {title}\n"]
     lines.append("| Method | Hit@10 [95% CI] | Hit@20 [95% CI] | Precision@10 [95% CI] | MRR [95% CI] | Percentile Rank [95% CI] | Enrichment [95% CI] |")
     lines.append("| :--- | :---: | :---: | :---: | :---: | :---: | :---: |")
@@ -78,7 +84,7 @@ def format_protocol_table(csv_name, title):
 def build_final_tables():
     out = []
     out.append("# MOLECULAR EVALUATION HARNESS: FINAL CONSOLIDATED RESULTS TABLES\n")
-    out.append("**Generated:** 2026-11-14  ")
+    out.append(f"**Generated:** {datetime.date.today().isoformat()}  ")
     out.append("**Primary Database:** DB-A (`experiments/data/drugrepo_oct6.db`)  ")
     out.append("**Strict Governance:** Frozen PROTOCOL.md definitions, exact mid-rank average ranking for ties, float64 precision, seed 42, chembl_id keys.  \n")
     out.append("---\n")
@@ -87,19 +93,19 @@ def build_final_tables():
     out.append("## 1. Primary Protocol Performance Metrics (Candidate Pool C1)\n")
     
     protocols_c1 = [
-        ("metrics_C1_P1.csv", "Protocol P1 (Broad Therapeutic Indication Matching - Original Baseline, N=1,661)"),
-        ("metrics_C1_P1_dn.csv", "Protocol P1-dn (Broad Indication Matching - Duplicate-Neutral, N=1,661)"),
-        ("metrics_C1_P2a_0.4.csv", "Protocol P2a (0.4) (Analogue Neutralization at θ=0.4 - Original Baseline, N=1,647)"),
-        ("metrics_C1_P2a_dn_0.4.csv", "Protocol P2a-dn (0.4) (Analogue Neutralization at θ=0.4 - Duplicate-Neutral, N=1,647)"),
-        ("metrics_C1_P2a_0.3.csv", "Protocol P2a (0.3) (Analogue Neutralization at θ=0.3, N=1,640)"),
-        ("metrics_C1_P2a_0.5.csv", "Protocol P2a (0.5) (Analogue Neutralization at θ=0.5, N=1,650)"),
-        ("metrics_C1_P2b_0.4.csv", "Protocol P2b (0.4) (Analogue Removal at θ=0.4 - Original Baseline, N=1,647)"),
-        ("metrics_C1_P2b_dn_0.4.csv", "Protocol P2b-dn (0.4) (Analogue Removal at θ=0.4 - Duplicate-Neutral, N=1,647)"),
-        ("metrics_C1_P3.csv", "Protocol P3 (Cross-Class Repurposing: Disjoint ATC-L3, Pool with ATC - Original Baseline, N=1,240)"),
-        ("metrics_C1_P3_all.csv", "Protocol P3-all (Cross-Class Repurposing: Disjoint ATC-L3, Full Pool - Original Baseline, N=1,240)"),
-        ("metrics_C1_P3_dn.csv", "Protocol P3-dn (Cross-Class Repurposing: Disjoint ATC-L3, Pool with ATC - Duplicate-Neutral, N=1,240)"),
-        ("metrics_C1_P4.csv", "Protocol P4 (Stricter Cross-Class: Disjoint ATC Level-1 Anatomical Main Groups, Full ATC Pool, N=965)"),
-        ("metrics_C1_P4b.csv", "Protocol P4b (Stricter Cross-Class: Disjoint ATC Level-1 Anatomical Removal, N=965)"),
+        ("metrics_C1_P1.csv", "Protocol P1 (Broad Therapeutic Indication Matching - Original Baseline, N={n_queries})"),
+        ("metrics_C1_P1_dn.csv", "Protocol P1-dn (Broad Indication Matching - Duplicate-Neutral, N={n_queries})"),
+        ("metrics_C1_P2a_0.4.csv", "Protocol P2a (0.4) (Analogue Neutralization at θ=0.4 - Original Baseline, N={n_queries})"),
+        ("metrics_C1_P2a_dn_0.4.csv", "Protocol P2a-dn (0.4) (Analogue Neutralization at θ=0.4 - Duplicate-Neutral, N={n_queries})"),
+        ("metrics_C1_P2a_0.3.csv", "Protocol P2a (0.3) (Analogue Neutralization at θ=0.3, N={n_queries})"),
+        ("metrics_C1_P2a_0.5.csv", "Protocol P2a (0.5) (Analogue Neutralization at θ=0.5, N={n_queries})"),
+        ("metrics_C1_P2b_0.4.csv", "Protocol P2b (0.4) (Analogue Removal at θ=0.4 - Original Baseline, N={n_queries})"),
+        ("metrics_C1_P2b_dn_0.4.csv", "Protocol P2b-dn (0.4) (Analogue Removal at θ=0.4 - Duplicate-Neutral, N={n_queries})"),
+        ("metrics_C1_P3.csv", "Protocol P3 (Cross-Class Repurposing: Disjoint ATC-L3, Pool with ATC - Original Baseline, N={n_queries})"),
+        ("metrics_C1_P3_all.csv", "Protocol P3-all (Cross-Class Repurposing: Disjoint ATC-L3, Full Pool - Original Baseline, N={n_queries})"),
+        ("metrics_C1_P3_dn.csv", "Protocol P3-dn (Cross-Class Repurposing: Disjoint ATC-L3, Pool with ATC - Duplicate-Neutral, N={n_queries})"),
+        ("metrics_C1_P4.csv", "Protocol P4 (Stricter Cross-Class: Disjoint ATC Level-1 Anatomical Main Groups, Full ATC Pool, N={n_queries})"),
+        ("metrics_C1_P4b.csv", "Protocol P4b (Stricter Cross-Class: Disjoint ATC Level-1 Anatomical Removal, N={n_queries})"),
     ]
     
     for fname, title in protocols_c1:
@@ -273,6 +279,236 @@ def build_final_tables():
             out.append(f"| {r['query_drug']} | {int(r['position'])} | {r['average_rank']:.1f} | {r['candidate_name']} | {r['candidate_chembl_id']} | {r['m7_score']:.6f} |")
         out.append(make_source_line(kc_top10_path))
         
+    out.append("---\n")
+
+    # 8. MODALITY WEIGHT OPTIMIZATION AND STABILITY ANALYSIS
+    out.append("## 8. Modality Weight Optimization and Stability Analysis\n")
+    
+    # 8.1 P1-dn MRR
+    ws_p1_path = "weight_stability_p1_dn.csv"
+    if (RESULTS_DIR / ws_p1_path).exists():
+        df_w1 = pd.read_csv(RESULTS_DIR / ws_p1_path)
+        out.append("### Modality Weight Stability on Protocol P1-dn (20 Random 50/50 Splits, Seeds 0-19)\n")
+        out.append("| Split Seed | Best Tune Weights $(w_S, w_T, w_E)$ | Best Tune MRR | Best Test MRR | Default Test MRR | Test MRR Diff (Best - Def) | Default Tune MRR | Default Tune Rank (/66) |")
+        out.append("| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |")
+        for _, r in df_w1.iterrows():
+            w_str = f"({r['best_w_s']:.1f}, {r['best_w_t']:.1f}, {r['best_w_e']:.1f})"
+            out.append(f"| {int(r['split_seed'])} | {w_str} | {r['best_tune_mrr']:.4f} | {r['best_test_mrr']:.4f} | {r['default_test_mrr']:.4f} | {r['test_diff_mrr']:+.4f} | {r['default_tune_mrr']:.4f} | {int(r['default_tune_rank'])} |")
+        out.append(make_source_line(ws_p1_path))
+
+    # 8.1b P1-dn Hit@10
+    ws_h1_path = "weight_stability_hit10_p1_dn.csv"
+    if (RESULTS_DIR / ws_h1_path).exists():
+        df_h1 = pd.read_csv(RESULTS_DIR / ws_h1_path)
+        out.append("### Modality Weight Stability Hit@10 on Protocol P1-dn (20 Random 50/50 Splits, Seeds 0-19)\n")
+        out.append("| Split Seed | Best Tune Weights $(w_S, w_T, w_E)$ | Best Test Hit@10 | Default Test Hit@10 | Test Hit@10 Diff (Best - Def) |")
+        out.append("| :---: | :---: | :---: | :---: | :---: |")
+        for _, r in df_h1.iterrows():
+            w_str = f"({r['best_w_s']:.1f}, {r['best_w_t']:.1f}, {r['best_w_e']:.1f})"
+            out.append(f"| {int(r['split_seed'])} | {w_str} | {r['best_test_hit10']:.4f} | {r['default_test_hit10']:.4f} | {r['test_diff_hit10']:+.4f} |")
+        out.append(make_source_line(ws_h1_path))
+
+    # 8.2 P2b-dn MRR
+    ws_p2b_path = "weight_stability_p2b_dn.csv"
+    if (RESULTS_DIR / ws_p2b_path).exists():
+        df_w2 = pd.read_csv(RESULTS_DIR / ws_p2b_path)
+        out.append("### Modality Weight Stability on Protocol P2b-dn (0.4) (20 Random 50/50 Splits, Seeds 0-19)\n")
+        out.append("| Split Seed | Best Tune Weights $(w_S, w_T, w_E)$ | Best Tune MRR | Best Test MRR | Default Test MRR | Test MRR Diff (Best - Def) | Default Tune MRR | Default Tune Rank (/66) |")
+        out.append("| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |")
+        for _, r in df_w2.iterrows():
+            w_str = f"({r['best_w_s']:.1f}, {r['best_w_t']:.1f}, {r['best_w_e']:.1f})"
+            out.append(f"| {int(r['split_seed'])} | {w_str} | {r['best_tune_mrr']:.4f} | {r['best_test_mrr']:.4f} | {r['default_test_mrr']:.4f} | {r['test_diff_mrr']:+.4f} | {r['default_tune_mrr']:.4f} | {int(r['default_tune_rank'])} |")
+        out.append(make_source_line(ws_p2b_path))
+
+    # 8.2b P2b-dn Hit@10
+    ws_h2_path = "weight_stability_hit10_p2b_dn.csv"
+    if (RESULTS_DIR / ws_h2_path).exists():
+        df_h2 = pd.read_csv(RESULTS_DIR / ws_h2_path)
+        out.append("### Modality Weight Stability Hit@10 on Protocol P2b-dn (0.4) (20 Random 50/50 Splits, Seeds 0-19)\n")
+        out.append("| Split Seed | Best Tune Weights $(w_S, w_T, w_E)$ | Best Test Hit@10 | Default Test Hit@10 | Test Hit@10 Diff (Best - Def) |")
+        out.append("| :---: | :---: | :---: | :---: | :---: |")
+        for _, r in df_h2.iterrows():
+            w_str = f"({r['best_w_s']:.1f}, {r['best_w_t']:.1f}, {r['best_w_e']:.1f})"
+            out.append(f"| {int(r['split_seed'])} | {w_str} | {r['best_test_hit10']:.4f} | {r['default_test_hit10']:.4f} | {r['test_diff_hit10']:+.4f} |")
+        out.append(make_source_line(ws_h2_path))
+
+    # 8.3 Weight Test Comparison
+    wt_path = "weight_test_comparison.csv"
+    if (RESULTS_DIR / wt_path).exists():
+        df_wt = pd.read_csv(RESULTS_DIR / wt_path)
+        out.append("### Independent Test Split Evaluation: Best Tune Weights vs Default Baseline\n")
+        out.append("> **Evaluation Protocol & Provenance:** Protocol P2a ($\\theta=0.4$, original baseline, $N=1,645$ queries); 50/50 split with seed 42 ($N_{\\text{tune}}=822$, $N_{\\text{test}}=823$ queries; test set is held-out second half); scoring formulation uses production hub penalty ($M_7$: composite score divided by $1 + (\\text{hubness\\_percentile}/100)^2$); generator script: `experiments/step4_weight_sensitivity.py`.\n")
+        out.append("| Configuration | Modality Weights $(w_S, w_T, w_E)$ | N Test Queries | MRR [95% CI] | Enrichment [95% CI] |")
+        out.append("| :--- | :---: | :---: | :---: | :---: |")
+        for _, r in df_wt.iterrows():
+            w_str = f"({r['w_s']:.1f}, {r['w_t']:.1f}, {r['w_e']:.1f})"
+            mrr_ci = f"{r['mrr_mean']:.4f} [{r['mrr_low']:.4f}, {r['mrr_high']:.4f}]"
+            enr_ci = f"{r['enrich_mean']:.2f} [{r['enrich_low']:.2f}, {r['enrich_high']:.2f}]"
+            out.append(f"| {r['configuration']} | {w_str} | {int(r['n_test'])} | {mrr_ci} | {enr_ci} |")
+        out.append(make_source_line(wt_path))
+
+    # 8.4 Weight Simplex Grid Search Summary
+    wg_path = "weight_grid.csv"
+    if (RESULTS_DIR / wg_path).exists():
+        df_wg = pd.read_csv(RESULTS_DIR / wg_path)
+        out.append("### Modality Weight Grid Search Summary (66 Triples on 2-Simplex at Step 0.1)\n")
+        out.append("> **Evaluation Protocol & Provenance:** Protocol P2a ($\\theta=0.4$, original baseline, $N=1,645$ queries); evaluated on tuning split ($N_{\\text{tune}}=822$ of 1,645, split seed 42); scoring formulation uses production hub penalty ($M_7$); generator script: `experiments/step4_weight_sensitivity.py`.\n")
+        out.append("| Rank | Modality Weights $(w_S, w_T, w_E)$ | Tune MRR | Note |")
+        out.append("| :---: | :---: | :---: | :--- |")
+        df_wg_sorted = df_wg.sort_values(by="mrr_tune", ascending=False).reset_index(drop=True)
+        for rank_idx, r in df_wg_sorted.head(10).iterrows():
+            w_str = f"({r['w_s']:.1f}, {r['w_t']:.1f}, {r['w_e']:.1f})"
+            note = "Best tuning configuration" if rank_idx == 0 else ""
+            out.append(f"| {rank_idx + 1} | {w_str} | {r['mrr_tune']:.4f} | {note} |")
+        def_idx = df_wg_sorted[(df_wg_sorted['w_s'] == 0.4) & (df_wg_sorted['w_t'] == 0.4) & (df_wg_sorted['w_e'] == 0.2)].index[0]
+        if def_idx >= 10:
+            r_def = df_wg_sorted.loc[def_idx]
+            out.append(f"| {def_idx + 1} | ({r_def['w_s']:.1f}, {r_def['w_t']:.1f}, {r_def['w_e']:.1f}) | {r_def['mrr_tune']:.4f} | Production Default Baseline |")
+        out.append(make_source_line(wg_path))
+
+    out.append("---\n")
+
+    # 9. FAILURE ANALYSIS FOR COMPOSITE SCORING (METHOD M7)
+    out.append("## 9. Failure Analysis for Composite Scoring (Method M7)\n")
+    
+    # 9.1 P2b-dn (0.4)
+    fa_p2b_path = "failure_analysis_p2b_dn.csv"
+    if (RESULTS_DIR / fa_p2b_path).exists():
+        df_fa2 = pd.read_csv(RESULTS_DIR / fa_p2b_path)
+        out.append("### Top 20 Best Performing Queries for M7 on Protocol P2b-dn (0.4)\n")
+        out.append("| Query Drug | N Relevant | First Relevant Drug | Rank ($r_{\\min}$) | S | T | E | Targets (Q / Cand) | SEs (Q / Cand) |")
+        out.append("| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |")
+        for _, r in df_fa2[df_fa2["category"] == "best_20"].iterrows():
+            q_str = f"{r['query_cid']} ({r['query_name']})"
+            rel_str = f"{r['first_rel_cid']} ({r['first_rel_name']})"
+            t_flag = f"{'Y' if str(r['query_has_targets']).lower() == 'true' else 'N'} / {'Y' if str(r['cand_has_targets']).lower() == 'true' else 'N'}"
+            se_flag = f"{'Y' if str(r['query_has_se']).lower() == 'true' else 'N'} / {'Y' if str(r['cand_has_se']).lower() == 'true' else 'N'}"
+            out.append(f"| {q_str} | {int(r['n_relevant'])} | {rel_str} | {r['first_rel_rank']:.1f} | {r['S']:.4f} | {r['T']:.4f} | {r['E']:.4f} | {t_flag} | {se_flag} |")
+        out.append(make_source_line(fa_p2b_path))
+
+        out.append("### Top 20 Worst Performing Queries for M7 on Protocol P2b-dn (0.4)\n")
+        out.append("| Query Drug | N Relevant | First Relevant Drug | Rank ($r_{\\min}$) | S | T | E | Targets (Q / Cand) | SEs (Q / Cand) |")
+        out.append("| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |")
+        for _, r in df_fa2[df_fa2["category"] == "worst_20"].iterrows():
+            q_str = f"{r['query_cid']} ({r['query_name']})"
+            rel_str = f"{r['first_rel_cid']} ({r['first_rel_name']})"
+            t_flag = f"{'Y' if str(r['query_has_targets']).lower() == 'true' else 'N'} / {'Y' if str(r['cand_has_targets']).lower() == 'true' else 'N'}"
+            se_flag = f"{'Y' if str(r['query_has_se']).lower() == 'true' else 'N'} / {'Y' if str(r['cand_has_se']).lower() == 'true' else 'N'}"
+            out.append(f"| {q_str} | {int(r['n_relevant'])} | {rel_str} | {r['first_rel_rank']:.1f} | {r['S']:.4f} | {r['T']:.4f} | {r['E']:.4f} | {t_flag} | {se_flag} |")
+        out.append(make_source_line(fa_p2b_path))
+
+    # 9.2 P3-dn
+    fa_p3_path = "failure_analysis_p3_dn.csv"
+    if (RESULTS_DIR / fa_p3_path).exists():
+        df_fa3 = pd.read_csv(RESULTS_DIR / fa_p3_path)
+        out.append("### Top 20 Best Performing Queries for M7 on Protocol P3-dn\n")
+        out.append("| Query Drug | N Relevant | First Relevant Drug | Rank ($r_{\\min}$) | S | T | E | Targets (Q / Cand) | SEs (Q / Cand) |")
+        out.append("| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |")
+        for _, r in df_fa3[df_fa3["category"] == "best_20"].iterrows():
+            q_str = f"{r['query_cid']} ({r['query_name']})"
+            rel_str = f"{r['first_rel_cid']} ({r['first_rel_name']})"
+            t_flag = f"{'Y' if str(r['query_has_targets']).lower() == 'true' else 'N'} / {'Y' if str(r['cand_has_targets']).lower() == 'true' else 'N'}"
+            se_flag = f"{'Y' if str(r['query_has_se']).lower() == 'true' else 'N'} / {'Y' if str(r['cand_has_se']).lower() == 'true' else 'N'}"
+            out.append(f"| {q_str} | {int(r['n_relevant'])} | {rel_str} | {r['first_rel_rank']:.1f} | {r['S']:.4f} | {r['T']:.4f} | {r['E']:.4f} | {t_flag} | {se_flag} |")
+        out.append(make_source_line(fa_p3_path))
+
+        out.append("### Top 20 Worst Performing Queries for M7 on Protocol P3-dn\n")
+        out.append("| Query Drug | N Relevant | First Relevant Drug | Rank ($r_{\\min}$) | S | T | E | Targets (Q / Cand) | SEs (Q / Cand) |")
+        out.append("| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |")
+        for _, r in df_fa3[df_fa3["category"] == "worst_20"].iterrows():
+            q_str = f"{r['query_cid']} ({r['query_name']})"
+            rel_str = f"{r['first_rel_cid']} ({r['first_rel_name']})"
+            t_flag = f"{'Y' if str(r['query_has_targets']).lower() == 'true' else 'N'} / {'Y' if str(r['cand_has_targets']).lower() == 'true' else 'N'}"
+            se_flag = f"{'Y' if str(r['query_has_se']).lower() == 'true' else 'N'} / {'Y' if str(r['cand_has_se']).lower() == 'true' else 'N'}"
+            out.append(f"| {q_str} | {int(r['n_relevant'])} | {rel_str} | {r['first_rel_rank']:.1f} | {r['S']:.4f} | {r['T']:.4f} | {r['E']:.4f} | {t_flag} | {se_flag} |")
+        out.append(make_source_line(fa_p3_path))
+
+    out.append("---\n")
+
+    # 10. CANDIDATE POOL DUPLICATE AUDIT AND QUERY IMPACT
+    out.append("## 10. Candidate Pool Duplicate Audit and Query Impact\n")
+    dup_path = "duplicate_pairs.csv"
+    if (RESULTS_DIR / dup_path).exists():
+        dup_path_full = RESULTS_DIR / dup_path
+        df_dup = pd.read_csv(dup_path_full)
+        drugs_set = set(df_dup['chembl_id_1']).union(set(df_dup['chembl_id_2']))
+        n_pairs = len(df_dup)
+        n_drugs = len(drugs_set)
+        inchikey_count = int((df_dup['reasons'] == 'first_block_inchikey').sum())
+        name_count = int((df_dup['reasons'] == 'generic_base_name').sum())
+        both_count = int((df_dup['reasons'] == 'generic_base_name; first_block_inchikey').sum())
+
+        # Dynamic computation of query impact and drop counts from CSVs
+        p1_csv = RESULTS_DIR / "metrics_C1_P1.csv"
+        p1_dn_csv = RESULTS_DIR / "metrics_C1_P1_dn.csv"
+        p3_csv = RESULTS_DIR / "metrics_C1_P3.csv"
+        p3_dn_csv = RESULTS_DIR / "metrics_C1_P3_dn.csv"
+
+        n_p1_orig = int(pd.read_csv(p1_csv)["n_queries"].iloc[0])
+        n_p1_dn = int(pd.read_csv(p1_dn_csv)["n_queries"].iloc[0])
+        n_p3_orig = int(pd.read_csv(p3_csv)["n_queries"].iloc[0])
+        n_p3_dn = int(pd.read_csv(p3_dn_csv)["n_queries"].iloc[0])
+        p1_dropped = n_p1_orig - n_p1_dn
+        p3_dropped = n_p3_orig - n_p3_dn
+
+        # Map duplicate relationships from duplicate_pairs.csv
+        duplicates_of = defaultdict(set)
+        for _, row in df_dup.iterrows():
+            duplicates_of[row['chembl_id_1']].add(row['chembl_id_2'])
+            duplicates_of[row['chembl_id_2']].add(row['chembl_id_1'])
+
+        gold_path = DATA_DIR / "gold_pairs_primary.csv"
+        drug_inds = defaultdict(set)
+        with open(gold_path, "r", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                drug_inds[row["chembl_id"]].add(row["indication_id"])
+
+        cids_with_inds = sorted(drug_inds.keys())
+        p1_queries_with_dup = 0
+        p1_queries_dup_in_rel = 0
+        for q_cid in cids_with_inds:
+            q_inds = drug_inds[q_cid]
+            rel_p1 = [c for c in cids_with_inds if c != q_cid and not q_inds.isdisjoint(drug_inds[c])]
+            if rel_p1:
+                if duplicates_of[q_cid]:
+                    p1_queries_with_dup += 1
+                    if duplicates_of[q_cid].intersection(rel_p1):
+                        p1_queries_dup_in_rel += 1
+
+        from experiments.eval_engine import load_database, DB_A_PATH
+        pool_size = len(load_database(DB_A_PATH, exclude_inorganics=True))
+
+        out.append("### Duplicate Pairs Audit Summary and Representative Sample Pairs\n")
+        out.append(f"> **Duplicate Census:** {n_drugs} unique pool drugs involved across {n_pairs} duplicate pairs in the {pool_size:,}-drug pool.  \n"
+                   f"> **Reason Breakdown:** First-block InChIKey: {inchikey_count} pairs, Generic base name: {name_count} pairs, Both: {both_count} pairs.  \n"
+                   f"> **Query Impact:** {p1_queries_with_dup} P1 queries have >= 1 duplicate in candidate pool; {p1_queries_dup_in_rel} P1 queries have >= 1 duplicate in Rel(q). "
+                   f"Queries dropped due to zero remaining indications: P1-dn dropped {p1_dropped} ({n_p1_orig:,} -> {n_p1_dn:,}), P3-dn dropped {p3_dropped} ({n_p3_orig:,} -> {n_p3_dn:,}).  \n"
+                   f"> **Census Source Files:** `{gold_path.as_posix()}` (SHA-256: `{sha256_file(gold_path)}`), "
+                   f"`{p1_csv.as_posix()}` (SHA-256: `{sha256_file(p1_csv)}`), "
+                   f"`{p1_dn_csv.as_posix()}` (SHA-256: `{sha256_file(p1_dn_csv)}`), "
+                   f"`{p3_csv.as_posix()}` (SHA-256: `{sha256_file(p3_csv)}`), "
+                   f"`{p3_dn_csv.as_posix()}` (SHA-256: `{sha256_file(p3_dn_csv)}`), "
+                   f"`{dup_path_full.as_posix()}` (SHA-256: `{sha256_file(dup_path_full)}`)\n")
+        out.append("| Pair Index | Drug 1 ChEMBL ID | Drug 1 Name | Drug 2 ChEMBL ID | Drug 2 Name | Removal Reason |")
+        out.append("| :---: | :--- | :--- | :--- | :--- | :--- |")
+        for idx, r in df_dup.head(20).iterrows():
+            out.append(f"| {idx + 1} | {r['chembl_id_1']} | {r['name_1']} | {r['chembl_id_2']} | {r['name_2']} | `{r['reasons']}` |")
+        out.append(make_source_line(dup_path))
+
+    out.append("---\n")
+
+    # 11. SIDE-EFFECT MUTUAL INFORMATION LIFT ANALYSIS
+    out.append("## 11. Side-Effect Mutual Information Lift Analysis\n")
+    lift_path = "se_top50_lift.csv"
+    if (RESULTS_DIR / lift_path).exists():
+        df_lift = pd.read_csv(RESULTS_DIR / lift_path)
+        out.append("### Top 50 Side Effects Ranked by Indication Co-occurrence Lift\n")
+        out.append("| Rank | Preferred Term | Drug Count ($N_{\\text{drugs}}$) | Indication Co-occurrences | Lift |")
+        out.append("| :---: | :--- | :---: | :---: | :---: |")
+        for _, r in df_lift.iterrows():
+            out.append(f"| {int(r['rank'])} | {r['term']} | {int(r['n_drugs'])} | {int(r['n_relevant_pair_cooccurrences'])} | {r['lift']:.4f} |")
+        out.append(make_source_line(lift_path))
+        
     final_md_path = RESULTS_DIR / "FINAL_TABLES.md"
     content = "\n".join(out)
     with open(final_md_path, "w", encoding="utf-8") as f:
@@ -289,6 +525,25 @@ def build_final_tables():
 def update_manifest():
     manifest_path = RESULTS_DIR / "manifest.json"
     
+    # Read real HEAD commit and check working tree status of experiments/
+    try:
+        git_commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=str(ROOT), text=True).strip()
+    except Exception:
+        git_commit = "UNKNOWN"
+        
+    try:
+        # Check if tracked working tree files in experiments/ have modifications (excluding generator outputs)
+        status_lines = subprocess.check_output(
+            ["git", "status", "--porcelain", "--untracked-files=no", "experiments/"],
+            cwd=str(ROOT),
+            text=True
+        ).splitlines()
+        generated_files = {"generate_final_tables.py", "FINAL_TABLES.md", "RESULTS.md", "manifest.json"}
+        dirty_other = [l for l in status_lines if not any(gf in l for gf in generated_files)]
+        experiments_clean = (len(dirty_other) == 0)
+    except Exception:
+        experiments_clean = False
+        
     # Read existing or construct
     if manifest_path.exists():
         with open(manifest_path, "r", encoding="utf-8") as f:
@@ -298,7 +553,8 @@ def update_manifest():
         
     manifest["metadata"] = {
         "description": "MoleculAR Evaluation Harness Manifest",
-        "git_commit": "27a8e8cf425790efa002f422f24eabe7174c10ea",
+        "git_commit": git_commit,
+        "experiments_working_tree_clean": experiments_clean,
         "random_seed": 42,
         "environment": {
             "python": sys.version,
