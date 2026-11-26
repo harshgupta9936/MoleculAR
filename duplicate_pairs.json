@@ -1,0 +1,1518 @@
+{
+  "metadata": {
+    "source_file": "experiments/results/duplicate_pairs.csv",
+    "source_commit": "885e59a37ccb85139b43d54894d845177a895b34",
+    "criteria": [
+      "generic_base_name",
+      "first_block_inchikey",
+      "desalted_canonical_smiles"
+    ],
+    "count": 107,
+    "num_distinct_drugs": 160
+  },
+  "pairs": [
+    {
+      "chembl_id_1": "CHEMBL1000",
+      "name_1": "CETIRIZINE",
+      "chembl_id_2": "CHEMBL1201190",
+      "name_2": "LEVOCETIRIZINE DIHYDROCHLORIDE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1002",
+      "name_1": "LEVOSALBUTAMOL",
+      "chembl_id_2": "CHEMBL1441059",
+      "name_2": "ALBUTEROL",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1057",
+      "name_1": "FLUORESCEIN",
+      "chembl_id_2": "CHEMBL1628233",
+      "name_2": "FLUORESCEIN",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1090",
+      "name_1": "VIDARABINE",
+      "chembl_id_2": "CHEMBL477",
+      "name_2": "ADENOSINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1091",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL1200495",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1091",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL1200562",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1091",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL1200968",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1091",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL389621",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1097620",
+      "name_1": "IOTHALAMATE",
+      "chembl_id_2": "CHEMBL2106318",
+      "name_2": "IOTHALAMATE SODIUM I 125",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1098",
+      "name_1": "BUPIVACAINE",
+      "chembl_id_2": "CHEMBL1200749",
+      "name_2": "LEVOBUPIVACAINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL113178",
+      "name_1": "SELENOMETHIONINE",
+      "chembl_id_2": "CHEMBL1201054",
+      "name_2": "SELENOMETHIONINE SE 75",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1152",
+      "name_1": "PREDNISOLONE",
+      "chembl_id_2": "CHEMBL1201014",
+      "name_2": "PREDNISOLONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1152",
+      "name_1": "PREDNISOLONE",
+      "chembl_id_2": "CHEMBL131",
+      "name_2": "PREDNISOLONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1162",
+      "name_1": "NORETHINDRONE",
+      "chembl_id_2": "CHEMBL1201146",
+      "name_2": "NORETHINDRONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL117785",
+      "name_1": "TETRABENAZINE",
+      "chembl_id_2": "CHEMBL3137326",
+      "name_2": "DEUTETRABENAZINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200322",
+      "name_1": "ESCITALOPRAM OXALATE",
+      "chembl_id_2": "CHEMBL1200781",
+      "name_2": "CITALOPRAM",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200323",
+      "name_1": "LABETALOL",
+      "chembl_id_2": "CHEMBL1204165",
+      "name_2": "DILEVALOL",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200376",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL1200538",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200376",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL1200762",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200376",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL1497",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200376",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL632",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200377",
+      "name_1": "AMPHETAMINE ASPARTATE",
+      "chembl_id_2": "CHEMBL1200782",
+      "name_2": "DEXTROAMPHETAMINE ADIPATE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200377",
+      "name_1": "AMPHETAMINE ASPARTATE",
+      "chembl_id_2": "CHEMBL19393",
+      "name_2": "LEVAMFETAMINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200402",
+      "name_1": "AMLODIPINE",
+      "chembl_id_2": "CHEMBL2111097",
+      "name_2": "LEVAMLODIPINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200430",
+      "name_1": "ESTRADIOL",
+      "chembl_id_2": "CHEMBL135",
+      "name_2": "ESTRADIOL",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200430",
+      "name_1": "ESTRADIOL",
+      "chembl_id_2": "CHEMBL1511",
+      "name_2": "ESTRADIOL",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200434",
+      "name_1": "OXTRIPHYLLINE",
+      "chembl_id_2": "CHEMBL2095207",
+      "name_2": "CHOLINE C-11",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200437",
+      "name_1": "QUINIDINE",
+      "chembl_id_2": "CHEMBL170",
+      "name_2": "QUININE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200470",
+      "name_1": "ESOMEPRAZOLE",
+      "chembl_id_2": "CHEMBL1503",
+      "name_2": "OMEPRAZOLE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200495",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL1200562",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200495",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL1200968",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200495",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL389621",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200527",
+      "name_1": "ATRACURIUM",
+      "chembl_id_2": "CHEMBL1200641",
+      "name_2": "CISATRACURIUM",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200538",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL1200762",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200538",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL1497",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200538",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL1530428",
+      "name_2": "DEXAMETHASONE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200538",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL632",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200562",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL1200968",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200562",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL389621",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200588",
+      "name_1": "CLINDAMYCIN",
+      "chembl_id_2": "CHEMBL1200632",
+      "name_2": "CLINDAMYCIN",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200588",
+      "name_1": "CLINDAMYCIN",
+      "chembl_id_2": "CHEMBL3184512",
+      "name_2": "CLINDAMYCIN",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200598",
+      "name_1": "DIETHYLSTILBESTROL",
+      "chembl_id_2": "CHEMBL411",
+      "name_2": "DIETHYLSTILBESTROL",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200600",
+      "name_1": "FLUOROMETHOLONE",
+      "chembl_id_2": "CHEMBL1201064",
+      "name_2": "FLUOROMETHOLONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200632",
+      "name_1": "CLINDAMYCIN",
+      "chembl_id_2": "CHEMBL3184512",
+      "name_2": "CLINDAMYCIN",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200638",
+      "name_1": "DEXBROMPHENIRAMINE",
+      "chembl_id_2": "CHEMBL1200961",
+      "name_2": "BROMPHENIRAMINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200645",
+      "name_1": "ETOPOSIDE",
+      "chembl_id_2": "CHEMBL44657",
+      "name_2": "ETOPOSIDE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200724",
+      "name_1": "PSEUDOEPHEDRINE",
+      "chembl_id_2": "CHEMBL1523964",
+      "name_2": "EPHEDRINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200729",
+      "name_1": "CHLORAMPHENICOL",
+      "chembl_id_2": "CHEMBL130",
+      "name_2": "CHLORAMPHENICOL",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200762",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL1201302",
+      "name_2": "DEXAMETHASONE PHOSPHORIC ACID",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200762",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL1497",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200762",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL632",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200782",
+      "name_1": "DEXTROAMPHETAMINE ADIPATE",
+      "chembl_id_2": "CHEMBL19393",
+      "name_2": "LEVAMFETAMINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200837",
+      "name_1": "LEVOBETAXOLOL",
+      "chembl_id_2": "CHEMBL1691",
+      "name_2": "BETAXOLOL",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200927",
+      "name_1": "DEXCHLORPHENIRAMINE",
+      "chembl_id_2": "CHEMBL1659",
+      "name_2": "CHLORPHENIRAMINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200962",
+      "name_1": "CEFEPIME",
+      "chembl_id_2": "CHEMBL186",
+      "name_2": "CEFEPIME",
+      "reasons": [
+        "generic_base_name",
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200968",
+      "name_1": "HYDROCORTISONE",
+      "chembl_id_2": "CHEMBL389621",
+      "name_2": "HYDROCORTISONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1200981",
+      "name_1": "EPIRUBICIN",
+      "chembl_id_2": "CHEMBL359744",
+      "name_2": "DOXORUBICIN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1201014",
+      "name_1": "PREDNISOLONE",
+      "chembl_id_2": "CHEMBL131",
+      "name_2": "PREDNISOLONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1201081",
+      "name_1": "METHYLPREDNISOLONE",
+      "chembl_id_2": "CHEMBL1364144",
+      "name_2": "METHYLPREDNISOLONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1201081",
+      "name_1": "METHYLPREDNISOLONE",
+      "chembl_id_2": "CHEMBL650",
+      "name_2": "METHYLPREDNISOLONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1201138",
+      "name_1": "LEUCOVORIN",
+      "chembl_id_2": "CHEMBL1908361",
+      "name_2": "LEVOLEUCOVORIN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1201141",
+      "name_1": "IBUPROFEN LYSINE",
+      "chembl_id_2": "CHEMBL175",
+      "name_2": "DEXIBUPROFEN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1201192",
+      "name_1": "ARMODAFINIL",
+      "chembl_id_2": "CHEMBL1373",
+      "name_2": "MODAFINIL",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1201863",
+      "name_1": "DEXLANSOPRAZOLE",
+      "chembl_id_2": "CHEMBL480",
+      "name_2": "LANSOPRAZOLE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1213351",
+      "name_1": "PROPOXYPHENE",
+      "chembl_id_2": "CHEMBL1593906",
+      "name_2": "LEVOPROPOXYPHENE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1256786",
+      "name_1": "FORMOTEROL",
+      "chembl_id_2": "CHEMBL1363",
+      "name_2": "ARFORMOTEROL",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1257051",
+      "name_1": "TEDIZOLID",
+      "chembl_id_2": "CHEMBL2105669",
+      "name_2": "TEDIZOLID",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL135",
+      "name_1": "ESTRADIOL",
+      "chembl_id_2": "CHEMBL1511",
+      "name_2": "ESTRADIOL",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL135400",
+      "name_1": "ZOPICLONE",
+      "chembl_id_2": "CHEMBL1522",
+      "name_2": "ESZOPICLONE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1364144",
+      "name_1": "METHYLPREDNISOLONE",
+      "chembl_id_2": "CHEMBL650",
+      "name_2": "METHYLPREDNISOLONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1389",
+      "name_1": "LEVONORGESTREL",
+      "chembl_id_2": "CHEMBL2107797",
+      "name_2": "NORGESTREL",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1476022",
+      "name_1": "NOMEGESTROL",
+      "chembl_id_2": "CHEMBL2105722",
+      "name_2": "NOMEGESTROL",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1497",
+      "name_1": "BETAMETHASONE",
+      "chembl_id_2": "CHEMBL632",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1530428",
+      "name_1": "DEXAMETHASONE",
+      "chembl_id_2": "CHEMBL384467",
+      "name_2": "DEXAMETHASONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1551",
+      "name_1": "URSODIOL",
+      "chembl_id_2": "CHEMBL240597",
+      "name_2": "CHENODIOL",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL157101",
+      "name_1": "KETOCONAZOLE",
+      "chembl_id_2": "CHEMBL295698",
+      "name_2": "LEVOKETOCONAZOLE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1599768",
+      "name_1": "PYRANTEL",
+      "chembl_id_2": "CHEMBL1626223",
+      "name_2": "PYRANTEL",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1621",
+      "name_1": "PALIPERIDONE",
+      "chembl_id_2": "CHEMBL2107360",
+      "name_2": "PALIPERIDONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1624",
+      "name_1": "LEVOTHYROXINE",
+      "chembl_id_2": "CHEMBL3545058",
+      "name_2": "DEXTROTHYROXINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1627367",
+      "name_1": "FLUOROESTRADIOL",
+      "chembl_id_2": "CHEMBL4594261",
+      "name_2": "FLUOROESTRADIOL F-18",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1682",
+      "name_1": "SORBITOL",
+      "chembl_id_2": "CHEMBL689",
+      "name_2": "MANNITOL",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1714",
+      "name_1": "KETAMINE",
+      "chembl_id_2": "CHEMBL2364609",
+      "name_2": "ESKETAMINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1722",
+      "name_1": "METHYLPHENIDATE",
+      "chembl_id_2": "CHEMBL827",
+      "name_2": "DEXMETHYLPHENIDATE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1789941",
+      "name_1": "RUXOLITINIB",
+      "chembl_id_2": "CHEMBL4594382",
+      "name_2": "DEURUXOLITINIB",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1887891",
+      "name_1": "DEXFENFLURAMINE",
+      "chembl_id_2": "CHEMBL2106217",
+      "name_2": "FENFLURAMINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1908906",
+      "name_1": "FLORBETABEN",
+      "chembl_id_2": "CHEMBL566752",
+      "name_2": "FLORBETABEN F18",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL1908917",
+      "name_1": "FLUCICLOVINE",
+      "chembl_id_2": "CHEMBL254468",
+      "name_2": "FLUCICLOVINE F18",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL2010601",
+      "name_1": "IVACAFTOR",
+      "chembl_id_2": "CHEMBL4297603",
+      "name_2": "DEUTIVACAFTOR",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL2096635",
+      "name_1": "UREA C 14",
+      "chembl_id_2": "CHEMBL985",
+      "name_2": "UREA",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL2103846",
+      "name_1": "ULIPRISTAL",
+      "chembl_id_2": "CHEMBL260538",
+      "name_2": "ULIPRISTAL",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL2105732",
+      "name_1": "LEVOMILNACIPRAN",
+      "chembl_id_2": "CHEMBL259209",
+      "name_2": "MILNACIPRAN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL254328",
+      "name_1": "ABIRATERONE",
+      "chembl_id_2": "CHEMBL271227",
+      "name_2": "ABIRATERONE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL256105",
+      "name_1": "MONENSIN",
+      "chembl_id_2": "CHEMBL5314365",
+      "name_2": "MONENSIN",
+      "reasons": [
+        "generic_base_name",
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL315985",
+      "name_1": "ESLICARBAZEPINE",
+      "chembl_id_2": "CHEMBL87992",
+      "name_2": "ESLICARBAZEPINE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL33",
+      "name_1": "LEVOFLOXACIN",
+      "chembl_id_2": "CHEMBL4",
+      "name_2": "OFLOXACIN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL38",
+      "name_1": "TRETINOIN",
+      "chembl_id_2": "CHEMBL547",
+      "name_2": "ISOTRETINOIN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL38",
+      "name_1": "TRETINOIN",
+      "chembl_id_2": "CHEMBL705",
+      "name_2": "ALITRETINOIN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL3833335",
+      "name_1": "CHLORAL BETAINE",
+      "chembl_id_2": "CHEMBL95889",
+      "name_2": "BETAINE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL384467",
+      "name_1": "DEXAMETHASONE",
+      "chembl_id_2": "CHEMBL632",
+      "name_2": "BETAMETHASONE",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL3989754",
+      "name_1": "FLURBIPROFEN",
+      "chembl_id_2": "CHEMBL435298",
+      "name_2": "ESFLURBIPROFEN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL3989917",
+      "name_1": "FOSNETUPITANT",
+      "chembl_id_2": "CHEMBL3989919",
+      "name_2": "FOSNETUPITANT",
+      "reasons": [
+        "generic_base_name",
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL3989974",
+      "name_1": "CEFIDEROCOL",
+      "chembl_id_2": "CHEMBL4297211",
+      "name_2": "CEFIDEROCOL",
+      "reasons": [
+        "generic_base_name",
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL4297334",
+      "name_1": "PIFLUFOLASTAT F18",
+      "chembl_id_2": "CHEMBL4299851",
+      "name_2": "PIFLUFOLASTAT",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL4435170",
+      "name_1": "DEUCRAVACITINIB",
+      "chembl_id_2": "CHEMBL4596392",
+      "name_2": "CRAVACITINIB",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL477",
+      "name_1": "ADENOSINE",
+      "chembl_id_2": "CHEMBL752",
+      "name_2": "ADENOSINE",
+      "reasons": [
+        "generic_base_name"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL547",
+      "name_1": "ISOTRETINOIN",
+      "chembl_id_2": "CHEMBL705",
+      "name_2": "ALITRETINOIN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    },
+    {
+      "chembl_id_1": "CHEMBL571",
+      "name_1": "KETOPROFEN",
+      "chembl_id_2": "CHEMBL75435",
+      "name_2": "DEXKETOPROFEN",
+      "reasons": [
+        "first_block_inchikey"
+      ]
+    }
+  ],
+  "lookup": {
+    "CHEMBL1000": [
+      "CHEMBL1201190"
+    ],
+    "CHEMBL1002": [
+      "CHEMBL1441059"
+    ],
+    "CHEMBL1057": [
+      "CHEMBL1628233"
+    ],
+    "CHEMBL1090": [
+      "CHEMBL477"
+    ],
+    "CHEMBL1091": [
+      "CHEMBL1200495",
+      "CHEMBL1200562",
+      "CHEMBL1200968",
+      "CHEMBL389621"
+    ],
+    "CHEMBL1097620": [
+      "CHEMBL2106318"
+    ],
+    "CHEMBL1098": [
+      "CHEMBL1200749"
+    ],
+    "CHEMBL113178": [
+      "CHEMBL1201054"
+    ],
+    "CHEMBL1152": [
+      "CHEMBL1201014",
+      "CHEMBL131"
+    ],
+    "CHEMBL1162": [
+      "CHEMBL1201146"
+    ],
+    "CHEMBL117785": [
+      "CHEMBL3137326"
+    ],
+    "CHEMBL1200322": [
+      "CHEMBL1200781"
+    ],
+    "CHEMBL1200323": [
+      "CHEMBL1204165"
+    ],
+    "CHEMBL1200376": [
+      "CHEMBL1200538",
+      "CHEMBL1200762",
+      "CHEMBL1497",
+      "CHEMBL632"
+    ],
+    "CHEMBL1200377": [
+      "CHEMBL1200782",
+      "CHEMBL19393"
+    ],
+    "CHEMBL1200402": [
+      "CHEMBL2111097"
+    ],
+    "CHEMBL1200430": [
+      "CHEMBL135",
+      "CHEMBL1511"
+    ],
+    "CHEMBL1200434": [
+      "CHEMBL2095207"
+    ],
+    "CHEMBL1200437": [
+      "CHEMBL170"
+    ],
+    "CHEMBL1200470": [
+      "CHEMBL1503"
+    ],
+    "CHEMBL1200495": [
+      "CHEMBL1091",
+      "CHEMBL1200562",
+      "CHEMBL1200968",
+      "CHEMBL389621"
+    ],
+    "CHEMBL1200527": [
+      "CHEMBL1200641"
+    ],
+    "CHEMBL1200538": [
+      "CHEMBL1200376",
+      "CHEMBL1200762",
+      "CHEMBL1497",
+      "CHEMBL1530428",
+      "CHEMBL632"
+    ],
+    "CHEMBL1200562": [
+      "CHEMBL1091",
+      "CHEMBL1200495",
+      "CHEMBL1200968",
+      "CHEMBL389621"
+    ],
+    "CHEMBL1200588": [
+      "CHEMBL1200632",
+      "CHEMBL3184512"
+    ],
+    "CHEMBL1200598": [
+      "CHEMBL411"
+    ],
+    "CHEMBL1200600": [
+      "CHEMBL1201064"
+    ],
+    "CHEMBL1200632": [
+      "CHEMBL1200588",
+      "CHEMBL3184512"
+    ],
+    "CHEMBL1200638": [
+      "CHEMBL1200961"
+    ],
+    "CHEMBL1200641": [
+      "CHEMBL1200527"
+    ],
+    "CHEMBL1200645": [
+      "CHEMBL44657"
+    ],
+    "CHEMBL1200724": [
+      "CHEMBL1523964"
+    ],
+    "CHEMBL1200729": [
+      "CHEMBL130"
+    ],
+    "CHEMBL1200749": [
+      "CHEMBL1098"
+    ],
+    "CHEMBL1200762": [
+      "CHEMBL1200376",
+      "CHEMBL1200538",
+      "CHEMBL1201302",
+      "CHEMBL1497",
+      "CHEMBL632"
+    ],
+    "CHEMBL1200781": [
+      "CHEMBL1200322"
+    ],
+    "CHEMBL1200782": [
+      "CHEMBL1200377",
+      "CHEMBL19393"
+    ],
+    "CHEMBL1200837": [
+      "CHEMBL1691"
+    ],
+    "CHEMBL1200927": [
+      "CHEMBL1659"
+    ],
+    "CHEMBL1200961": [
+      "CHEMBL1200638"
+    ],
+    "CHEMBL1200962": [
+      "CHEMBL186"
+    ],
+    "CHEMBL1200968": [
+      "CHEMBL1091",
+      "CHEMBL1200495",
+      "CHEMBL1200562",
+      "CHEMBL389621"
+    ],
+    "CHEMBL1200981": [
+      "CHEMBL359744"
+    ],
+    "CHEMBL1201014": [
+      "CHEMBL1152",
+      "CHEMBL131"
+    ],
+    "CHEMBL1201054": [
+      "CHEMBL113178"
+    ],
+    "CHEMBL1201064": [
+      "CHEMBL1200600"
+    ],
+    "CHEMBL1201081": [
+      "CHEMBL1364144",
+      "CHEMBL650"
+    ],
+    "CHEMBL1201138": [
+      "CHEMBL1908361"
+    ],
+    "CHEMBL1201141": [
+      "CHEMBL175"
+    ],
+    "CHEMBL1201146": [
+      "CHEMBL1162"
+    ],
+    "CHEMBL1201190": [
+      "CHEMBL1000"
+    ],
+    "CHEMBL1201192": [
+      "CHEMBL1373"
+    ],
+    "CHEMBL1201302": [
+      "CHEMBL1200762"
+    ],
+    "CHEMBL1201863": [
+      "CHEMBL480"
+    ],
+    "CHEMBL1204165": [
+      "CHEMBL1200323"
+    ],
+    "CHEMBL1213351": [
+      "CHEMBL1593906"
+    ],
+    "CHEMBL1256786": [
+      "CHEMBL1363"
+    ],
+    "CHEMBL1257051": [
+      "CHEMBL2105669"
+    ],
+    "CHEMBL130": [
+      "CHEMBL1200729"
+    ],
+    "CHEMBL131": [
+      "CHEMBL1152",
+      "CHEMBL1201014"
+    ],
+    "CHEMBL135": [
+      "CHEMBL1200430",
+      "CHEMBL1511"
+    ],
+    "CHEMBL135400": [
+      "CHEMBL1522"
+    ],
+    "CHEMBL1363": [
+      "CHEMBL1256786"
+    ],
+    "CHEMBL1364144": [
+      "CHEMBL1201081",
+      "CHEMBL650"
+    ],
+    "CHEMBL1373": [
+      "CHEMBL1201192"
+    ],
+    "CHEMBL1389": [
+      "CHEMBL2107797"
+    ],
+    "CHEMBL1441059": [
+      "CHEMBL1002"
+    ],
+    "CHEMBL1476022": [
+      "CHEMBL2105722"
+    ],
+    "CHEMBL1497": [
+      "CHEMBL1200376",
+      "CHEMBL1200538",
+      "CHEMBL1200762",
+      "CHEMBL632"
+    ],
+    "CHEMBL1503": [
+      "CHEMBL1200470"
+    ],
+    "CHEMBL1511": [
+      "CHEMBL1200430",
+      "CHEMBL135"
+    ],
+    "CHEMBL1522": [
+      "CHEMBL135400"
+    ],
+    "CHEMBL1523964": [
+      "CHEMBL1200724"
+    ],
+    "CHEMBL1530428": [
+      "CHEMBL1200538",
+      "CHEMBL384467"
+    ],
+    "CHEMBL1551": [
+      "CHEMBL240597"
+    ],
+    "CHEMBL157101": [
+      "CHEMBL295698"
+    ],
+    "CHEMBL1593906": [
+      "CHEMBL1213351"
+    ],
+    "CHEMBL1599768": [
+      "CHEMBL1626223"
+    ],
+    "CHEMBL1621": [
+      "CHEMBL2107360"
+    ],
+    "CHEMBL1624": [
+      "CHEMBL3545058"
+    ],
+    "CHEMBL1626223": [
+      "CHEMBL1599768"
+    ],
+    "CHEMBL1627367": [
+      "CHEMBL4594261"
+    ],
+    "CHEMBL1628233": [
+      "CHEMBL1057"
+    ],
+    "CHEMBL1659": [
+      "CHEMBL1200927"
+    ],
+    "CHEMBL1682": [
+      "CHEMBL689"
+    ],
+    "CHEMBL1691": [
+      "CHEMBL1200837"
+    ],
+    "CHEMBL170": [
+      "CHEMBL1200437"
+    ],
+    "CHEMBL1714": [
+      "CHEMBL2364609"
+    ],
+    "CHEMBL1722": [
+      "CHEMBL827"
+    ],
+    "CHEMBL175": [
+      "CHEMBL1201141"
+    ],
+    "CHEMBL1789941": [
+      "CHEMBL4594382"
+    ],
+    "CHEMBL186": [
+      "CHEMBL1200962"
+    ],
+    "CHEMBL1887891": [
+      "CHEMBL2106217"
+    ],
+    "CHEMBL1908361": [
+      "CHEMBL1201138"
+    ],
+    "CHEMBL1908906": [
+      "CHEMBL566752"
+    ],
+    "CHEMBL1908917": [
+      "CHEMBL254468"
+    ],
+    "CHEMBL19393": [
+      "CHEMBL1200377",
+      "CHEMBL1200782"
+    ],
+    "CHEMBL2010601": [
+      "CHEMBL4297603"
+    ],
+    "CHEMBL2095207": [
+      "CHEMBL1200434"
+    ],
+    "CHEMBL2096635": [
+      "CHEMBL985"
+    ],
+    "CHEMBL2103846": [
+      "CHEMBL260538"
+    ],
+    "CHEMBL2105669": [
+      "CHEMBL1257051"
+    ],
+    "CHEMBL2105722": [
+      "CHEMBL1476022"
+    ],
+    "CHEMBL2105732": [
+      "CHEMBL259209"
+    ],
+    "CHEMBL2106217": [
+      "CHEMBL1887891"
+    ],
+    "CHEMBL2106318": [
+      "CHEMBL1097620"
+    ],
+    "CHEMBL2107360": [
+      "CHEMBL1621"
+    ],
+    "CHEMBL2107797": [
+      "CHEMBL1389"
+    ],
+    "CHEMBL2111097": [
+      "CHEMBL1200402"
+    ],
+    "CHEMBL2364609": [
+      "CHEMBL1714"
+    ],
+    "CHEMBL240597": [
+      "CHEMBL1551"
+    ],
+    "CHEMBL254328": [
+      "CHEMBL271227"
+    ],
+    "CHEMBL254468": [
+      "CHEMBL1908917"
+    ],
+    "CHEMBL256105": [
+      "CHEMBL5314365"
+    ],
+    "CHEMBL259209": [
+      "CHEMBL2105732"
+    ],
+    "CHEMBL260538": [
+      "CHEMBL2103846"
+    ],
+    "CHEMBL271227": [
+      "CHEMBL254328"
+    ],
+    "CHEMBL295698": [
+      "CHEMBL157101"
+    ],
+    "CHEMBL3137326": [
+      "CHEMBL117785"
+    ],
+    "CHEMBL315985": [
+      "CHEMBL87992"
+    ],
+    "CHEMBL3184512": [
+      "CHEMBL1200588",
+      "CHEMBL1200632"
+    ],
+    "CHEMBL33": [
+      "CHEMBL4"
+    ],
+    "CHEMBL3545058": [
+      "CHEMBL1624"
+    ],
+    "CHEMBL359744": [
+      "CHEMBL1200981"
+    ],
+    "CHEMBL38": [
+      "CHEMBL547",
+      "CHEMBL705"
+    ],
+    "CHEMBL3833335": [
+      "CHEMBL95889"
+    ],
+    "CHEMBL384467": [
+      "CHEMBL1530428",
+      "CHEMBL632"
+    ],
+    "CHEMBL389621": [
+      "CHEMBL1091",
+      "CHEMBL1200495",
+      "CHEMBL1200562",
+      "CHEMBL1200968"
+    ],
+    "CHEMBL3989754": [
+      "CHEMBL435298"
+    ],
+    "CHEMBL3989917": [
+      "CHEMBL3989919"
+    ],
+    "CHEMBL3989919": [
+      "CHEMBL3989917"
+    ],
+    "CHEMBL3989974": [
+      "CHEMBL4297211"
+    ],
+    "CHEMBL4": [
+      "CHEMBL33"
+    ],
+    "CHEMBL411": [
+      "CHEMBL1200598"
+    ],
+    "CHEMBL4297211": [
+      "CHEMBL3989974"
+    ],
+    "CHEMBL4297334": [
+      "CHEMBL4299851"
+    ],
+    "CHEMBL4297603": [
+      "CHEMBL2010601"
+    ],
+    "CHEMBL4299851": [
+      "CHEMBL4297334"
+    ],
+    "CHEMBL435298": [
+      "CHEMBL3989754"
+    ],
+    "CHEMBL4435170": [
+      "CHEMBL4596392"
+    ],
+    "CHEMBL44657": [
+      "CHEMBL1200645"
+    ],
+    "CHEMBL4594261": [
+      "CHEMBL1627367"
+    ],
+    "CHEMBL4594382": [
+      "CHEMBL1789941"
+    ],
+    "CHEMBL4596392": [
+      "CHEMBL4435170"
+    ],
+    "CHEMBL477": [
+      "CHEMBL1090",
+      "CHEMBL752"
+    ],
+    "CHEMBL480": [
+      "CHEMBL1201863"
+    ],
+    "CHEMBL5314365": [
+      "CHEMBL256105"
+    ],
+    "CHEMBL547": [
+      "CHEMBL38",
+      "CHEMBL705"
+    ],
+    "CHEMBL566752": [
+      "CHEMBL1908906"
+    ],
+    "CHEMBL571": [
+      "CHEMBL75435"
+    ],
+    "CHEMBL632": [
+      "CHEMBL1200376",
+      "CHEMBL1200538",
+      "CHEMBL1200762",
+      "CHEMBL1497",
+      "CHEMBL384467"
+    ],
+    "CHEMBL650": [
+      "CHEMBL1201081",
+      "CHEMBL1364144"
+    ],
+    "CHEMBL689": [
+      "CHEMBL1682"
+    ],
+    "CHEMBL705": [
+      "CHEMBL38",
+      "CHEMBL547"
+    ],
+    "CHEMBL752": [
+      "CHEMBL477"
+    ],
+    "CHEMBL75435": [
+      "CHEMBL571"
+    ],
+    "CHEMBL827": [
+      "CHEMBL1722"
+    ],
+    "CHEMBL87992": [
+      "CHEMBL315985"
+    ],
+    "CHEMBL95889": [
+      "CHEMBL3833335"
+    ],
+    "CHEMBL985": [
+      "CHEMBL2096635"
+    ]
+  }
+}

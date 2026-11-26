@@ -1,0 +1,275 @@
+{
+  "provenance": {
+    "git_tag": "eval-v2",
+    "db_sha256": "d88a2333743af2dbe859b3717764b6a645b9786caa6f059cc9558e29c7ff0da7",
+    "manifest_commit": "020dbadc4d6ded0a7ff1d84a4fc8f4cd0ee4c41e"
+  },
+  "summary_sentence": "Strong at finding drugs with the same indication; much weaker across drug classes, where a popularity-only baseline can do as well or better.",
+  "protocols": {
+    "p1_dn": {
+      "key": "p1_dn",
+      "label": "Protocol P1-dn (Primary Same-Indication Repurposing)",
+      "file": "experiments/results/metrics_C1_P1_dn.csv",
+      "n_queries": 1659,
+      "methods": [
+        {
+          "id": "M1",
+          "label": "Random Baseline",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.14491849576302165,
+            "ci_low": 0.138141144870363,
+            "ci_high": 0.15187171272876665
+          },
+          "mrr": {
+            "mean": 0.06206826405362935,
+            "ci_low": 0.05927916801097327,
+            "ci_high": 0.06486023701388487
+          }
+        },
+        {
+          "id": "M7",
+          "label": "Evaluated Default (Hand-Weighted + Hub Penalty)",
+          "isDefault": true,
+          "hit10": {
+            "mean": 0.7540687160940326,
+            "ci_low": 0.731163351416516,
+            "ci_high": 0.7739752863170585
+          },
+          "mrr": {
+            "mean": 0.5870246997887894,
+            "ci_low": 0.5652890808833104,
+            "ci_high": 0.6064975241743736
+          }
+        },
+        {
+          "id": "M8",
+          "label": "Popularity Prior (uses labels, an upper bound for a query-independent method)",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.26823387582881253,
+            "ci_low": 0.24773960216998192,
+            "ci_high": 0.29055153707052445
+          },
+          "mrr": {
+            "mean": 0.1540252984241341,
+            "ci_low": 0.1403405723281975,
+            "ci_high": 0.16869356012404005
+          }
+        }
+      ]
+    },
+    "p2a_dn_0.4": {
+      "key": "p2a_dn_0.4",
+      "label": "Protocol P2a-dn (Analogue Neutralization at θ=0.4)",
+      "file": "experiments/results/metrics_C1_P2a_dn_0.4.csv",
+      "n_queries": 1645,
+      "methods": [
+        {
+          "id": "M1",
+          "label": "Random Baseline",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.14073702203696084,
+            "ci_low": 0.13354315253317803,
+            "ci_high": 0.1471638354769591
+          },
+          "mrr": {
+            "mean": 0.06181535844906593,
+            "ci_low": 0.058992458831848046,
+            "ci_high": 0.06439124757062915
+          }
+        },
+        {
+          "id": "M7",
+          "label": "Evaluated Default (Hand-Weighted + Hub Penalty)",
+          "isDefault": true,
+          "hit10": {
+            "mean": 0.6534954407294833,
+            "ci_low": 0.6291793313069909,
+            "ci_high": 0.6766109422492401
+          },
+          "mrr": {
+            "mean": 0.37460515967587305,
+            "ci_low": 0.3550693765293723,
+            "ci_high": 0.3913728239267302
+          }
+        },
+        {
+          "id": "M8",
+          "label": "Popularity Prior (uses labels, an upper bound for a query-independent method)",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.270516717325228,
+            "ci_low": 0.2486322188449848,
+            "ci_high": 0.2918085106382978
+          },
+          "mrr": {
+            "mean": 0.15400790796869127,
+            "ci_low": 0.1393188501657066,
+            "ci_high": 0.16891021314089624
+          }
+        }
+      ]
+    },
+    "p3_dn": {
+      "key": "p3_dn",
+      "label": "Protocol P3-dn (Lead Optimization / Analog Discovery)",
+      "file": "experiments/results/metrics_C1_P3_dn.csv",
+      "n_queries": 1240,
+      "methods": [
+        {
+          "id": "M1",
+          "label": "Random Baseline",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.12176154422974157,
+            "ci_low": 0.11449649150541526,
+            "ci_high": 0.12915165126904704
+          },
+          "mrr": {
+            "mean": 0.053003394855832824,
+            "ci_low": 0.050237411443930687,
+            "ci_high": 0.055834888928264215
+          }
+        },
+        {
+          "id": "M7",
+          "label": "Evaluated Default (Hand-Weighted + Hub Penalty)",
+          "isDefault": true,
+          "hit10": {
+            "mean": 0.24758064516129033,
+            "ci_low": 0.22336693548387096,
+            "ci_high": 0.2725806451612903
+          },
+          "mrr": {
+            "mean": 0.122263689496002,
+            "ci_low": 0.10880078014422359,
+            "ci_high": 0.1347109085497499
+          }
+        },
+        {
+          "id": "M8",
+          "label": "Popularity Prior (uses labels, an upper bound for a query-independent method)",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.29354838709677417,
+            "ci_low": 0.2669354838709677,
+            "ci_high": 0.32016129032258067
+          },
+          "mrr": {
+            "mean": 0.15473060647683212,
+            "ci_low": 0.13963889925692213,
+            "ci_high": 0.17063018352586184
+          }
+        }
+      ]
+    },
+    "p4": {
+      "key": "p4",
+      "label": "Protocol P4 (Mechanism Generalization across ATC L3 Classes)",
+      "file": "experiments/results/metrics_C1_P4.csv",
+      "n_queries": 965,
+      "methods": [
+        {
+          "id": "M1",
+          "label": "Random Baseline",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.052461,
+            "ci_low": 0.047452,
+            "ci_high": 0.057095
+          },
+          "mrr": {
+            "mean": 0.025512,
+            "ci_low": 0.023306,
+            "ci_high": 0.027461
+          }
+        },
+        {
+          "id": "M7",
+          "label": "Evaluated Default (Hand-Weighted + Hub Penalty)",
+          "isDefault": true,
+          "hit10": {
+            "mean": 0.12228,
+            "ci_low": 0.101528,
+            "ci_high": 0.141995
+          },
+          "mrr": {
+            "mean": 0.069219,
+            "ci_low": 0.056498,
+            "ci_high": 0.08165
+          }
+        },
+        {
+          "id": "M8",
+          "label": "Popularity Prior (uses labels, an upper bound for a query-independent method)",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.163731,
+            "ci_low": 0.139896,
+            "ci_high": 0.187565
+          },
+          "mrr": {
+            "mean": 0.068309,
+            "ci_low": 0.058701,
+            "ci_high": 0.078042
+          }
+        }
+      ]
+    },
+    "p4b": {
+      "key": "p4b",
+      "label": "Protocol P4b (Mechanism Generalization with Target-Shared Classes)",
+      "file": "experiments/results/metrics_C1_P4b.csv",
+      "n_queries": 965,
+      "methods": [
+        {
+          "id": "M1",
+          "label": "Random Baseline",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.061161,
+            "ci_low": 0.055174,
+            "ci_high": 0.066771
+          },
+          "mrr": {
+            "mean": 0.028851,
+            "ci_low": 0.026375,
+            "ci_high": 0.031136
+          }
+        },
+        {
+          "id": "M7",
+          "label": "Evaluated Default (Hand-Weighted + Hub Penalty)",
+          "isDefault": true,
+          "hit10": {
+            "mean": 0.194819,
+            "ci_low": 0.168886,
+            "ci_high": 0.219715
+          },
+          "mrr": {
+            "mean": 0.132571,
+            "ci_low": 0.113279,
+            "ci_high": 0.150721
+          }
+        },
+        {
+          "id": "M8",
+          "label": "Popularity Prior (uses labels, an upper bound for a query-independent method)",
+          "isDefault": false,
+          "hit10": {
+            "mean": 0.243523,
+            "ci_low": 0.215544,
+            "ci_high": 0.272539
+          },
+          "mrr": {
+            "mean": 0.100582,
+            "ci_low": 0.088072,
+            "ci_high": 0.112826
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# MoleculAR database construction and data pipeline dependencies
+numpy==2.4.6
+pandas==3.0.3
+rdkit==2026.3.6
+requests==2.34.2
+chembl-webresource-client==0.10.9
+scikit-learn==1.9.0
+xgboost==3.4.1

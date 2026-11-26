@@ -1,7 +1,13 @@
+import json
+from pathlib import Path
 import sqlite3
 import pandas as pd
 from rdkit.Chem import DataStructs
 from scoring_engine import repurposing_score_bulk
+
+# Path to SQLite database (built from __file__, opened read-only via URI)
+DB_PATH = Path(__file__).resolve().parent / "drugrepo.db"
+DUPLICATE_PAIRS_PATH = Path(__file__).resolve().parent / "duplicate_pairs.json"
 
 # DrugFeaturesCache: keys are chembl_id (primary key), with fallback lookup by drug_name
 class DrugFeaturesCache(dict):
@@ -36,6 +42,8 @@ class DrugFeaturesCache(dict):
 drug_features = DrugFeaturesCache()
 hub_percentile_ranks = {}
 name_to_chembl = {}
+all_target_ids = set()
+duplicate_lookup = {}
 df = None  # Kept for backward compatibility with server.py calling `df["drug_name"]`
 
 def resolve_chembl_id(drug_identifier: str):
@@ -48,9 +56,9 @@ def resolve_chembl_id(drug_identifier: str):
     return drug_features.name_to_cid.get(q)
 
 def init_db_cache():
-    global drug_features, hub_percentile_ranks, name_to_chembl, df
+    global drug_features, hub_percentile_ranks, name_to_chembl, all_target_ids, df, duplicate_lookup
     print("Loading SQLite database into memory cache (keyed by chembl_id)...")
-    conn = sqlite3.connect("drugrepo.db")
+    conn = sqlite3.connect(f"file:{DB_PATH.as_posix()}?mode=ro", uri=True)
     
     # Load basic DataFrame for fast lookups
     df = pd.read_sql("SELECT chembl_id, generic_base_name as drug_name, generic_base_name, indication, hubness_percentile FROM drugs", conn)
@@ -97,6 +105,7 @@ def init_db_cache():
         if cid in drug_features:
             if uid:
                 drug_features[cid]["targets"].add(uid)
+                all_target_ids.add(str(uid).strip().upper())
             if tname:
                 drug_features[cid]["target_names"].add(tname)
                 
@@ -108,6 +117,15 @@ def init_db_cache():
             drug_features[cid]["side_effects"].add(se)
             
     conn.close()
+
+    # Load duplicate pairs lookup if present
+    duplicate_lookup = {}
+    if DUPLICATE_PAIRS_PATH.exists():
+        with open(DUPLICATE_PAIRS_PATH, "r", encoding="utf-8") as f:
+            dup_data = json.load(f)
+            raw_lookup = dup_data.get("lookup", {})
+            duplicate_lookup = {c: set(dups) for c, dups in raw_lookup.items()}
+
     print(f"Loaded {len(drug_features)} unique drugs (all keyed by chembl_id).")
 
 # Initialize on import
@@ -155,6 +173,7 @@ def get_repurposing_candidates(drug_identifier: str, top_n=10, use_hub_correctio
     candidates = scores[:top_n]
     
     query_target_names = query_feats["target_names"]
+    query_dups = duplicate_lookup.get(cid, set())
     
     results = []
     for t_drug, candidate_name, score, score_info in candidates:
@@ -177,6 +196,11 @@ def get_repurposing_candidates(drug_identifier: str, top_n=10, use_hub_correctio
             "shared_targets": sorted(shared_targets) if shared_targets else [],
             "shared_side_effects": top_shared_ses,
             "indication": ind_str,
+            # Additive fields: pass-through only, no effect on ordering or score
+            "hubness_percentile": t_drug.get("hubness_percentile"),
+            "has_targets": len(t_drug.get("targets", set())) > 0,
+            "has_side_effects": len(t_drug.get("side_effects", set())) > 0,
+            "is_duplicate_ingredient": t_drug["chembl_id"] in query_dups,
         })
         
     return results
@@ -240,6 +264,11 @@ def get_target_candidates(target_id: str, top_n=10, use_hub_correction=True):
             "shared_targets": [target_id],
             "shared_side_effects": [],
             "indication": ind_str,
+            # Additive fields: pass-through only, no effect on ordering or score
+            "hubness_percentile": t_drug.get("hubness_percentile"),
+            "has_targets": len(t_drug.get("targets", set())) > 0,
+            "has_side_effects": len(t_drug.get("side_effects", set())) > 0,
+            "is_duplicate_ingredient": False,
         })
         
     return results
