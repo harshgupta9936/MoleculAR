@@ -106,6 +106,7 @@ function App() {
       {/* Persistent Research Tool Footer */}
       <footer className="footer">
         <p>Research tool. Rankings show similarity, not proven treatments. Not medical advice.</p>
+        <p>Research demo, non-commercial. Data: ChEMBL 37 (CC BY-SA 3.0), DrugCentral (CC BY-SA 4.0), SIDER 4.1 (CC BY-NC-SA 4.0).</p>
       </footer>
     </div>
   );

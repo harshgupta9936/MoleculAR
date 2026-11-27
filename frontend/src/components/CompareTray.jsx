@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { API_BASE_URL } from '../utils/api';
 
 export function CompareTray({
   pinnedCandidates,
@@ -83,7 +84,7 @@ export function CompareTray({
                 {/* 2D Structure */}
                 <div className="compare-structure">
                   <img
-                    src={`http://127.0.0.1:8000/api/structure?name=${encodeURIComponent(cand.candidate)}`}
+                    src={`${API_BASE_URL}/api/structure?name=${encodeURIComponent(cand.candidate)}`}
                     alt={`2D Structure of ${cand.candidate}`}
                     className="compare-svg"
                     loading="lazy"

@@ -202,3 +202,39 @@ def test_duplicate_pairs_count_and_detection():
     for cand in t_resp.json()["results"]:
         assert cand["is_duplicate_ingredient"] is False
 
+
+def test_health_ok_returns_200():
+    """(h) /api/health returns 200 OK with database hash verification and table row counts."""
+    resp = client.get("/api/health")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["status"] == "ok"
+    assert data["database"]["sha256_verified"] is True
+    assert data["database"]["expected_sha256"] == "D88A2333743AF2DBE859B3717764B6A645B9786CAA6F059CC9558E29C7FF0DA7"
+    assert data["database"]["row_counts"] == {
+        "drugs": 2267,
+        "targets": 7068,
+        "side_effects": 119227,
+        "crosswalk": 2267,
+    }
+
+
+def test_health_mismatch_returns_503(monkeypatch):
+    """(i) /api/health returns HTTP 503 with the same JSON schema when database hash verification fails."""
+    import server as srv
+
+    patched_payload = {
+        "status": "sha256_mismatch",
+        "database": {
+            "expected_sha256": srv.EXPECTED_DB_SHA256,
+            "sha256_verified": False,
+            "row_counts": srv._HEALTH_PAYLOAD["database"]["row_counts"],
+        },
+    }
+    monkeypatch.setattr(srv, "_HEALTH_PAYLOAD", patched_payload)
+
+    resp = client.get("/api/health")
+    assert resp.status_code == 503
+    assert resp.json() == patched_payload
+
+

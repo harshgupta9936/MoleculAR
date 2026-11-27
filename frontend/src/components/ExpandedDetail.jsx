@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { API_BASE_URL } from '../utils/api';
 
 /**
  * ExpandedDetail view for a candidate.
@@ -13,7 +14,7 @@ import { useState } from 'react';
 export function ExpandedDetail({ candidate }) {
   const [imgError, setImgError] = useState(false);
 
-  const structUrl = `http://127.0.0.1:8000/api/structure?name=${encodeURIComponent(candidate.candidate)}`;
+  const structUrl = `${API_BASE_URL}/api/structure?name=${encodeURIComponent(candidate.candidate)}`;
 
   return (
     <div className="expanded-detail">

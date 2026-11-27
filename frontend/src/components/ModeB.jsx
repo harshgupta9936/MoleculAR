@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { API_BASE_URL } from '../utils/api'
 
 function ModeB() {
   const [query, setQuery] = useState('')
@@ -16,7 +17,7 @@ function ModeB() {
     setResults(null)
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/target-search', {
+      const response = await fetch(`${API_BASE_URL}/api/target-search`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ target_id: query.trim(), top_n: Number(topN) })

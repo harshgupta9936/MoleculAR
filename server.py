@@ -1,13 +1,129 @@
+import hashlib
+import os
 import sqlite3
+import sys
+import urllib.error
+import urllib.parse
+import urllib.request
 from functools import lru_cache
+from pathlib import Path
 from typing import List, Optional
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import Response
+from fastapi.responses import JSONResponse, Response
 from pydantic import BaseModel, Field
 
-# Import the existing production pipeline
+EXPECTED_DB_SHA256 = "D88A2333743AF2DBE859B3717764B6A645B9786CAA6F059CC9558E29C7FF0DA7"
+_LOCAL_DB_PATH = Path(__file__).resolve().parent / "drugrepo.db"
+_HEALTH_TABLES = ("drugs", "targets", "side_effects", "crosswalk")
+
+DEFAULT_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+
+
+def _sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest().upper()
+
+
+def _parse_cors_origins() -> List[str]:
+    raw = os.environ.get("CORS_ORIGINS", "").strip()
+    if not raw:
+        return list(DEFAULT_ALLOWED_ORIGINS)
+    origins = [origin.strip().rstrip("/") for origin in raw.split(",") if origin.strip()]
+    return origins or list(DEFAULT_ALLOWED_ORIGINS)
+
+
+class _SameHostAuthRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """Strip Authorization on redirects to a different netloc."""
+
+    def __init__(self, allowed_netloc: str) -> None:
+        self._allowed_netloc = allowed_netloc.lower()
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        new_req = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if new_req is None:
+            return None
+        new_netloc = urllib.parse.urlparse(new_req.full_url).netloc.lower()
+        if new_netloc != self._allowed_netloc:
+            for hdr_dict in (new_req.headers, new_req.unredirected_hdrs):
+                for key in [k for k in hdr_dict if k.lower() == "authorization"]:
+                    del hdr_dict[key]
+        return new_req
+
+
+def _ensure_database(db_path: Path) -> None:
+    """Download drugrepo.db from DB_URL only if missing, and verify its SHA-256."""
+    if db_path.exists():
+        return
+
+    db_url = os.environ.get("DB_URL", "").strip()
+    if not db_url:
+        print(
+            f"ERROR: Database not found at {db_path} and DB_URL is not set.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    parsed = urllib.parse.urlparse(db_url)
+    if parsed.scheme not in ("http", "https"):
+        print(
+            f"ERROR: Unsupported DB_URL scheme '{parsed.scheme}'; expected http or https.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    headers = {"User-Agent": "MoleculAR/1.0"}
+    token = os.environ.get("DB_URL_TOKEN", "").strip()
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    if "api.github.com" in parsed.netloc.lower():
+        headers.setdefault("Accept", "application/octet-stream")
+
+    tmp_path = db_path.with_name(f"{db_path.name}.download")
+    req = urllib.request.Request(db_url, headers=headers)
+    opener = urllib.request.build_opener(_SameHostAuthRedirectHandler(parsed.netloc))
+    try:
+        with opener.open(req, timeout=120) as resp, open(tmp_path, "wb") as out:
+            hasher = hashlib.sha256()
+            while True:
+                chunk = resp.read(1024 * 1024)
+                if not chunk:
+                    break
+                out.write(chunk)
+                hasher.update(chunk)
+        actual_sha = hasher.hexdigest().upper()
+    except (urllib.error.URLError, OSError) as exc:
+        if tmp_path.exists():
+            tmp_path.unlink(missing_ok=True)
+        print(f"ERROR: Failed to download drugrepo.db from DB_URL: {exc}", file=sys.stderr)
+        sys.exit(1)
+
+    if actual_sha != EXPECTED_DB_SHA256:
+        tmp_path.unlink(missing_ok=True)
+        print(
+            f"ERROR: Downloaded drugrepo.db failed SHA-256 verification "
+            f"(expected {EXPECTED_DB_SHA256}, got {actual_sha}).",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    os.replace(tmp_path, db_path)
+
+
+_ensure_database(_LOCAL_DB_PATH)
+
+# Import the existing production pipeline (initializes read-only cache on import)
 from pipeline import (
     DB_PATH,
     all_target_ids,
@@ -16,17 +132,34 @@ from pipeline import (
     resolve_chembl_id,
 )
 
+
+def _compute_health_payload() -> dict:
+    actual_sha = _sha256_file(DB_PATH)
+    conn = sqlite3.connect(f"file:{DB_PATH.as_posix()}?mode=ro", uri=True)
+    try:
+        cur = conn.cursor()
+        row_counts = {}
+        for table in _HEALTH_TABLES:
+            cur.execute(f"SELECT COUNT(*) FROM {table}")
+            row_counts[table] = int(cur.fetchone()[0])
+    finally:
+        conn.close()
+    return {
+        "status": "ok" if actual_sha == EXPECTED_DB_SHA256 else "sha256_mismatch",
+        "database": {
+            "expected_sha256": EXPECTED_DB_SHA256,
+            "sha256_verified": actual_sha == EXPECTED_DB_SHA256,
+            "row_counts": row_counts,
+        },
+    }
+
+
+_HEALTH_PAYLOAD = _compute_health_payload()
+
 app = FastAPI(title="MoleculAR API", version="1.0.0")
 
-# Configure CORS: Allow only localhost origins with credentials
-ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
-]
+# Configure CORS: defaults to localhost origins unless CORS_ORIGINS is set
+ALLOWED_ORIGINS = _parse_cors_origins()
 
 app.add_middleware(
     CORSMiddleware,
@@ -165,6 +298,14 @@ def _lookup_smiles(chembl_id: str) -> str | None:
     row = cur.fetchone()
     conn.close()
     return row[0] if row else None
+
+
+@app.get("/api/health")
+def health_check():
+    """Return verified database SHA-256 status (200 OK or 503 on mismatch) and table row counts only."""
+    verified = bool(_HEALTH_PAYLOAD.get("database", {}).get("sha256_verified"))
+    status_code = 200 if verified else 503
+    return JSONResponse(content=_HEALTH_PAYLOAD, status_code=status_code)
 
 
 @app.get("/api/structure")

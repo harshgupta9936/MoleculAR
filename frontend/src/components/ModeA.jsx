@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { API_BASE_URL } from '../utils/api'
 
 function ModeA() {
   const [query, setQuery] = useState('')
@@ -16,7 +17,7 @@ function ModeA() {
     setResults(null)
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/rank', {
+      const response = await fetch(`${API_BASE_URL}/api/rank`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ drug_name: query.trim(), top_n: Number(topN) })

@@ -1,0 +1,26 @@
+# Render Blueprint for the MoleculAR FastAPI backend.
+#
+# Frontend (Vercel):
+#   - Root Directory: frontend
+#   - Framework Preset: Vite
+#   - Build Command: npm run build
+#   - Output Directory: dist
+#   - Environment Variable: VITE_API_BASE_URL=https://<your-render-service>.onrender.com
+
+services:
+  - type: web
+    name: molecular-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.14.5"
+      - key: DB_URL
+        sync: false
+      - key: DB_URL_TOKEN
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false

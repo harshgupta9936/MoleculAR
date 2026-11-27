@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { API_BASE_URL } from '../utils/api';
 
 const CACHE = new Map();
 const RECENT_KEY = 'molecular_recent_searches';
@@ -72,7 +73,7 @@ export function useSearch(mode, query, topN = 50) {
         ? { drug_name: trimmed, top_n: topN }
         : { target_id: trimmed, top_n: topN };
 
-    fetch(`http://127.0.0.1:8000${endpoint}`, {
+    fetch(`${API_BASE_URL}${endpoint}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),

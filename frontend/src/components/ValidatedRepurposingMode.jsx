@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { API_BASE_URL } from '../utils/api';
 
 export default function RepurposingMode() {
   const [query, setQuery] = useState('');
@@ -15,7 +16,7 @@ export default function RepurposingMode() {
     setResults([]);
 
     try {
-      const response = await fetch('http://localhost:8000/api/rank', {
+      const response = await fetch(`${API_BASE_URL}/api/rank`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
